@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gestión de Sistemas de Información | Prof. Dr. J.L. Salmeron, Ing.</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Slidify">
+  <meta name="author" content="Prof. Dr. Jose L. Salmeron, Eng.">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/solarized_light.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+    <link rel="stylesheet" href = "libraries/widgets/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href = "libraries/widgets/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href = "libraries/widgets/quiz/css/jquery-quiz.css">
+<link rel="stylesheet" href = "assets/css/lists.css">
+<link rel="stylesheet" href = "assets/css/quotes.css">
+<link rel="stylesheet" href = "assets/css/ribbons.css">
+<link rel="stylesheet" href = "assets/css/sizes.css">
+<link rel="stylesheet" href = "assets/css/tables.css">
+<link rel="stylesheet" href = "assets/css/text.css">
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+<!--
+    <slide class="nobackground">
+      <article class="flexbox vcenter">
+        <span>
+          <img width='500px' src="assets/img/presentation.png">
+        </span>
+      </article>
+    </slide>
+-->
+    <!-- END LOGO SLIDE -->
+    
+
+    <!-- TITLE SLIDE -->
+    <!-- Should I move this to a Local Layout File? -->
+    <slide class="title-slide segue nobackground">
+      <aside class="gdbar">
+        <img src="assets/img/upologo.jpg">
+      </aside>
+      <hgroup class="auto-fadein">
+        <h1>Gestión de Sistemas de Información</h1>
+        <h2>Master en Dirección de Empresas</h2>
+        <h2>Master en Recursos Humanos</h2>
+        <p><a href="http://member.acm.org/~salmeron/">Prof. Dr. José Luis Salmeron, Ing.</a><br/>Catedrático de Universidad, Universidad Pablo de Olavide</p>
+      </hgroup>
+      <a href="http://www.upo.es/eps/salmeron" class="example">
+        homepage
+      </a>
+      
+      <footer class = 'source'>
+        <a href='http://creativecommons.org/licenses/by-nc-sa/3.0/'>
+        <img width = '80px' src = 'http://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png'>
+        </a>
+      </footer>
+    </slide>
+
+    <!-- SLIDES -->
+
+
+    <!-- SLIDE 0 -->
+<slide class="" id="slide-0" style="background:;">
+  <hgroup>
+    <h2>Objetivos de aprendizaje</h2>
+  </hgroup>
+  <article>
+    <p>Los objetivos que se persiguen en este tema son los siguientes:</p>
+
+<ol>
+    <li>Conocer el rol de los miembros de un equipo de desarrollo de los Sistemas de Información</li>
+    <li>Entender las responsabilidades de cada uno de los miembros</li>
+    <li>Explicar concepto de la gestión de riesgos</li>
+    <li>Explicar conceptos del control de calidad</li>
+    <li>Conocer técnicas de planificación de proyectos</li> 
+    </li>
+</ol>
+      <footer class="source"><a href="http://member.acm.org/~salmeron/">Prof. Dr. J.L. Salmeron, Ing.</a></footer>      
+  </article>
+</slide>
+      
+      
+    <!-- SLIDE 1 -->          
+<slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Contenidos</h2>
+  </hgroup>
+  <article>
+    <p>Los contenidos de este tema son los siguientes:</p>
+
+<ol>
+    <li>Gestión de riesgos de Sistemas de Información</li>
+    <li>Control de calidad de Sistemas de Información</li>
+    <li>Planificación de Sistemas de Información</li>
+</ol>
+<!--
+    <p>Ejercicios</p>
+<ol class = "build">
+    <li>El soporte de los Sistemas de Información a la estrategia corporativa</li>
+    <li>Evolución de la integración de Sistemas de Información</li>
+    <li>Escenarios para la elección de herramientas</li>
+</ol>      
+-->
+      <footer class="source"><a href="http://member.acm.org/~salmeron/">Prof. Dr. J.L. Salmeron, Ing.</a></footer>      
+  </article>
+</slide>
+
+<!-- SLIDE 2 -->          
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Gestión de riegos de SI</h2>
+    <h3>Conceptos fundamentales</h3>
+  </hgroup>
+  <article>
+    <p class="red3">Un <b>riesgo</b> de Sistemas de Información es cualquier elemento
+      potencial que provoca resultados insatisfactorios en un proyecto</p>
+    <p>Niveles de gestión de riesgos:</p>
+      <ul class="build">
+          <li><b>Control de crisis</b>: Se controlan los riesgos solo cuando se 
+              han convertido en problemas</li>
+          <li><b>Arreglar errores</b>: Detectar y reaccionar ante 
+              cualquier riesgo, solo tras su ocurrencia</li>
+          <li><b>Mitigación de riesgos</b>: Se planifica con antelación el tiempo
+                necesario para cubrir riesgos en caso de que ocurran, sin eliminarlos
+                inicialmente</li>
+          <li><b>Prevención</b>: Se diseña un plan como parte del proyecto para 
+                la identificación del riesgo y evitar que lleguen a problemas</li>
+          <li><b>Eliminación de las causas principales</b>: Identificación y eliminacion
+                de los factores que pueden generar algún riesgo</li>
+      </ul>
+      <footer class="source"><a href="http://member.acm.org/~salmeron/">Prof. Dr. J.L. Salmeron, Ing.</a></footer>      
+  </article>
+</slide>
+
+    <!-- SLIDE 3 -->          
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Gestión de riegos de SI</h2>
+    <h3>Clases de riesgos (I)</h3>
+  </hgroup>
+  <article>
+      <ul class="build">
+          <li><b>Riesgos de gestión</b>: Riesgos relacionados con la orgranización 
+              de los proyectos (recursos y equipos, calendarios, subcontratistas, 
+              etimaciones, etc.)</li>
+          <li><b>Riesgos de proyecto</b>: Riesgos causados por los aspectos técnicos
+                del software, (especificación, diseño, realización, integración y diseño)</li>
+          <li><b>Riesgos de explotación</b>: Fallos ocurridos durante la explotación,
+                pudiendo causar daños significativos incluso a las personas</li>
+          <li><b>Riesgos de mantenimiento</b>: Causados por sobrecostes en matenimiento 
+              correctivo, preventivos y de soporte</li>
+      </ul>
+      <blockquote>
+          <p>Todos los riesgos llevan asociados una probabilidad de ocurrencia, 
+              así como unas consecuencias no deseables</p> 
+      </blockquote>
+      <footer class="source"><a href="http://member.acm.org/~salmeron/">Prof. Dr. J.L. Salmeron, Ing.</a></footer>      
+  </article>
+</slide>
+
+    <!-- SLIDE 4 -->          
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Gestión de riegos de SI</h2>
+    <h3>Análisis de riesgos mas comunes</h3>
+  </hgroup>
+  <article>
+      <ul class="build">
+          <li>Estimación de la probabilidad de ocurrencia <i>P</i></li>
+          <li>Estimación de la magnitud de la pérdida <i>M</i></li>
+          <li>Análisis de la exposición a riesgos = <i>P</i> x <i>M</i></li>
+          <li>Retraso total del proyecto y margen de retraso</li>
+      </ul>
+      <footer class="source"><a href="http://member.acm.org/~salmeron/">Prof. Dr. J.L. Salmeron, Ing.</a></footer>      
+  </article>
+</slide>
+    
+    <!-- SLIDE 5 -->          
+<slide class="" id="slide-5" style="background:;">
+  <hgroup>
+    <h2>Control de calidad de SI</h2>
+    <h3>Introducción</h3>
+  </hgroup>
+  <article class="">
+      <ul class="build">
+          <li>Se define como <i>el grado en el que un conjunto de características inherentes cumple
+          con los requisitos</i> (<a href="http://goo.gl/2MOgUp">ISO 9000/2000</a>)</li>
+          <li>Los requisitos son las necesidades o expectativas establecidas
+          generalmente implícitas u obligatorias</li>
+          <li>Las características se refieren a cualquier tipo de rasgo diferenciador</li>
+          <li>Suele ser transparente cuando está presente, aunque se hace notar
+          cuando se encuentar ausente</li>
+        </ul>
+      <footer class="source"><a href="http://member.acm.org/~salmeron/">Prof. Dr. J.L. Salmeron, Ing.</a></footer>      
+  </article>
+</slide>
+    
+        <!-- SLIDE 6 -->          
+<slide class="" id="slide-6" style="background:;">
+  <hgroup>
+    <h2>Gestión de riegos de SI</h2>
+    <h3>Clases de riesgos (II)</h3>
+  </hgroup>
+  <article class="columns-2">
+      <ul class="build">
+          <li><b>Calidad realizada</b>: la obtenida por la persona que realiza
+          el trabajo debido a la habilidad en la ejecución de la tarea</li>
+          <li><b>Calidad programada</b>: La que se pretende obtener</li>
+          <li><b>Calidad necesaria</b>: La exigida por el cliente con mayor o 
+          menor grado de concreción. En definitiva, la que le gustaria recibir</li>
+      </ul>
+      <blockquote><p>La gestión de la calidad pretende conseguir que los tres 
+      círculos coincidan</p></blockquote>
+        <img width='450px'src="./assets/img/3q.png" class="reflect" alt="Quality" title="Tipos de calidad">
+      <footer class="source"><a href="http://member.acm.org/~salmeron/">Prof. Dr. J.L. Salmeron, Ing.</a></footer>      
+  </article>
+</slide>
+
+        <!-- SLIDE 7 -->          
+<slide class="" id="slide-7" style="background:;">
+  <hgroup>
+    <h2>Gestión de riegos de SI</h2>
+    <h3>Modelo de maduración (I)</h3>
+  </hgroup>
+  <article>
+      <p>El estándar para Sistemas de Información <a href="http://cmmiinstitute.com">CMMI</a> 
+          (Capability Maturity Model Integration) 
+          describe los principios básicos y los prácticos que representan la 
+          base para la madurez de los procesos de software.</p>
+      <p>Así como el estándar <a href="http://www.iso15504.es">SPICE</a> (ISO 15504) 
+          basa todo su análisis en los procesos individuales, 
+          el CMMI se basa en el conjunto de la organización de SI. 
+          El estándar CMMI se gestiona y coordina dentro del 
+          <a href="http://www.sei.cmu.edu">Software Engineering Institute (SEI)</a>
+          y establece cinco niveles</p>
+      <blockquote><p>Es habitual que los técnicos encuentren engorroso el incremento
+          de trabajo administrativo que genera el CMMI</p></blockquote>
+      <footer class="source"><a href="http://member.acm.org/~salmeron/">Prof. Dr. J.L. Salmeron, Ing.</a></footer>      
+  </article>
+</slide>
+
+        <!-- SLIDE 8 -->          
+<slide class="" id="slide-8" style="background:;">
+  <hgroup>
+    <h2>Gestión de riegos de SI</h2>
+    <h3>Modelo de maduración (II)</h3>
+  </hgroup>
+  <article>
+      <ul class="build">
+          <li><b>Nivel 0 - Inexistente</b> Las organizaciones carecen 
+              de cualquier proceso reconocible e incluso desconocen la existencia 
+              de un problema a resolver.</li>
+          <li><b>Nivel I - Inicial</b> El proceso de desarrollo de un SI es 
+              caótico. Muy pocos procesos están definidos y el éxito del 
+              desarrollo radica en la capacidad y el esfuerzo individual.</li>
+          <li><b>Nivel II - Repetible</b> Están establecidos algunos procesos 
+              básicos de gestión de proyectos con el objetivo de hacer un 
+              seguimiento de costes, calendario y funcionalidad. Está establecida 
+              una cierta disciplina para repetir los procesos 
+              en proyectos similares.</li>
+      </ul>
+      <blockquote><p>La madurez del proceso de software de una organización 
+          ayuda a predecir si los proyectos alcanzarán sus objetivos.</p></blockquote>
+      <footer class="source"><a href="http://member.acm.org/~salmeron/">Prof. Dr. J.L. Salmeron, Ing.</a></footer>      
+  </article>
+</slide>
+    
+        <!-- SLIDE 9 -->          
+<slide class="" id="slide-9" style="background:;">
+  <hgroup>
+    <h2>Gestión de riegos de SI</h2>
+    <h3>Modelo de maduración (III)</h3>
+  </hgroup>
+  <article>
+      <ul class="build">
+          <li><b>Nivel III - Definido</b> El proceso de desarrollo de SI, tanto 
+              en la gestión como en la ingeniería, está documentado, 
+              estandarizado e integrado en los procesos globales. 
+              Todos los proyectos utilizan los procesos para el 
+              desarrollo de SI adaptado a sus necesidades.</li>
+          <li><b>Nivel IV - Gestionado</b> Hay una recopilación de medidas 
+              detallada sobre el desarrollo de SI y la calidad 
+              del producto.</li>
+          <li><b>Nivel V - Optimizado</b> Hay un proceso de puesta en marcha de
+              mejoras continuas basado en los resultados cuantitativos 
+              del proceso y en los resultados obtenidos en pruebas piloto de 
+              mejoras tecnológicas y de la gestión.</li>
+      </ul>
+      <blockquote><p>A medida que el proceso de software de la organización va 
+          madurando, las organizaciones obtienen una mejoría al alcanzar sus 
+          objetivos esperados</p></blockquote>
+      <footer class="source"><a href="http://member.acm.org/~salmeron/">Prof. Dr. J.L. Salmeron, Ing.</a></footer>      
+  </article>
+</slide>
+    
+<!-- SLIDE 10 -->          
+<slide class="" id="slide-10" style="background:;">
+  <hgroup>
+    <h2>Planificación de Sistemas de Información</h2>
+    <h3>Origen de gestión de proyectos</h3>
+  </hgroup>
+  <article>
+    <p>El origen de la Gestión de Proyectos moderna se suele situar a finales de 
+        los años 50 con el desarrollo y aplicación del método <a href="http://goo.gl/Fqc2">PERT</a> a la realización 
+        del proyecto de submarinos atómicos armados con proyectiles <a href="http://en.wikipedia.org/wiki/UGM-27_Polaris">Polaris</a>. 
+        En este ambicioso proyecto la <a href="http://www.navy.mil">Marina de los Estados Unidos</a> tenía 250 
+        contratistas directos, más de 9000 subcontratistas, y relación con 
+        numerosas agencias gubernamentales.</p>
+    <p>Este proyecto requería la coordinación de <b>gran cantidad materiales y 
+        recursos humanos</b> de diferentes procedencias. En primera instancia, se 
+        había previsto que el proyecto se extendiera a lo largo de 5 años. 
+        No obstante, <b>la aplicación del método PERT lo redujo en dos años</b>. 
+        También a finales de los 50 la empresa <a href="http://www.dupont.com">DuPont</a> 
+        desarrolló el método CPM que conocemos como el método del camino crítico.</p>
+      <footer class="source"><a href="http://member.acm.org/~salmeron/">Prof. Dr. J.L. Salmeron, Ing.</a></footer>      
+    </article>
+</slide>
+
+<!-- SLIDE 10b -->          
+<slide class="" id="slide-10b" style="background:;">
+  <hgroup>
+    <h2>Planificación de Sistemas de Información</h2>
+    <h3>Concepto</h3>
+  </hgroup>
+  <article>
+    <p>La planificación de un proyecto consiste en:</p>
+    <ul>
+        <li>La definición del proyecto, concretando los objetivos, recursos disponibles, tiempo disponible y el presupuesto.</li>
+        <li>División del trabajo en actividades y personas a las que se les asignan responsabilidades.</li>
+        <li>Representar el diagrama de descomposición del trabajo adecuado (Gantt, WBS, PERT u otros) con las relaciones de precedencia entre actividades.</li>
+        <li>Estimación de la duración de las actividades concretando los recursos implicados y estimando las necesidades de éstos por parte de las actividades.</li>
+        <li>Establecimiento de un calendario de ejecución del proyecto. </li>
+    </ul>
+      <footer class="source"><a href="http://member.acm.org/~salmeron/">Prof. Dr. J.L. Salmeron, Ing.</a></footer>      
+    </article>
+</slide>
+
+<!-- SLIDE 10c -->          
+<slide class="" id="slide-10c" style="background:;">
+  <hgroup>
+    <h2>Planificación de Sistemas de Información</h2>
+    <h3>Tareas</h3>
+  </hgroup>
+  <article class="columns-2">
+    <p>Se suele ser dividir el proyecto en actividades o paquetes de trabajo. Cada una de estas partes puede descomponerse en tareas a realizar, interdependientes entre sí con las siguientes características:</p>
+    <ul>
+        <li>Tener un comienzo y un fin concreto</li>
+        <li>Existe un responsable</li>
+        <li>Ser medibles (tiempo, recursos, esfuerzo y coste)</li>
+        <li>Su resultado es un producto final</li>
+        <li>Establecimiento de un calendario de ejecución del proyecto. </li>
+    </ul>
+    <p>Los <b>hitos</b> significan un logro concreto en un instante determinado del proyecto. Se emplean, entre otras cosas, para:
+obtener una medida del progreso del proyecto y enfocar la atención sobre los resultados</p>
+    <div class="flexbox vcenter">
+    <img width='250px'src="./assets/img/tarea.png" class="reflect" alt="plantilla" title="Plantilla de tareas">
+  </div>  
+      
+      
+      <footer class="source"><a href="http://member.acm.org/~salmeron/">Prof. Dr. J.L. Salmeron, Ing.</a></footer>      
+    </article>
+</slide>
+        
+<!-- SLIDE 11 -->          
+<slide class="" id="slide-11" style="background:;">
+  <hgroup>
+    <h2>Planificación de Sistemas de Información</h2>
+    <h3>Herramientas</h3>
+  </hgroup>
+  <article>
+    <p>Un proyecto consiste en la realización de una actividad compleja, 
+        susceptible de descomponerse en una serie de tareas interdependientes 
+        entre sí en cuanto a su orden de ejecución.</p>
+    <p>Actualmente, la administración y las empresas utilizan software de gestión 
+        de proyectos, debido a la gran difusión de los ordenadores personales y 
+        la disponibilidad en el mercado de una amplia gama de software. Existe 
+        más de medio centenar de aplicaciones para PC, denominadas 
+        sistemas de gestión de proyectos 
+</p>
+    <blockquote>
+        <p>Algunas de las herramientas mas conocidas son 
+        <a href="http://office.microsoft.com/en-us/project/">MS Project</a>, <a href="http://goo.gl/wfQlv8">All 
+        Fusion Project Management Suite</a>, <a href="http://www.aisc.com">Artemis</a> y 
+        <a href="http://goo.gl/tMiHPJ"></a>Primavera IT 
+        Project Office</p>
+        <p>Recientemente han proliferado las herramientas de software libre como 
+        <a href="http://www.ganttproject.biz">GanttProject</a>, 
+        <a href="http://sourceforge.net/projects/openproj/">OpenProj</a> y 
+        <a href="http://www.dotproject.net">dotProject</a></p>
+    </blockquote>
+      <footer class="source"><a href="http://member.acm.org/~salmeron/">Prof. Dr. J.L. Salmeron, Ing.</a></footer>      
+    </article>
+</slide> 
+
+<!-- SLIDE 12 -->          
+<slide class="" id="slide-12" style="background:;">
+  <hgroup>
+    <h2>Planificación de Sistemas de Información</h2>
+    <h3>Fases de la gestión de proyectos (I)</h3>
+  </hgroup>
+  <article>
+    <p>Hay una serie de elementos fundamentales a considerar en toda gestión de 
+    proyectos: tiempo, recursos, calidad, y costes. La Gestión de Proyectos los 
+    considera simultáneamente en cuatro grandes fases:</p>
+    <ol>
+        <li>Planificación</li>
+        <li>Programación</li>
+        <li>Seguimiento y control de la ejecución</li>
+        <li>Análisis y evaluación de los resultados</li>
+    </ol>
+  <footer class="source"><a href="http://member.acm.org/~salmeron/">Prof. Dr. J.L. Salmeron, Ing.</a></footer>      
+    </article>
+</slide>
+    
+<!-- SLIDE 13 -->          
+<slide class="" id="slide-13" style="background:;">
+  <hgroup>
+    <h2>Planificación de Sistemas de Información</h2>
+    <h3>Fases de la gestión de proyectos (II)</h3>
+  </hgroup>
+  <article>
+    <p>La <b>Planificación</b> estriba en la definición de las actividades 
+    del proyecto, la estimación de su duración y de los recursos que demandan. </p>
+    <p>La <b>Programación</b> se centra en el diseño del calendario de ejecución 
+        del proyecto. Ambas fases son previas a la ejecución del proyecto.</p>
+    <p>El <b>Seguimiento y Control</b> consiste en la comparación de la 
+        evolución real con la programación inicial, y de la adopción 
+        de medidas correctivas cuando difieren en exceso.</p>
+    <p>El <b>Análisis y la Evaluación</b> del proyecto considerará las diferencias 
+        entre previsiones y duraciones reales de las actividades, entre presupuesto y coste real, etc.</p>
+      <footer class="source"><a href="http://member.acm.org/~salmeron/">Prof. Dr. J.L. Salmeron, Ing.</a></footer>      
+    </article>
+</slide>    
+    
+    
+<!-- SLIDE 14 -->          
+<slide class="" id="slide-14" style="background:;">
+  <hgroup>
+    <h2>Planificación de Sistemas de Información</h2>
+    <h3>Ciclo de vida de un proyecto (I)</h3>
+  </hgroup>
+  <article>
+    <p>En definitiva, podemos conceptualizar un proyecto como un instrumento de 
+        cambio. Por este motivo, en ocasiones los proyectos se realizan para 
+        efectuar cambios de forma controlada.</p>
+    <p>Las principales características de un proyecto son:</p>
+    <ul>
+        <li>Tiene un comienzo y un fin claramente identificable</li>
+        <li>Tiene un objetivo u objetivos concretos.</li>
+        <li>Es responsabilidad del jefe del proyecto</li>
+        <li>Existe una interdependencia en las tareas que lo constituyen.</li>
+        <li>Implica tiempo, recursos, costes y también puede considerarse la calidad.</li>
+        <li>Es un instrumento de cambio</li>
+    </ul>
+    <footer class="source"><a href="http://member.acm.org/~salmeron/">Prof. Dr. J.L. Salmeron, Ing.</a></footer>      
+  </article>
+</slide> 
+
+<!-- SLIDE 15 -->          
+<slide class="" id="slide-15" style="background:;">
+  <hgroup>
+    <h2>Planificación de Sistemas de Información</h2>
+    <h3>Ciclo de vida de un proyecto (II)</h3>
+  </hgroup>
+  <article>
+    <p>Los proyectos presentan una serie de fases comunes desde el comienzo hasta 
+        el fin. Este modelo se denomina <b>ciclo de vida del proyecto</b>. 
+        El esfuerzo más bajo se sitúa en la 
+        fase inicial, cuando se desarrollan las fases iniciales. Sin embargo, 
+        el esfuerzo en las etapas iniciales aumenta las posibilidades de éxito.</p>
+    <p>Los beneficios son:</p>
+    <ul>
+        <li>El resultado del proyecto estará definido de forma inequívoca y 
+            consensuado por todas las partes</li>
+        <li>La meta del proyecto estará alineado con los objetivos de negocio de 
+            la organización para la cual se realiza</li>
+        <li>La responsabilidad de cada actividad del proyecto estará 
+            asignada y acotada</li>
+        <li>Utilización de buenas técnicas de planificación y requiere la realización 
+            de estimaciones precisas</li>
+        <li>Otorga confianza al incluir el control y seguimiento</li>
+    </ul>
+    <footer class="source"><a href="http://member.acm.org/~salmeron/">Prof. Dr. J.L. Salmeron, Ing.</a></footer>      
+  </article>
+</slide>
+
+<!-- SLIDE 16 -->          
+<slide class="" id="slide-16" style="background:;">
+  <hgroup>
+    <h2>Planificación de Sistemas de Información</h2>
+    <h3>Ejercicio</h3>
+  </hgroup>
+  <article>
+    <blockquote>
+        <p>Comentar tres proyectos reales, sus características principales (objetivos, actividades y recursos) y el perfil del jefe de proyecto más adecuado. Algunos ejemplos:</p>
+        <ul>
+            <li><p>Construcción de un edificio.</p></li>
+            <li><p>Desarrollo de un SI para RRHH.</p></li>
+            <li><p>Desarrollo y comercialización de un nuevo producto.</p></li>
+            <li><p>Campaña electoral.</p></li>
+            <li><p>Desarrollo de un proyecto informático</p></li>
+        </ul>
+    </blockquote>
+    <footer class="source"><a href="http://member.acm.org/~salmeron/">Prof. Dr. J.L. Salmeron, Ing.</a></footer>      
+  </article>
+</slide>
+
+    
+<!-- SLIDE 17 -->          
+<slide class="" id="slide-17" style="background:;">
+  <hgroup>
+    <h2>Planificación de Sistemas de Información</h2>
+    <h3>Técnicas</h3>
+  </hgroup>
+  <article>
+        <p>Las técnicas pioneras de la gestión de proyectos son PERT 
+         y CPM. Su utilidad reside en:</p>
+        <ul>
+            <li><p>Establecimiento de relaciones de precedencia.</p></li>
+            <li><p>Estimación de duración para cada actividad.</p></li>
+            <li><p>Determinar las actividades críticas.</p></li>
+            <li><p>Mejor utilización de los recursos de personal y materiales al 
+                identificar los cuellos de botella del proyecto.</p></li>
+            <li><p>Desarrollo de un proyecto informático</p></li>
+            <li><p>Simplifica la programación, seguimiento y control de un proyecto.</p></li>
+        </ul>
+    <footer class="source"><a href="http://member.acm.org/~salmeron/">Prof. Dr. J.L. Salmeron, Ing.</a></footer>      
+  </article>
+</slide>
+    
+    
+<!-- SLIDE 18 -->          
+<slide class="" id="slide-18" style="background:;">
+  <hgroup>
+    <h2>Planificación de Sistemas de Información</h2>
+    <h3>CPM - Tarea</h3>
+  </hgroup>
+  <article>
+      <div class="flexbox vcenter">
+        <img width='700px'src="./assets/img/cpmtarea.png" class="reflect" alt="cpm" title="Tarea de un CPM">
+        </div>
+      <footer class="source"><a href="http://member.acm.org/~salmeron/">Prof. Dr. J.L. Salmeron, Ing.</a></footer>      
+  </article>
+</slide>
+    
+<!-- SLIDE 19 -->          
+<slide class="" id="slide-19" style="background:;">
+  <hgroup>
+    <h2>Planificación de Sistemas de Información</h2>
+    <h3>CPM - Diagrama de precedencia</h3>
+  </hgroup>
+  <article>
+      <div class="flexbox vcenter">
+        <img width='650px'src="./assets/img/precedencia.png" class="reflect" alt="cpm" title="Diagrama de precedencia">
+        </div>
+      <footer class="source"><a href="http://member.acm.org/~salmeron/">Prof. Dr. J.L. Salmeron, Ing.</a></footer>      
+  </article>
+</slide>
+
+<!-- SLIDE 20 -->          
+<slide class="" id="slide-20" style="background:;">
+  <hgroup>
+    <h2>Planificación de Sistemas de Información</h2>
+    <h3>CPM - Tiempos early</h3>
+  </hgroup>
+  <article>
+      <div class="flexbox vcenter">
+        <img width='650px'src="./assets/img/tearly.png" class="reflect" alt="cpm" title="Tiempos early">
+        </div>
+      <footer class="source"><a href="http://member.acm.org/~salmeron/">Prof. Dr. J.L. Salmeron, Ing.</a></footer>      
+  </article>
+</slide>    
+    
+<!-- SLIDE 21 -->          
+<slide class="" id="slide-21" style="background:;">
+  <hgroup>
+    <h2>Planificación de Sistemas de Información</h2>
+    <h3>CPM - Tiempos last</h3>
+  </hgroup>
+  <article>
+      <div class="flexbox vcenter">
+        <img width='650px'src="./assets/img/tlast.png" class="reflect" alt="cpm" title="Tiempos last">
+        </div>
+      <footer class="source"><a href="http://member.acm.org/~salmeron/">Prof. Dr. J.L. Salmeron, Ing.</a></footer>      
+  </article>
+</slide>
+
+    <!-- SLIDE 21 -->          
+<slide class="" id="slide-21" style="background:;">
+  <hgroup>
+    <h2>Planificación de Sistemas de Información</h2>
+    <h3>CPM - Camino crítico</h3>
+  </hgroup>
+  <article>
+      <div class="flexbox vcenter">
+        <img width='650px'src="./assets/img/critico.png" class="reflect" alt="cpm" title="Camino crítico">
+        </div>
+      <blockquote><p><b>Ruta crítica</b></p>
+          <p>Conjunto de actividades 
+          en el que todas ellas tienen una holgura de cero.</p></blockquote>
+      <footer class="source"><a href="http://member.acm.org/~salmeron/">Prof. Dr. J.L. Salmeron, Ing.</a></footer>      
+  </article>
+</slide>
+
+    <!-- SLIDE 22 -->          
+<slide class="" id="slide-22" style="background:;">
+  <hgroup>
+    <h2>Ejercicio 1</h2>
+    <h3>CPM</h3>
+  </hgroup>
+  <article class="columns-2">
+      <p>Construir el modelo CPM y el camino crítico</p>
+    <article class="smaller">
+      <table border="1" align="center">
+        <tr>
+          <th>Actividad</th><th>Precedentes</th><th>Duración</th>
+        </tr>
+        <tr>
+          <td>A</td><td class="highlight">-</td><td>6</td>
+        </tr>
+        <tr>
+          <td>B</td><td class="highlight">-</td><td>10</td>
+        </tr>
+        <tr>
+          <td>C</td><td class="highlight">-</td><td>6</td>
+        </tr>
+        <tr>
+          <td>D</td><td>B</td><td>8</td>
+        </tr>
+        <tr>
+          <td>E</td><td>A, C</td><td>16</td>
+        </tr>
+        <tr>
+          <td>F</td><td>D</td><td>4</td>
+        </tr>
+        <tr>
+          <td>G</td><td>C</td><td>8</td>
+        </tr>
+        <tr>
+          <td>H</td><td>F</td><td>4</td>
+        </tr>
+        <tr>
+          <td>I</td><td>F</td><td>10</td>
+        </tr>
+        <tr>
+          <td>J</td><td>H, E, G</td><td>6</td>
+        </tr>
+        </table>
+    </article>
+      <footer class="source"><a href="http://member.acm.org/~salmeron/">Prof. Dr. J.L. Salmeron, Ing.</a></footer>      
+  </article>
+</slide>
+
+    <!-- SLIDE 23 -->          
+<slide class="" id="slide-22" style="background:;">
+  <hgroup>
+    <h2>Ejercicio 2</h2>
+    <h3>CPM</h3>
+  </hgroup>
+  <article class="columns-2">
+      <p>Construir el modelo CPM y el camino crítico</p>
+    <article class="smaller">
+      <table border="1" align="center">
+        <tr>
+          <th>Actividad</th><th>Precedentes</th><th>Duración</th>
+        </tr>
+        <tr>
+          <td>A</td><td class="highlight">-</td><td>3</td>
+        </tr>
+        <tr>
+          <td>B</td><td class="highlight">-</td><td>6</td>
+        </tr>
+        <tr>
+          <td>C</td><td class="highlight">-</td><td>7</td>
+        </tr>
+        <tr>
+          <td>D</td><td>A</td><td>2</td>
+        </tr>
+        <tr>
+          <td>E</td><td>C</td><td>5</td>
+        </tr>
+        <tr>
+          <td>F</td><td>A</td><td>5</td>
+        </tr>
+        <tr>
+          <td>G</td><td>C</td><td>5</td>
+        </tr>
+        <tr>
+          <td>H</td><td>B,D,E</td><td>4</td>
+        </tr>
+        <tr>
+          <td>I</td><td>A</td><td>5</td>
+        </tr>
+        <tr>
+          <td>J</td><td>C</td><td>7</td>
+        </tr>
+        <tr>
+          <td>K</td><td>F,G,H</td><td>4</td>
+        </tr>
+        <tr>
+          <td>L</td><td>F,G,H</td><td>3</td>
+        </tr>
+        <tr>
+          <td>M</td><td>F,G,H</td><td>2</td>
+        </tr>
+        <tr>
+          <td>N</td><td>I,K</td><td>2</td>
+        </tr>
+        <tr>
+          <td>O</td><td>N,L</td><td>6</td>
+        </tr>
+        <tr>
+          <td>P</td><td>I,K</td><td>4</td>
+        </tr>
+        <tr>
+          <td>Q</td><td>J,M,O</td><td>6</td>
+        </tr>
+        <tr>
+          <td>R</td><td>N,L</td><td>2</td>
+        </tr>
+        </table>
+    </article>
+      <footer class="source"><a href="http://member.acm.org/~salmeron/">Prof. Dr. J.L. Salmeron, Ing.</a></footer>      
+  </article>
+</slide>
+
+  <slide class="thank-you-slide segue nobackground">
+    <aside class="gdbar right"><img src="./assets/img/upologo.jpg"></aside>
+    <article class="flexbox vleft auto-fadein">
+      <h2>&lt;¡Gracias por la atención!&gt;</h2>
+    </article>
+    <p class="auto-fadein" data-config-contact>
+      <!-- populated from slide_config.json -->
+    </p>
+  </slide>
+
+
+
+    <slide class="backdrop"></slide>
+  </slides>
+
+  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+<!-- Grab CDN jQuery, fall back to local if offline -->
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+<script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery-1.7.min.js"><\/script>')</script>
+<!-- Load Javascripts for Widgets -->
+<!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      processEscapes: true
+    }
+  });
+</script>
+<script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<script src='libraries/widgets/bootstrap/js/bootstrap.min.js'></script>
+<script>  
+$(function (){ 
+  $("#example").popover(); 
+  $("[rel='tooltip']").tooltip(); 
+});  
+</script>  
+<script src='libraries/widgets/quiz/js/jquery.quiz.js'></script>
+<script src='libraries/widgets/quiz/js/mustache.min.js'></script>
+<script type="text/javascript">
+ $('.quiz').find('li:has(em)').addClass('quiz-answer')
+ $('li.quiz-answer em').replaceWith(function(){
+   return $(this).contents()
+ })
+ $('.quiz').find('li').addClass('quiz-option')
+ $.quiz();
+</script>
+<!-- LOAD HIGHLIGHTER JS FILES -->
+<script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<!-- DONE LOADING HIGHLIGHTER JS FILES -->
+</html>
