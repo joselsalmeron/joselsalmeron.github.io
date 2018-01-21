@@ -1,38 +1,538 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE HTML>
+<!--
+	Astral by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Professor Jose L. Salmeron</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="data science, big data, computer science, artificial intelligence, research" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+			<link rel="stylesheet" href="css/style-noscript.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body>
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ site.baseurl }}/{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+		<!-- Wrapper-->
+			<div id="wrapper">
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="#me" class="icon fa-home active"><span>Home</span></a>
+            <a href="#bio" class="icon fa-user"><span>Bio</span></a>
+            <a href="#research" class="icon fa-wrench"><span>Research</span></a>
+            <a href="#publications" class="icon fa-signal"><span>Publications</span></a>
+            <a href="#projects" class="icon fa-line-chart"><span>Projects</span></a>
+						<a href="#tweets" class="icon fa-newspaper-o"><span>Last tweets</span></a>
+						<a href="#contact" class="icon fa-envelope"><span>Contact</span></a>
+					</nav>
 
-    {{ post.content }}
-  </div>
-  {% endfor %}
-</div>
+				<!-- Main -->
+					<div id="main">
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}/">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
+						<!-- Me -->
+							<article id="me" class="panel">
+								<header>
+									<h1>Prof. Jose L. Salmeron</h1>
+									<p>(Catedrático) Professor of Data Science</p></br>
+									<!--p>Catedrático de Universidad</p-->
+									<!--p>Universidad Pablo de Olavide</p-->
+								</header>
+								<a href="#bio" class="jumplink pic">
+									<span class="arrow icon fa-chevron-right"><span>See my bio</span></span>
+									<img src="images/me3.jpg" alt="My picture" />
+								</a>
+							</article>
 
+                        <!-- Bio -->
+							<article id="bio" class="panel">
+								<header>
+									<h2>Professor Jose L. Salmeron, Ph.D., Eng., ACMLTM</h2>
+									<hr>
+								</header>
+
+                                <h1>
+                                    <p align="center"><font color="red">Professional details</font></p>
+                                </h1>
+
+                                <h2>
+                                    <font color="red">Positions held</font>
+                                </h2>
+                                <br/>
+                                <h5>
+                                    <font color="red">Postdoctoral</font>
+                                </h5>
+
+                                <ul class="fa-ul">
+                                    <li><i class="fa-li fa fa-graduation-cap" style="color:red;"></i>[Spring 2012-Present]</li>
+                                    <li><b>(Catedrático) Professor of <a href="https://en.wikipedia.org/wiki/Data_science">Data Science</a></b>, <a href="http://www.upo.es">University Pablo de Olavide</a>, Spain. Topics taugth (teaching in english several courses): Decision Support Systems, Machine Learning, Computational Intelligence, Business Informatics, Concurrent programming (Erlang).</li>
+                                    <br/>
+                                    <li><i class="fa-li fa fa-graduation-cap" style="color:red;"></i>[Spring 2015-Present] </li>
+                                    <li><b>Research Professor of Artificial Intelligence</b>, <a href="http://www.uhk.cz">University Hradec Králové</a>, Czech Republic</li>
+                                    <br/>
+                                    <li><i class="fa-li fa fa-graduation-cap" style="color:red;"></i>[Spring 2014-Present] </li>
+                                    <li><b>Research Associate of Artificial Intelligence</b>, <a href="http://www.uautonoma.cl">University Autonoma de Chile</a>, Chile</li>
+                                    <br/>
+                                    <li><i class="fa-li fa fa-graduation-cap"></i>[2003-2011]</li>
+                                    <li><b>Associate Professor (tenured) of Information Systems</b>, <a href="http://www.upo.es">University Pablo de Olavide</a>, Spain. Topics taugth: Decision Support Systems, Information Systems, Machine Learning, Business Intelligence, Business Systems Analysis, Knowledge-Based Systems, Business Informatics, Information Systems Analysis and Design, Expert Systems</li>
+                                    <br/>
+                                    <li><i class="fa-li fa fa-graduation-cap"></i>[Summer 2008]</li>
+                                    <li><b>Visiting Scientist</b>, Engineering Design Lab, Department of Mechanical Engineering and Construction. <a href="http://ujiapps.uji.es">University Jaime I</a>, Castellon, Spain</li>
+                                    <br/>
+                                    <li><i class="fa-li fa fa-graduation-cap"></i>[2000-2003]</li>
+                                    <li><b>Assistant Professor of Information Systems</b>, <a href="http://www.upo.es">University Pablo de Olavide</a>, Spain. Topics taugth: Decision Support Systems, Information Systems, Business Systems Analysis, Business Informatics, Information Systems Analysis and Design.</li>
+                                    <br/>
+                                    <li><i class="fa-li fa fa-graduation-cap"></i>[Fall 2001]</li>
+                                    <li><b>Visiting Scientist</b>, <a http="http://www.depts.ttu.edu/rawlsbusiness/about/isqs/">Area of Information Systems and Quantitative Sciences</a>, USA. <a href="http://www.ttu.edu">Texas Tech University</a>, USA.</li>
+                                <br/>
+                                    <li><i class="fa-li fa fa-graduation-cap"></i>[1999-2000]</li>
+                                    <li><b>Assistant Professor of Information Systems</b>, <a href="http://www.upo.es">University of Huelva</a>, Spain. Topics taugth: Decision Support Systems, Information Systems, Information Technology, Business Informatics.
+                                </ul>
+
+                                <h4>
+                                    <font color="red">Predoctoral</font>
+                                </h4>
+                                <ul class="fa-ul">
+                                    <li><i class="fa-li fa fa-graduation-cap"></i>[1997-1998]</li>
+                                    <li><b>Teaching assistant of Information Systems</b>, <a href="http://www.upo.es">University of Huelva</a>, Spain. Topics taugth: Information Systems, Decision Support Systems, Information Systems Analysis and Design.</li>
+                                    <br/>
+                                    <li><i class="fa-li fa fa-graduation-cap"></i>[1996-1997]</li>
+                                    <li><b>Teaching assistant of Information Systems</b>, <a href="http://www.us.es">University of Seville</a>, Spain. Topics taugth: Business Informatics, Decision Support Systems.</li>
+                                    <br/>
+                                    <li><i class="fa-li fa fa-graduation-cap"></i>[1995-1996]</li>
+                                    <li><b>Teaching assistant of Information Systems</b>, <a href="http://www.ceuandalucia.es">San Pablo CEU</a>, Spain. Topics taugth: Business Informatics, Decision Support Systems.
+                                </ul>
+
+							</article>
+
+						<!--  Research -->
+							<article id="research" class="panel">
+                                <header>
+									<h2>Professor Jose L. Salmeron, Ph.D., Eng., ACMLTM</h2>
+                                    <hr>
+								</header>
+
+								<h3>Research Interests</h3>
+								<p>
+								<a href="https://en.wikipedia.org/wiki/Soft_computing">Soft computing</a>, <a href="https://en.wikipedia.org/wiki/Machine_learning">Machine Learning</a>, <a href="https://en.wikipedia.org/wiki/Big_data">Big data</a>, <a href="https://en.wikipedia.org/wiki/Data_science">Data Science</a>, <a href="https://en.wikipedia.org/wiki/blockchain">Blockchain</a> technologies, <a href="https://en.wikipedia.org/wiki/Computational_intelligence">Computational Intelligence</a>, <a href="https://en.wikipedia.org/wiki/Blockchain">Blockchain</a> technologies and always researching in something new...
+								</p>
+
+                <h3>Editorialships</h3>
+                  <ul class="fa-ul">
+                    <li><i class="fa-li fa fa-toggle-on" style="color:red;"></i>Vice-President of the <a href="http://www.iagsua.org/about-international-association-of-grey-system-and-uncertain-analysis/governors-2/">International Association of Grey Systems and Uncertain Analysis</a>, 2016-.</li>
+
+                    <li><i class="fa-li fa fa-toggle-on" style="color:red;"></i>Editorial board of the  journal <a href="http://www.journals.elsevier.com/applied-soft-computing/">Applied Soft Computing</a>, 2014-.</li>
+
+										<li><i class="fa-li fa fa-toggle-on" style="color:red;"></i>Guest co-editor of the Special Issue on <a href="http://www.journals.elsevier.com/neurocomputing/call-for-papers/special-issue-on-advances-in-fuzzy-cognitive-maps-theory/">Fuzzy Cognitive Maps</a> at <a href="http://www.journals.elsevier.com/neurocomputing/">Neurocomputing</a> journal.
+
+                    <li><i class="fa-li fa fa-toggle-on" style="color:red;"></i>Associate Editor of the journal <a href="http://emeraldgrouppublishing.com/products/journals/editorial_team.htm?id=gs">Grey Systems: Theory and Applications</a>, 2014-.</li>
+
+                    <li><i class="fa-li fa fa-toggle-on" style="color:red;"></i>Editorial board of the <a href="http://www.omicsgroup.org/journals/industrial-engineering-management.php">Industrial Engineering &amp; Management</a> journal, 2013-.
+
+					  		   	<li><i class="fa-li fa fa-toggle-on" style="color:red;"></i>Editorial board of the <a href="http://www.aasmr.org/jsms/index.html">Journal of Systems and Management Sciences</a> sponsored by <a href="http://en.njtu.edu.cn">Beijing Jiaotong University</a>, 2013-.
+
+					  		   	<li><i class="fa-li fa fa-toggle-off"></i>Guest co-editor of the Special Issue on <a href="http://www.fujipress.jp/JACIII/JACIII_CFP.html#cfp2">Artificial Intelligence in Emotion Technology Methods and Applications</a> at <a href="http://www.fujipress.jp/JACIII/">Journal of Advanced Computational Intelligence and Intelligent Informatics</a>.
+
+                    <li><i class="fa-li fa fa-toggle-off"></i>Guest co-editor of the Special Issue on <a href="http://www.sciencedirect.com/science/journal/15684946/12">Fuzzy Cognitive Maps</a> at <a href="http://www.journals.elsevier.com/applied-soft-computing/">Applied Soft Computing</a> journal. <font color="green">Published, 2012</font>
+
+                    <li><i class="fa-li fa fa-toggle-off"></i>Guest editor of the Special Issue on <a href="http://www.jiem.org/index.php/jiem/issue/view/4">New trends in Process Simulation and Modeling</a> at <a href="http://www.jiem.org/">Journal of Industrial Engineering and Management</a>. <font color="green">Published, 2009</font>
+
+                    <li><i class="fa-li fa fa-toggle-off"></i>Editorial board of the <a href="http://www.jiem.org/">Journal of Industrial Engineering and Management</a>, 2009-2015.</li>
+                  </ul>
+
+                <h3>Recent scientific conference boards and committees</h3>
+					  	<ul class="fa-ul">
+            <li><i class="fa-li fa fa-toggle-on" style="color:red;"></i>Program Co-chair and Keynote speaker of the <a href="http://ieeegsis.nuaa.edu.cn/committee.htm">IEEE International Conference on Grey Systems and Intelligent Services</a>, Stockholm (Sweden) 2017.</li>
+
+						<li><i class="fa-li fa fa-toggle-off"></i>Keynote speaker in the <a href="http://www.icss.pwr.wroc.pl/us/ks.html">19th International Conference on Systems Science -  Workshop on Uncertain Systems</a>, Wroclaw (Poland) 2016.</li>
+
+						<li><i class="fa-li fa fa-toggle-off"></i>Program committee member of the <a href="http://gicap.ubu.es/cisis2012/home/home.shtml">International Conference on Computational Intelligence in Security for Information Systems</a> 2008-present.</li>
+
+						<li><i class="fa-li fa fa-toggle-off"></i>Program committee member of the <a href="http://www.icesal.org/index.html">International Conference on Enterprise Systems, Accounting and Logistics</a> 2006-present.</li>
+
+						<li><i class="fa-li fa fa-toggle-off"></i>Co-chair of the Special Session <a href="http://wcci2016.org/spsessions.php">Methods and Applications of Fuzzy Cognitive Maps</a> at the <a href="http://www.wcci2016.org/">2016 IEEE International Conference on Fuzzy Systems</a>, Vancouver (Canada) 2015. <font color="red"></font></li>
+
+						<li><i class="fa-li fa fa-toggle-off"></i>Co-chair of the <a href="http://www.dmu.ac.uk/research/research-faculties-and-institutes/technology/cci/projects/2016-international-conference-on-grey-systems-and/2016-international-conference-on-grey-systems-and-its-applications.aspx">2016 International Conference on Grey Systems and Its Applications</a>, Leicester (UK) 2016. <font color="red"></font></li>
+
+						<li><i class="fa-li fa fa-toggle-off"></i>Keynote speaker in the <a href="">European Meeting on Grey Systems and its Applications</a>, Bucharest (Romania) 2015.</li>
+
+						<li><i class="fa-li fa fa-toggle-off"></i>Co-chair of the Special Session <a href="http://fuzzieee2015.org/wp-content/uploads/2014/10/A-Special-Session-FUZZIEEE2015-enginyeşil.pdf">Methods and Applications of Fuzzy Cognitive Maps</a> at the <a href="http://fuzzieee2015.org/">2015 IEEE International Conference on Fuzzy Systems</a>, Istambul (Turkey) 2015. <font color="red"></font></li>
+
+            <li><i class="fa-li fa fa-toggle-off"></i>Co-chair and Keynote speaker of the <a href="http://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=6708583">IEEE International Conference on Grey Systems and Intelligent Services</a>, Leicester (UK) 2015.</li>
+
+            <li><i class="fa-li fa fa-toggle-off"></i>Scientific committee member of the <a href="http://aciids.org/?page=Home.YS">7th Asian Conference on Intelligent Information and Database Systems</a>, 23-25 March, Bali (Indonesia) 2015.</li>
+
+            <li><i class="fa-li fa fa-toggle-off"></i>Organizing committee member at the <a href="http://omicsgroup.com/artificial-intelligence-conference-2014/">Annual Summit on Artificial Intelligence</a>, Philadelphia (USA) 2014.</li>
+
+					  <li><i class="fa-li fa fa-toggle-off"></i>Co-chair of the Special Session <a href="">Methods and Applications of Fuzzy Cognitive Maps</a> at the <a href="http://www.ieee-wcci2014.org/">2014 IEEE International Conference on Fuzzy Systems</a>, Beijing (China) 2014. <font color="red"></font></li>
+
+					  		<li><i class="fa-li fa fa-toggle-off"></i>Program committee member at the <a href="http://cisis14.deusto.es/home/home.shtml">7th International Conference on Computational Intelligence in Security for Information Systems</a>, Bilbao (Spain) 2014.</li>
+
+					  		<li><i class="fa-li fa fa-toggle-off"></i>Program committee member at the <a href="http://www.omicsgroup.com/industrial-engineering-2014/">International Summit on Industrial Engineering</a>, San Francisco (USA) 2014.</li>
+
+					  		<li><i class="fa-li fa fa-toggle-off"></i>Program committee member at the <a href="http://kicss2014.cs.ucy.ac.cy/">Knowledge, Information and Creativity Support Systems</a>, Limassol (Cyprus) 2014.</li>
+
+					  		<li><i class="fa-li fa fa-toggle-off"></i>Co-chair of the Special Session <a href="http://www.isical.ac.in/~fuzzieee2013/?q=node/82">Emerging Trends in Methods and Applications of Fuzzy Cognitive Maps</a> at the <a href="http://www.isical.ac.in/~fuzzieee2013/">2013 IEEE International Conference on Fuzzy Systems</a>, Hyderabad (India) 2013.</li>
+
+					  		<li><i class="fa-li fa fa-toggle-off"></i>Program committee member of the <a href="http://www.kicss2013.ipbf.eu/program-committee">Knowledge, Information and Creativity Support Systems</a>, Krakow (Poland) 2013.</li>
+
+					  		<li><i class="fa-li fa fa-toggle-off"></i>Program committee member of the <a href="http://aiai2013.cut.ac.cy/fcmta-2013/">1st International Workshop on Fuzzy Cognitive Maps Theory and Applications</a>, Paphos (Cyprus) 2013.</li>
+
+					  		<li><i class="fa-li fa fa-toggle-off"></i>Co-chair of the Special Session <a href="http://fuzzieee2011.nutn.edu.tw/download/FUZZ-IEEE%202011-SS42-02132011.pdf">Fuzzy Cognitive Maps - Theory and Applications</a> at the <a href="http://fuzzieee2011.nutn.edu.tw/">2011 IEEE International Conference on Fuzzy Systems</a>, Taipei (Taiwan) 2011.</li>
+
+					  		<li><i class="fa-li fa fa-toggle-off"></i>Co-chair of the Special Session Fuzzy Cognitive Maps at the International Conference on Artificial Intelligence, Las Vegas (USA) 2011.</li>
+              </ul>
+
+							</article>
+
+
+                            <!-- Publications -->
+							<article id="publications" class="panel">
+                                <header>
+									<h2>Professor Jose L. Salmeron, Ph.D., Eng., ACMLTM</h2>
+                                    <hr>
+								</header>
+
+
+								<h3>Publications</h3>
+								<br/>
+                                <section>
+                                <h5>Selected papers</h5>
+
+                                <p align="justify">
+                                <ul class="fa-ul">
+																	<li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong> and P. Palos (2018). <a href="http://dx.doi.org/10.1109/TCYB.2017.2771387">Uncertainty propagation in Fuzzy Grey Cognitive Maps with Hebbian-like learning algorithms</a>. <em>IEEE Transactions on Cybernetics</em>  forthcoming.</li></br>
+
+																	<li><i class="fa-li fa fa-file-text-o"></i>W. Froelich and <strong>J.L. Salmeron</strong> (2017). <a href="http://dx.doi.org/10.1016/j.neucom.2016.11.058">Advances in Fuzzy Cognitive Maps Theory (Guest Editorial)</a>. <em>Neurocomputing</em>  232, pp. 1-2.</li></br>
+
+																	<li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong>, A. Ruiz-Celma and A. Mena (2017). <a href="https://doi.org/10.1016/j.neucom.2016.10.070">Learning FCMs with multi-local and balanced memetic algorithms for forecasting drying processes</a>. <em>Neurocomputing</em> 232, pp. 52-57.</li></br>
+
+																	<li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong>, S.A. Rahimi, A.M. Navalie and A. Sadeghpour (2017). <a href="https://doi.org/10.1016/j.neucom.2016.09.113">Medical Diagnosis of Rheumatoid Arthritis using Data driven PSO-FCM</a>. <em>Neurocomputing</em> 232, pp. 104-112.</li></br>
+
+																	<li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong> and W. Froelich (2016). <a href="http://dx.doi.org/10.1016/j.knosys.2016.04.023">Dynamic Optimization of Fuzzy Cognitive Maps for Time Series Forecasting</a>. <em>Knowledge-Based Systems</em>. 105, pp. 29-37.</li></br>
+
+																	<li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong> (2016). <a href="http://researchinformation.co.uk/greyarchindex.php">An Autonomous FGCM-based System for Surveillance Assets Coordination</a>. <em>The Journal of Grey Systems</em> 28(1), pp. 27-35.</li></br>
+
+																	<li><i class="fa-li fa fa-file-text-o"></i>R. Vidal, <strong>J.L. Salmeron</strong>, A. Mena and V. Chulvi (2015). <a href="http://dx.doi.org/10.1016/j.jclepro.2015.04.131">Fuzzy Cognitive Map-based selection of TRIZ trends for eco-innovation of ceramic industry products</a>. <em>Journal of Cleaner Production</em> 107, pp. 202-214.</li></br>
+
+																	<li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong> and E.I. Papageorgiou (2014). <a href="http://dx.doi.org/10.1007/s10489-013-0511-z">Fuzzy Grey Cognitive Maps and Nonlinear Hebbian Learning in process control</a>. <em>Applied Intelligence</em> 41(1), pp. 223-234.</li></br>
+
+                                <li><i class="fa-li fa fa-file-text-o"></i>W. Froelich and <strong>J.L. Salmeron</strong> (2014). <a href="http://dx.doi.org/10.1016/j.ijar.2014.02.006">Evolutionary Learning of Fuzzy Grey Cognitive Maps for the Forecasting of Multivariate, Interval-Valued Time Series</a>. <em>International Journal of Approximate Reasoning</em> 55(6), pp. 1319-1335.</li></br>
+
+                                <li><i class="fa-li fa fa-file-text-o"></i>C. Lopez and <strong>J.L. Salmeron</strong> (2014). <a href="http://www.sciencedirect.com/science/article/pii/S0920548913001359">Modeling maintenance projects risks effects on ERP performance</a>. <em>Computer Standards &amp; Interfaces</em> 36(3), pp. 545-553.</li></br>
+
+                                <li><i class="fa-li fa fa-file-text-o"></i>C. Lopez and <strong>J.L. Salmeron</strong> (2013). <a href="http://dx.doi.org/10.1016/j.ins.2012.05.026">Dynamic risks modelling in ERP maintenance projects with FCM</a>. <em>Information Sciences</em> 256, pp. 25-45.</li></br>
+
+                                <li><i class="fa-li fa fa-file-text-o"></i>E.I. Papageorgiou and <strong>J.L. Salmeron</strong> (2013). <a href="http://dx.doi.org/10.1109/TFUZZ.2012.2201727">A Review of Fuzzy Cognitive Maps research during the last decade</a>. <em>IEEE Transactions on Fuzzy Systems</em> 21(1), pp. 66-79.</li></br>
+
+                                <li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong> (2012). <a href="http://dx.doi.org/10.1016/j.asoc.2012.01.015">Fuzzy Cognitive Maps for Artificial Emotions Forecasting</a>. <em>Applied Soft Computing</em> 12(12), pp. 3704–3710.</li></br>
+
+                                <li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong> and E. Gutierrez (2012). <a href="http://dx.doi.org/10.1016/j.asoc.2012.02.003">Fuzzy Grey Cognitive Maps in Reliability Engineering</a>. <em>Applied Soft Computing</em> 12(12), pp. 3818-3824.</li></br>
+
+                                <li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong> and C. Lopez (2012). <a href="http://doi.ieeecomputersociety.org/10.1109/TSE.2011.8">Forecasting Risk Impact on ERP Maintenance with Augmented Fuzzy Cognitive Maps</a>. <em>IEEE Transactions on Software Engineering</em> 38(2), pp-439-452.</li></br>
+
+                                <li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong> and E.I. Papageorgiou (2012). <a href="http://dx.doi.org/10.1016/j.knosys.2012.01.008">A Fuzzy Grey Cognitive Maps-based Decision Support System for Radiotherapy Treatment Planning</a>. <em>Knowledge-Based Systems</em> 30(1), pp. 151-160.</li></br>
+
+                                <li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong> and C. Lopez (2012). <a href="http://www.jart.ccadet.unam.mx/vol9_3/ranking_12.pdf">Ranking Ambient Intelligence projects risks</a>. <em>Journal of Applied Research and Technology</em> 9(3), pp. 419-429.</li></br>
+
+                                <li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong>, R. Vidal and A. Mena (2012). <a href="http://dx.doi.org/10.1016/j.eswa.2011.08.094">Ranking Fuzzy Cognitive Maps based scenarios with TOPSIS</a>. <em>Expert Systems with Applications</em> 39(3), pp. 2443-2450.</li></br>
+
+                                <li><i class="fa-li fa fa-file-text-o"></i>E.I. Papageorgiou and <strong>J.L. Salmeron</strong> (2012). <a href="http://dx.doi.org/10.1016/j.ijar.2011.09.006">Learning Fuzzy Grey Cognitive Maps using Nonlinear Hebbian-based approach</a>. <em>International Journal of Approximate Reasoning</em> 53(1), pp. 54-65.</li></br>
+
+																<li><i class="fa-li fa fa-file-text-o"></i>C. Lopez and <strong>J.L. Salmeron</strong> (2011). <a href="http://bit.ly/2DjNLqx">Exploring Risk Factors in ERP Maintenance Projects</a>. <em>Scientific Journal of Riga Technical University</em> 43, pp. 50-56.</li></br>
+
+																<li><i class="fa-li fa fa-file-text-o"></i>V.A. Banuls and <strong>J.L. Salmeron</strong> (2011). <a href="http://dx.doi.org/10.1504/IJFIP.2011.043023">Scope and design issues in Foresight Support Systems</a>. <em> International Journal of Foresight and Innovation Policy</em> 7(4), pp. 338-351.</li></br>
+
+                                <li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong> and C. Lopez (2010). <a href="http://dx.doi.org/10.1016/j.jss.2010.05.073">A multicriteria approach for risks assessment in ERP maintenance</a>. <em>Journal of Systems and Software</em> 83(10), pp. 1941-1953.</li></br>
+
+                                <li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong> (2010). <a href="http://dx.doi.org/10.1016/j.eswa.2010.04.085">Modelling grey uncertainty with Fuzzy Grey Cognitive Maps</a>. <em>Expert Systems with Applications</em> 37(12), pp. 7581-7588.</li></br>
+
+                                <li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong> (2009). <a href="http://dx.doi.org/10.1016/j.knosys.2009.01.002">Augmented Fuzzy Cognitive Maps for modelling LMS Critical Success Factors</a>. <em>Knowledge-Based Systems</em> 22(4), pp. 275-278.</li></br>
+
+                                <li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong> (2009). <a href="http://www.ingentaconnect.com/content/iri/rtm/2009/00000052/00000003/art00009">Supporting decision makers with Fuzzy Cognitive Maps</a>. <em>Research-Technology Management</em> 52(3), pp. 53-59.</li></br>
+
+                                <li><i class="fa-li fa fa-file-text-o"></i>S. Bueno and <strong>J.L. Salmeron</strong> (2009). <a href="http://dx.doi.org/10.1016/j.eswa.2008.06.072">Benchmarking Main Activation functions in Fuzzy Cognitive Maps</a>. <em>Expert Systems with Applications</em> 36(3 part. 1), pp. 5221-5229.</li></br>
+
+                                <li><i class="fa-li fa fa-file-text-o"></i>S. Bueno and <strong>J.L. Salmeron</strong> (2008). <a href="http://dx.doi.org/10.1016/j.intcom.2008.08.003">TAM-based success modelling in ERP</a>. <em>Interacting with Computers</em> 20(6), pp. 515-523.</li></br>
+
+                                <li><i class="fa-li fa fa-file-text-o"></i>S. Bueno and <strong>J.L. Salmeron</strong> (2008). <a href="http://dx.doi.org/10.1016/j.csi.2007.08.001">Fuzzy modelling Enterprise Resource Planning tool selection</a>. <em>Computer Standards &amp; Interfaces</em> 30(3), pp. 137-147.</li></br>
+
+                                <li><i class="fa-li fa fa-file-text-o"></i>V.A. Banuls and <strong>J.L. Salmeron</strong> (2008). <a href="http://dx.doi.org/10.1016/j.technovation.2007.05.006">Foresighting key areas in the information technology industry</a>. <em>Technovation</em> 28(3), pp. 103-111.</li></br>
+
+                                <li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong> and F. Smarandache (2008). <a href="http://arxiv.org/abs/cs/0703060">Redesigning Decision Matrix Method with an indeterminacy-based inference process</a>. <em>International Journal of Applied Mathematics &amp; Statistics</em> 13(8).</li></br>
+
+                                <li><i class="fa-li fa fa-file-text-o"></i>L. Rodriguez-Repiso, R. Setchi and <strong>J.L. Salmeron</strong> (2007). <a href="http://dx.doi.org/10.1016/j.technovation.2006.12.006">Modelling IT Projects Success: Emerging Methodologies Reviewed</a>. <em>Technovation</em> 27(10), pp. 582-594.</li></br>
+
+                                <li><i class="fa-li fa fa-file-text-o"></i>V.A. Banuls and <strong>J.L. Salmeron</strong> (2007). <a href="http://dx.doi.org/10.1016/j.techfore.2006.05.015">A Scenario-based Assessment Model - SBAM</a>. <em>Technological Forecasting and Social Change</em> 74(6), pp. 750-762.</li></br>
+
+                                <li><i class="fa-li fa fa-file-text-o"></i>L. Rodriguez-Repiso, R. Setchi and <strong>J.L. Salmeron</strong> (2007). <a href="http://dx.doi.org/10.1016/j.eswa.2006.01.032">Modelling IT Projects success with Fuzzy Cognitive Maps</a>. <em>Expert Systems with Applications</em> 32(2), pp. 543-559.</li></br>
+
+                                <li><i class="fa-li fa fa-file-text-o"></i>V.A. Banuls and <strong>J.L. Salmeron</strong> (2007). <a href="http://dx.doi.org/10.1016/j.futures.2006.03.006">Benchmarking the Information Society in the Long Range</a>. <em>Futures</em> 39(1), pp. 83-95.</li></br>
+
+                                <li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong> and S. Bueno (2006). <a href="http://dx.doi.org/10.1016/j.ejor.2005.07.002">An Information Technologies and Information Systems Industry-based evaluation in Small and Medium-Sized Enterprises</a>. <em>European Journal of Operational Research</em> 173(3), pp. 1012-1025.</li></br>
+
+                                <li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong> and J.M. Hurtado (2006). <a href="http://dx.doi.org/10.1016/j.technovation.2005.06.006">Modelling the reasons to establish B2C in the fashion industry</a>. <em>Technovation</em> 26(7), pp. 865-872.</li></br>
+
+                                <li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong> and F. Smarandache (2006). <a href="http://www.pphmj.com/abstract/2276.htm">Extending Decision-Matrix Method with Neutrosophic Logic</a>. <em>Advances in Fuzzy Sets and Systems</em> 1(3), pp. 263-271.</li></br>
+
+                                <li><i class="fa-li fa fa-file-text-o"></i>I. Herrero and <strong>J.L. Salmeron</strong> (2005). <a href="http://dx.doi.org/10.1145/1039539.1039546">Using the DEA Methodology to Rank Software Technical Efficiency</a>. <em>Communications of the ACM</em> 48(1), pp. 101-106.</li></br>
+
+                                <li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong> and I. Herrero (2005). <a href="http://dx.doi.org/10.1016/j.csi.2004.09.002">An AHP-based methodology to rank Critical Success Factors of Executive Information Systems</a>. <em>Computer Standards &amp; Interfaces</em> 28(1), pp.1-12.</li></br>
+
+                                <li><i class="fa-li fa fa-file-text-o"></i>S. Lozano and <strong>J.L. Salmeron</strong> and I. Herrero (2005). <a href="http://link.springer.com/article/10.1007%2Fs11192-005-0245-8">Data Envelopment Analysis of OR/MS journals</a>. <em>Scientometrics</em> 64(2), pp.133-150.</li></br>
+
+                                <li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong> (2003). <a href="http://dx.doi.org/10.1016/S0166-4972(01)00076-1">EIS Success: Keys and difficulties in major companies</a>. <em>Technovation</em> 23(1), pp. 35-38.</li></br>
+
+                                <li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong> (2002). <a href="http://dx.doi.org/10.1016/S0378-7206(01)00130-6">EIS Evolution in Large Spanish Businesses</a>. <em>Information &amp; Management</em> 40(1), pp. 41-50.</li></br>
+
+                                <li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong> (2002). <a href="http://dx.doi.org/10.1108/02635570210428311">EIS profitability, costs and benefits: An evolutionary approach</a>. <em>Industrial Management &amp; Data Systems</em> 102(5-6), pp. 284-288.</li></br>
+
+                                <li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong> (2002). <a href="http://dx.doi.org/10.1016/S0164-1212(02)00030-4">EIS data: Findings from an evolutionary study</a>. <em>Journal of Systems and Software</em> 64(2), pp. 111-114.</li></br>
+
+                                <li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong>, P. Luna and F.J. Martinez (2001). <a href="http://dx.doi.org/10.1016/S0920-5489(01)00071-X">Executive Information Systems in major companies: Spanish Case study</a>. <em>Computer Standards &amp; Interfaces</em> 23(3), pp. 195-207.</li>
+                                </ul>
+                                </p>
+                                </section>
+                                <br/>
+                                <section>
+                                <h5>Books and chapters</h5>
+                                <p align="justify">
+                                <ul class="fa-ul">
+                                    <li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong> and E.I. Papageorgiou (2013). Using Fuzzy Grey Cognitive Maps in industrial process control in E.I. Papageorgiou, Fuzzy Cognitive Maps for Applied Sciences and Engineering, Springer.
+                                    </li>
+                                    <br/>
+                                    <li><i class="fa-li fa fa-file-text-o"></i>E.I. Papageorgiou and <strong>J.L. Salmeron</strong> (2013). Methods and Algorithms for Fuzzy Cognitive Map-based Decision Support, in E.I. Papageorgiou, Fuzzy Cognitive Maps
+for Applied Sciences and Engineering, Springer.
+                                    </li>
+                                    <br/>
+                                    <li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong> and C. Lopez (2012). Fuzzy approach for monitoring project success in IT/IS industry, in Belkhamza and Wafa, Measuring Organizational Information Systems Success: New Technologies and Practices, IGI Global.
+                                    </li>
+                                    <br/>
+                                    <li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong> (2012). Autonomous Decision Systems in Multi-meanings Environments, in M. Gavalec, M. Husakova, P. Mikulecky, E. Gutierrez, K. Mls, H. Mohelska, K. Olsevicova, <strong>J.L. Salmeron</strong>, M. Sokolova, L. Svobodova, P. Tucnik, J. Vascak, Autonomous Decision Systems Handbook, Technika Literatura, Prague, Czech Republic.
+                                    </li>
+                                    <br/>
+                                    <li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong> and F. Smarandache (2010). Redesigning Decision Matrix Method with an indeterminacy-based inference process, in F. Smarandache Multispace & Multistructure. Neutrosophic transdisciplinary, North-European Scientific Publishers, Hanko, Finland.
+                                    </li>
+                                    <br/>
+                                    <li><i class="fa-li fa fa-file-text-o"></i>K. Mls, <strong>J.L. Salmeron</strong>, K. Olsevicova, and M. Husakova (2009). Cognitive Personal Software Assistants within AmI environment. In Ambient Intelligence Perspectives II, IOS Press Amsterdam, pp. 167-174
+                                    </li>
+                                    <br/>
+                                    <li><i class="fa-li fa fa-file-text-o"></i>V.A. Banuls and <strong>J.L. Salmeron</strong> (2009). Fundamentals of Information Systems Foresight. RA-MA (written in spanish).
+                                    </li>
+                                    <br/>
+                                    <li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong> and F. Smarandache (2006). Processing Uncertainty and Indeterminacy in Information Systems Projects success mapping, in F. Smarandache, S. Bhattacharya and M. Khoshnevisan, Computational Modelling in Applied Problems: collected papers on econometrics, operations research, game theory and simulation, Hexis.
+                                    </li>
+                                    <br/>
+                                    <li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong> and J.M. Hurtado (2005). Modelling Business to Consumer Systems Adoption. Lecture Series on Computer and Computational Sciences 2(1), pp. 116-119.
+                                    </li>
+                                    <br/>
+                                    <li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong> and V.A. Banuls (2005). Detecting IS/IT future trends: An analysis of technology foresight processes around the world. Lecture Series on Computer and Computational Sciences 2(1), pp. 120-123.
+                                    </li>
+                                    <br/>
+                                    <li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong> and M.B. Ramirez (2005). Modelling success in Information Technology projects. Lecture Series on Computer and Computational Sciences
+2(1), pp. 124-127.
+                                    </li>
+                                    <br/>
+                                    <li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong> and S. Bueno (2005). An isomorphic-based model in IT/IS assimilation. Lecture Series on Computer and Computational Sciences 2(1), pp. 128-131.
+                                    </li>
+                                    <br/>
+                                    <li><i class="fa-li fa fa-file-text-o"></i>P. Luna, F.J. Martinez and <strong>J.L. Salmeron</strong> (2001). Internet for researchers 3rd edition, Publications of the University of Huelva (written in spanish).
+
+                                    </li>
+                                    <br/>
+                                    <li><i class="fa-li fa fa-file-text-o"></i>F.J. Martinez, P. Luna, M. Garcia, and <strong>J.L. Salmeron</strong> (2000). Analysis of Information Technology in Tourism industry, in New Information Technologies in Tourism and Telework, Technographic, pp. 209-248 (written in spanish).
+                                    </li>
+                                    <br/>
+                                    <li><i class="fa-li fa fa-file-text-o"></i>P. Luna, F.J. Martinez, R. Pozo, J.C. Ruiz, and <strong>J.L. Salmeron</strong> (1998). Learning Spreadsheet with case studies, McGraw-Hill (written in spanish).
+                                    </li>
+                                    <br/>
+                                    <li><i class="fa-li fa fa-file-text-o"></i>F.J. Martinez, <strong>J.L. Salmeron</strong> and J.C. Roca (1998). A multidisciplinary view of Telework, Publications of the University of Huelva (written in spanish).
+                                    </li>
+                                    <br/>
+                                    <li><i class="fa-li fa fa-file-text-o"></i>P. Luna, F.J. Martinez and <strong>J.L. Salmeron</strong> (1998). Internet for researchers 2nd edition, Publications of the University of Huelva (written in spanish).
+                                    </li>
+                                    <br/>
+                                    <li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong> (1997). Fundamentals of Information Systems, Publications of the University of Huelva (written in spanish).
+                                    </li>
+                                    <br/>
+                                    <li><i class="fa-li fa fa-file-text-o"></i>P. Luna, F.J. Martinez and <strong>J.L. Salmeron</strong> (1997). Internet for researchers 1st edition, Publications of the University of Huelva (written in spanish).
+                                    </li>
+                                    </section>
+                                <br/>
+                                <section>
+                                <h5>Selected conference proceedings</h5>
+                                <p align="justify">
+                                <ul class="fa-ul">
+																	<li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong> and A. Ruiz-Celma (2017). Bipolar Extreme Learning Machine for solar and wind synergy regression, in <a href="https://goo.gl/rqgL22">9th International KES Conference on Intelligent Decision Technologies (KES-IDT-17)</a>, 21-23 June 2017, Vilamoura (Portugal)</li><br/>
+																	<li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong> and P. Palos (2016). Analyzing cloud business services with Choquet Fuzzy Integrals and Support Vector Machines, in <a href="http://goo.gl/0yv9VK">8th International KES Conference on Intelligent Decision Technologies (KES-IDT-16)</a>, 15-17 June 2016, Tenerife (Spain)</li><br/>
+																	<li><i class="fa-li fa fa-file-text-o"></i>R. Ulanczyk, K. Samborska, W. Froelich, E. Magiera, C. Laspidou and <strong>J.L. Salmeron</strong> (2015). A fuzzy-stochastic modelling approach for urban water supply systems – ISS EWATUS project’s concepts, in <a href="http://app.iahr2015.info/programma_details/3909">36th IAHR World conference</a> (International Association for Hydro-Environment Engineering and Research) 28 June - 3 July 2015, Delft - The Hague (the Netherlands)</li><br/>
+																	<li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong>, W. Froelich and E.I. Papageorgiou (2015). Application of Fuzzy Cognitive Maps to the Forecasting of Daily Water Demand in <a href="http://itise.ugr.es/2015/">International work-conference on Time Series Analysis</a>, Granada (Spain) 2015.</li><br/>
+																		<li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong> (2013). Simulating synthetic emotions with Fuzzy Grey Cognitive Maps in Symposium on Emergent Trends in Artificial Intelligence & Robotics 2013, Kosice (Slovak Republic).</li><br/>
+                                    􏰀<li><i class="fa-li fa fa-file-text-o"></i>V.K. Mago, E.I. Papageorgiou, <strong>J.L. Salmeron</strong> and A. Mago (2012). Employing Fuzzy Cognitive Map for Periodontal Disease assessment in IEEE International Conference in Fuzzy Systems 2012, Brisbane (Australia).</li><br/>
+                                    􏰀 <li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong> (2012). Dynamic patterns-based system for assessing projects in IADIS Information Systems 2012, Lisbon (Portugal).</li><br/>
+                                    􏰀 <li><i class="fa-li fa fa-file-text-o"></i>C. Lopez and <strong>J.L. Salmeron</strong> (2012). Risks Response Strategies for Supporting Practitioners Decision-Making in Software Projects in 4th Conference of ENTERprise Information Systems - aligning technology, organizations and people (CENTERIS 2012), Lisbon (Portugal).</li><br/>
+                                    􏰀<li><i class="fa-li fa fa-file-text-o"></i>C. Lopez and <strong>J.L. Salmeron</strong> (2012). Monitoring Software Maintenance Project Risks in 4th Conference of ENTERprise Information Systems - aligning technology, organizations and people (CENTERIS 2012), Lisbon (Portugal).</li><br/>
+                                    <li><i class="fa-li fa fa-file-text-o"></i>C. Lopez, <strong>J.L. Salmeron</strong> and S. Lozano (2011). Software maintenance scenarios simulation with Fuzzy Cognitive Maps in IEEE International Conference in Fuzzy Systems 2011, Taipei (Taiwan).</li><br/>
+                                    􏰀<li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong> and E. Gutierrez (2011). Modelling Complex Systems with Fuzzy Grey Cognitive Maps in International Conference on Artificial Intelligence 2011, Las Vegas (NV, USA).</li><br/>
+                                    􏰀 <li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong>, A.P. Moreno-Beltran, and S. Lozano (2011). Network DEA assessment of NBA teams efficiency in International Conference on Operations Research 2011, Zurich (Switzerland).</li><br/>
+                                    <li><i class="fa-li fa fa-file-text-o"></i>C. Lopez and <strong>J.L. Salmeron</strong> (2011). Exploring Risk Factors in ERP Maintenance Projects in The 10th International Conference on Perspectives In Business Informatics Research, Riga (Latvia).</li><br/>
+                                    <li><i class="fa-li fa fa-file-text-o"></i>C. Lopez and <strong>J.L. Salmeron</strong> (2011). A framework for classifying risks in ERP maintenance projects in 2011 International Conference on E-Business, Seville (Spain).</li><br/>
+                                    <li><i class="fa-li fa fa-file-text-o"></i>C. Lopez and <strong>J.L. Salmeron</strong> (2011). Supporting risks management in ERP post- implementation projects in The 11th EURAM Annual Conference, Tallinn (Estonia).</li><br/>
+                                    <li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong> and A. Mena (2010). Formal methodologies for modelling Critical Success Factors in IT projects in XV International Congress on Project Engineering 2010, Madrid (Spain).</li><br/>
+                                    <li><i class="fa-li fa fa-file-text-o"></i>S. Lozano, E. Gutierrez and <strong>J.L. Salmeron</strong> (2010). Network DEA models for air transport efficiency assessment in The 2010 World Conference of Air Transport Research Society 2010, Oporto (Portugal).</li><br/>
+                                    <li><i class="fa-li fa fa-file-text-o"></i>S. Lozano, E. Gutierrez, A.P. Moreno-Beltran, and <strong>J.L. Salmeron</strong> (2010). A Network DEA model of airlines in Euro XXIV - 24th European Conference on Operational Research, Lisbon (Portugal).</li><br/>
+                                    <li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong> and C. Lopez (2010). Civil Safety Engineering with Artificial Intelligence in 2010 International Congress on Environmental Health, Coimbra (Portugal).</li><br/>
+                                    􏰀<li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong> and C. Lopez (2010). Ranking Ambient Intelligence projects risks in 2010 International Congress on Environmental Health, Coimbra (Portugal).</li><br/>
+                                    􏰀 􏰀<li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong> and A. Mena (2010). Risks standards in IT projects engineering in XV International Congress on Project Engineering 2010, Madrid (Spain).</li><br/>
+     􏰀                                 􏰀<li><i class="fa-li fa fa-file-text-o"></i>S. Lozano, A. Diaz, J. Esparza and <strong>J.L. Salmeron</strong> (2010). SOM for finding WEEE Consumer behaviour patterns in ALIO-INFORMS Joint International Meeting, Buenos Aires (Argentina).</li><br/>
+                                    􏰀 􏰀<li><i class="fa-li fa fa-file-text-o"></i>V.A. Banuls and <strong>J.L. Salmeron</strong> (2010). Foresight in Emergency Management in International Conference on Information Systems for Crisis Response and Management, Washington D.C. (USA).</li><br/>
+                                    􏰀<li><i class="fa-li fa fa-file-text-o"></i>S. Lozano, Y. Barba, B.A. Diaz and <strong>J.L. Salmeron</strong> (2009). Russell non-radial Eco-Efficiency measure and scale elasticity of a sample of electric/electronic products in 3rd IEEE International Conference in Modelling, Simulation and Applied Optimization 2009, Sharjah (United Arab Emirates).</li><br/>
+                                    􏰀 <li><i class="fa-li fa fa-file-text-o"></i>K. Mls, <strong>J.L. Salmeron</strong> and K. Olsevicova (2009). Cognitive Personal Software Assistants within AmI Environment in Ambient Intelligence Forum, Hradec Kralove (Czech Republic).</li><br/>
+                                    􏰀<li><i class="fa-li fa fa-file-text-o"></i>C. Lopez and <strong>J.L. Salmeron</strong> (2009). Catalogo de riesgos del mantenimiento de sistemas ERP, IADIS Iberoamerican Conference WWW/Internet, Algarve (Portugal).</li><br/>
+                                    􏰀<li><i class="fa-li fa fa-file-text-o"></i>S. Lozano, G. Villa, F. Cuevas and <strong>J.L. Salmeron</strong> (2008). Spanish Harbours efficiency with DEA in XIV Iberoamerican Congress on Operations Research 2008, Cartagena de Indias (Colombia).</li><br/>
+                                    􏰀<li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong>, S. Bueno and V.A. Banuls and M.T. Gonzalez (2008). ERP system selection with fuzzy modelling in 3rd World Conference on Production and Operations Management, Tokyo (Japan).</li><br/>
+                                    􏰀<li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong>, M. Aguayo and R. Pozo (2008). A qualitative decision support tool for operational managers in 3rd World Conference on Production and Operations Management, Tokyo (Japan).</li><br/>
+                                    􏰀<li><i class="fa-li fa fa-file-text-o"></i>V.A. Banuls and <strong>J.L. Salmeron</strong> (2008). Foresight in emergency management in 5th International Conference on Information Systems for Crisis Response and Management, Washington D.C. (USA).</li><br/>
+                                    􏰀􏰀<li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong> (2008). Group Decision Support Systems in Technology Policy Analysis in 7th Wuhan International Conference on e-Business, Wuhan (China).</li><br/>
+                                    􏰀<li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong> (2007). Foresight analysis for public policies priorities in Vth Iberoamerican Academy of Management, Santo Domingo (Republica Dominicana).</li><br/>
+                                    􏰀<li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong> and V.A. Banuls (2005). Applying Scenario and Multicriteria Methods to simulate and assess technology policies in 25th International Symposium on Forecasting, San Antonio (Texas, USA).</li><br/>
+                                    􏰀<li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong>, V.A. Banuls, M.D. Gallego, S. Bueno (2003). Measuring regional development with a macroindicator in XIII National Congress of ACEDE, Salamanca (Spain).</li><br/>
+􏰀                                      <li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong>, S. Bueno, V.A. Banuls, and M.D. Gallego (2003). A multivariate analysis of IT-based decision making in IADIS Iberoamerican WWW/INTERNET 2003, Algarve (Portugal).</li><br/>
+􏰀                                       <li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong>, V.A. Banuls, S. Bueno, and M.D. Gallego (2003). Technological Foresight as a support of Public Policies in IADIS Iberoamerican WWW/INTERNET 2003, Algarve (Portugal).</li><br/>
+                                    <li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong>, M.D. Gallego, S. Bueno, and V.A. Banuls (2003). Critical Success Factors in Electronic Data Interchange in IADIS Iberoamerican WWW/INTERNET 2003, Algarve (Portugal).</li><br/>
+􏰀                                      <li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong>, P. Luna, and F.J. Martinez (1998). Hierarchical organization towards virtual company and telework in IV IFSAM World Congress 1998, Madrid (Spain).</li><br/>
+􏰀                                      <li><i class="fa-li fa fa-file-text-o"></i><strong>J.L. Salmeron</strong>, P. Luna, and F.J. Martinez (1997). Electronic Commerce and Direct Marketing in Spain and Mediterranean Countries in Euroconference on Barries to Electronic Trade in the European and Mediterranean Area 1997, Malaga (Spain).</li><br/>
+􏰀                                      <li><i class="fa-li fa fa-file-text-o"></i>P. Luna, F.J. Martinez and <strong>J.L. Salmeron</strong> (1997). Using IT to create virtual companies in peripheral regions of Europe in European Conference in Information Systems 1997, Cork (Ireland).</li>
+                                    </ul>
+                                    </p>
+                                </section>
+							</article>
+
+						<!-- Projects -->
+							<article id="projects" class="panel">
+								<header>
+									<h2>Professor Jose L. Salmeron, Ph.D., Eng., ACMLTM</h2>
+                                    <hr>
+								</header>
+                                <h3>Research projects</h3><br/>
+                                <p align="justify">
+                                <ul class="fa-ul">
+																	  <!--li><i class="fa-li fa fa-gear fa-spin"></i><a href=""><b>Human-like reasoning engine with Rule Based-Fuzzy Grey Cognitive Maps</b></a>. Comisión Nacional de Investigación Científica y Tecnológica (CONYCIT), Fondo Nacional de Desarrollo Científico y Tecnológico (FONDECYT), Gobierno de Chile (2016-2018). Principal investigator: J.L. Salmeron</li>
+																	  <br/-->
+                                    <li><i class="fa-li fa fa-gear fa-spin" style="color:red;"></i><a href="http://issewatus.eu"><b>[ISS-EWATUS] Integrated Support System for Efficient Water Usage and Resources Management</b></a>. FP7 - European Commission (2014-2017). UPO Principal investigator: J.L. Salmeron</li>
+																		<br/>
+																		<li><i class="fa-li fa fa-gear fa-spin" style="color:red;"></i><a href="http://www.leverhulme.ac.uk"><b>Leverhulme Trust International Network in Grey Systems</b></a>. The Leverhulme Trust - Coordinator: Yingjie Yang (DeMonfort University) (2015-2018). Principal investigator: J.L. Salmeron</li>
+																		<br/>
+																		<li><i class="fa-li fa fa-check-square"></i><a href="http://en.wtelecom.es/products-and-services/smart-city/buildings.aspx"><b>[SBP] Intelligent Recommender system for smart buildings energy efficiency and optimization</b></a>. Andalusian Technological Corporation and Wellness Telecom (2014-2015). Principal investigator: J.L. Salmeron</li>
+                                    <br/>
+																		<li><i class="fa-li fa fa-check-square"></i><a href=""><b>HHRR analysis of fruits and vegetables industry</b></a>. Regional Government of Andalusia (2015). UPO leader: J.L. Salmeron</li>
+																	  <br/>
+                                    <li><i class="fa-li fa fa-check-square"></i><b>[GEcoPro] An Intelligent System for Environmental Control within Civil Engineering</b>. Andalusian Technological Corporation and GEA21 (2011-2013). Principal investigator: J.L. Salmeron</li>
+																		<br/>
+                                    <li><i class="fa-li fa fa-check-square"></i><b>Fuzzy Dynamic Models in Technological Forecasting</b>. Spanish Ministry of Innovation and Science - (2010-2012). Principal investigator: J.L. Salmeron</li>
+																		<br/>
+                                    <li><i class="fa-li fa fa-check-square"></i><b>[SinRisk] An Intelligent System for Safety Civil Engineering</b>. Andalusian Technological Corporation and GEA21 (2009-2012). Principal investigator: J.L. Salmeron</li>
+																		<br/>
+                                    <li><i class="fa-li fa fa-check-square"></i><b>ERP systems implementation analysis</b>. Andalusian Regional Government (awarded as Excellence project) (2008-2012). Principal investigator: J.L. Salmeron</li>
+																		<br/>
+                                    <li><i class="fa-li fa fa-check-square"></i><b>Decision making processes in autonomous Systems (Rozhodovaci procesy v autonomnich systemech - GACR 402/09/0662)</b>. Czech Science Foundation (2009-2011). Principal investigator: Karel Mls. UPO partner leader: Jose L. Salmeron</li>
+																		<br/>
+                                    <li><i class="fa-li fa fa-check-square"></i><b>Usability of Fuzzy Cognitive Maps</b>. <a href="https://www.uhk.cz/en-GB/UHK">University of Hradec Králové</a> (2010). Principal investigator: J.L. Salmeron</li>
+                                    <br/>
+                                    <li><i class="fa-li fa fa-check-square"></i><b>Forecasting‐based Information Systems for supporting Technology Policies</b>. Spanish Ministry of Innovation and Science (2007-2009). Principal investigator: J.L. Salmeron</li>
+                                    <br/>
+                                    <li><i class="fa-li fa fa-check-square"></i><b>IT impact in economic growth</b>. Microsoft (2008). Principal investigator: J.L. Salmeron</li>
+                                    <br/>
+                                    <li><i class="fa-li fa fa-check-square"></i><b>Multimedia material for SMEs</b>. Avante (2008). Principal investigator: J.L. Salmeron</li>
+                                    <br/>
+                                    <li><i class="fa-li fa fa-check-square"></i><b>A foresight analysis for ERP tools selections with Fuzzy Cognitive Maps</b>. VP of Research, University of Research (2005-2006). Principal investigator: J.L. Salmeron</li>
+                                    <br/>
+                                    <li><i class="fa-li fa fa-check-square"></i><b>A methodological framework for developing ERP solutions specifications</b>. VP of Research, University Pablo de Olavide (2003-2004). Principal investigator: J.L. Salmeron</li>
+                                    <br/>
+                                    <li><i class="fa-li fa fa-check-square"></i><b>Technological forecasting infrastructure</b>. Regional Government of Andalucia,  (2003-2004). Principal investigator: J.L. Salmeron</li>
+                                    <br/>
+                                    <li><i class="fa-li fa fa-check-square"></i><b>A foresight analysis of the andalusian businesses</b>. VP of Research, University Pablo de Olavide,  (2002-2003). Principal investigator: J.L. Salmeron</li>
+
+                                </ul>
+
+                                </p>
+
+                    </article>
+
+						<!-- Contact -->
+							<article id="contact" class="panel">
+								<header>
+									<h2>Contact Me</h2>
+								</header>
+
+                                <div class="row">
+                                    <div class="col-md-3"><img src="./images/qrcode.png"></div>
+                                    <div class="col-md-5"><address>
+    						<strong>Prof. Jose L. Salmeron, Ph.D., Eng, ACMLTM.</strong><br>
+						    Data Science Lab<br>
+						    <a href="http://www.upo.es">University Pablo de Olavide</a><br>
+						    Km. 1 Utrera road, 41013 <a href="http://www.sevilla.org>">Seville</a>, <a href="https://en.wikipedia.org/wiki/Spain"Spain</a><br>
+						    <abbr title="Phone">P:</abbr> +34 954349063
+						</address>
+						<address>
+						    email: <a href="mailto:salmeron@acm.org">salmeron@acm.org</a><br>
+						    website: <a href="http://member.acm.org/~salmeron/">http://member.acm.org/~salmeron/</a>
+						</address></div>
+                                </div>
+
+
+							</article>
+
+                    <!-- News -->
+							<article id="tweets" class="panel">
+                                <header>
+									<h2>Professor Jose L. Salmeron, Ph.D., Eng., ACMLTM</h2>
+                                    <hr>
+								</header>
+
+								<h3>Latest tweets</h3>
+								<p align="center">
+
+                                <a class="twitter-timeline" href="https://twitter.com/jlsalmeron" data-widget-id="438441970810109952">Tweets by @jlsalmeron</a>
+                                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+                                </p>
+                            </article>
+
+					</div>
+
+				<!-- Footer -->
+					<div id="footer">
+
+                    &copy; Jose L. Salmeron &nbsp; · &nbsp;
+						<a href="https://www.facebook.com/joselsalmeron" target="_blank" class="icon fa-facebook"></a> &nbsp; · &nbsp;
+                        <a href="http://es.linkedin.com/in/salmeron/" class="icon fa-linkedin"></a>  &nbsp; · &nbsp;
+                        <a href="https://twitter.com/jlsalmeron" class="icon fa-twitter"></a> &nbsp; · &nbsp;
+					Adapted from the design of <a href="http://html5up.net">HTML5 UP</a>
+
+					</div>
+<div>
+		<p align="center"><!-- Begin Shinystat code -->
+<script type="text/javascript" src="http://codice.shinystat.com/cgi-bin/getcod.cgi?USER=salmeron"></script>
+<!--noscript>
+<h6><a href="http://www.shinystat.com">
+<img src="http://www.shinystat.com/cgi-bin/shinystat.cgi?USER=salmeron" alt="Blog counters" style="border:0px" /></a></h6>
+</noscript--!>
+<!-- End Shinystat code --></p></div>
+
+			</div>
+
+	</body>
+</html>
