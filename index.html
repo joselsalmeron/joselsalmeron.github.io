@@ -3,534 +3,565 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jose L. Salmeron — Professor of AI & Computer Science</title>
+  <title>Jose L. Salmeron — AI Scientist & Executive</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Source+Sans+3:wght@300;400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Source+Sans+3:wght@300;400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300&display=swap" rel="stylesheet" />
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
       --white: #ffffff;
-      --off-white: #f8f8f6;
-      --black: #0a0a0a;
-      --charcoal: #1c1c1c;
-      --mid: #4a4a4a;
-      --light: #8a8a8a;
-      --rule: #e2e2e0;
-      --accent: #003087;
-      --accent-mid: #004eb0;
-      --accent-light: #e8eef7;
-      --red: #c8102e;
-      --font-display: 'Playfair Display', Georgia, serif;
-      --font-serif: 'Source Serif 4', Georgia, serif;
-      --font-sans: 'Source Sans 3', system-ui, sans-serif;
+      --off: #f7f7f5;
+      --black: #080808;
+      --ink: #1a1a1a;
+      --mid: #484848;
+      --muted: #888;
+      --rule: #e0e0de;
+      --blue: #002D72;       /* deep institutional blue */
+      --blue-mid: #004aad;
+      --blue-light: #e6ecf7;
+      --red: #B5121B;        /* strong accent red */
+      --gold: #8a6800;
+      --ff-display: 'Playfair Display', Georgia, serif;
+      --ff-serif: 'Source Serif 4', Georgia, serif;
+      --ff-sans: 'Source Sans 3', system-ui, sans-serif;
     }
 
     html { scroll-behavior: smooth; }
 
     body {
-      font-family: var(--font-sans);
+      font-family: var(--ff-sans);
       background: var(--white);
-      color: var(--charcoal);
+      color: var(--ink);
       font-weight: 300;
       line-height: 1.7;
       overflow-x: hidden;
     }
 
+    /* ─── NAV ─── */
     nav {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      z-index: 200;
+      position: fixed; top: 0; left: 0; right: 0; z-index: 300;
       background: var(--white);
       border-bottom: 1px solid var(--rule);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 4rem;
-      height: 64px;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 4rem; height: 62px;
     }
-
     .nav-logo {
-      font-family: var(--font-display);
-      font-size: 1.1rem;
-      font-weight: 500;
-      color: var(--black);
-      text-decoration: none;
+      font-family: var(--ff-display); font-size: 1.05rem; font-weight: 500;
+      color: var(--black); text-decoration: none;
     }
-
-    .nav-links { display: flex; gap: 0; list-style: none; height: 100%; }
-    .nav-links li { display: flex; align-items: center; }
+    .nav-links { display: flex; list-style: none; height: 100%; }
     .nav-links a {
-      font-family: var(--font-sans);
-      font-size: 0.78rem;
-      font-weight: 400;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: var(--mid);
-      text-decoration: none;
-      padding: 0 1.4rem;
-      height: 100%;
-      display: flex;
-      align-items: center;
+      font-family: var(--ff-sans); font-size: 0.76rem; font-weight: 500;
+      letter-spacing: 0.07em; text-transform: uppercase; color: var(--mid);
+      text-decoration: none; padding: 0 1.3rem; height: 100%;
+      display: flex; align-items: center;
       border-bottom: 2px solid transparent;
-      transition: color 0.18s, border-color 0.18s;
+      transition: color .18s, border-color .18s;
     }
-    .nav-links a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+    .nav-links a:hover { color: var(--blue); border-bottom-color: var(--blue); }
 
-    /* HERO */
-    .hero { padding-top: 64px; background: var(--white); }
+    /* ─── HERO ─── */
+    .hero { padding-top: 62px; }
 
-    .hero-top {
-      border-bottom: 3px solid var(--accent);
-      padding: 5rem 4rem 4.5rem;
+    /* Top split: left=identity, right=photo+dual pillars */
+    .hero-split {
       display: grid;
-      grid-template-columns: 1fr auto;
-      align-items: end;
-      gap: 4rem;
+      grid-template-columns: 1fr 420px;
+      min-height: calc(100vh - 62px);
+      border-bottom: 3px solid var(--blue);
+    }
+
+    .hero-left {
+      padding: 5rem 4rem 4rem;
+      display: flex; flex-direction: column; justify-content: flex-end;
+      border-right: 1px solid var(--rule);
     }
 
     .hero-eyebrow {
-      font-family: var(--font-sans);
-      font-size: 0.72rem;
-      font-weight: 600;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--red);
-      margin-bottom: 1.4rem;
+      font-family: var(--ff-sans); font-size: 0.7rem; font-weight: 700;
+      letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--red); margin-bottom: 1.6rem;
     }
 
     .hero-name {
-      font-family: var(--font-display);
-      font-size: clamp(3.5rem, 5.5vw, 6rem);
-      font-weight: 700;
-      line-height: 0.95;
-      letter-spacing: -0.02em;
-      color: var(--black);
-      margin-bottom: 1.8rem;
+      font-family: var(--ff-display);
+      font-size: clamp(3.8rem, 5vw, 5.8rem);
+      font-weight: 700; line-height: 0.93; letter-spacing: -0.02em;
+      color: var(--black); margin-bottom: 2rem;
+    }
+    .hero-name em { display: block; font-style: italic; font-weight: 400; color: var(--blue); }
+
+    /* Dual identity statement — the key new element */
+    .dual-identity {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 0; margin-bottom: 2.8rem;
+      border-top: 1px solid var(--rule);
     }
 
-    .hero-name span {
-      display: block;
-      font-style: italic;
-      font-weight: 400;
-      color: var(--accent);
+    .identity-pillar {
+      padding: 1.6rem 1.4rem 1.6rem 0;
+      border-right: 1px solid var(--rule);
+    }
+    .identity-pillar:last-child { border-right: none; padding-left: 1.4rem; padding-right: 0; }
+
+    .pillar-icon {
+      font-family: var(--ff-sans); font-size: 0.62rem; font-weight: 700;
+      letter-spacing: 0.16em; text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+    .pillar-icon.science { color: var(--blue); }
+    .pillar-icon.industry { color: var(--red); }
+
+    .pillar-title {
+      font-family: var(--ff-display); font-size: 1.2rem; font-weight: 500;
+      color: var(--black); line-height: 1.25; margin-bottom: 0.5rem;
     }
 
-    .hero-description {
-      font-family: var(--font-serif);
-      font-size: 1.18rem;
-      font-weight: 300;
-      line-height: 1.8;
-      color: var(--mid);
-      max-width: 640px;
+    .pillar-desc {
+      font-family: var(--ff-sans); font-size: 0.82rem;
+      color: var(--mid); line-height: 1.6;
     }
 
-    .hero-description strong { font-weight: 600; color: var(--charcoal); }
+    .hero-summary {
+      font-family: var(--ff-serif); font-size: 1.1rem; font-weight: 300;
+      line-height: 1.8; color: var(--mid); max-width: 560px;
+    }
+    .hero-summary strong { font-weight: 600; color: var(--ink); }
 
-    .hero-photo-col {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      gap: 1.2rem;
+    /* Hero right */
+    .hero-right {
+      background: var(--blue);
+      display: flex; flex-direction: column;
+      justify-content: flex-end;
+      position: relative; overflow: hidden;
+    }
+
+    .hero-right::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0;
+      height: 65%;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.25), transparent);
     }
 
     .hero-photo {
-      width: 200px;
-      height: 240px;
-      object-fit: cover;
-      object-position: top;
+      width: 100%; height: 65%;
+      object-fit: cover; object-position: top center;
       display: block;
-      filter: grayscale(10%);
+      filter: grayscale(15%) contrast(1.05);
     }
 
-    .affil-main {
-      font-family: var(--font-sans);
-      font-size: 0.78rem;
-      font-weight: 600;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: var(--accent);
-      text-align: right;
+    .hero-right-meta {
+      padding: 2.2rem 2rem;
+      position: relative; z-index: 2;
     }
 
-    .affil-sub {
-      font-family: var(--font-sans);
-      font-size: 0.75rem;
-      color: var(--light);
-      margin-top: 0.15rem;
-      text-align: right;
+    .hero-affil {
+      font-family: var(--ff-sans); font-size: 0.7rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: rgba(255,255,255,0.5); margin-bottom: 0.25rem;
     }
 
-    /* METRICS */
-    .metrics-strip {
-      background: var(--accent);
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
+    .hero-affil-val {
+      font-family: var(--ff-display); font-size: 1.05rem; font-weight: 400;
+      color: #fff; margin-bottom: 1.2rem; line-height: 1.3;
     }
 
-    .metric {
-      padding: 2.2rem 2.5rem;
-      border-right: 1px solid rgba(255,255,255,0.12);
-    }
-    .metric:last-child { border-right: none; }
-
-    .metric-value {
-      font-family: var(--font-display);
-      font-size: 2.6rem;
-      font-weight: 700;
-      color: #fff;
-      line-height: 1;
-      margin-bottom: 0.4rem;
+    .hero-credentials {
+      display: flex; flex-direction: column; gap: 0.5rem;
     }
 
-    .metric-label {
-      font-family: var(--font-sans);
-      font-size: 0.72rem;
-      font-weight: 400;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.55);
+	.hcred {
+	  display: flex; align-items: center; gap: 0.7rem;
+	  padding: 0.55rem 0.8rem;
+	  background: rgba(255,255,255,0.12);
+	  border-left: 2px solid rgba(255,255,255,0.5);  /* más visible */
+	}
+
+	.hcred-val {
+	  font-family: var(--ff-display); font-size: 1.1rem; font-weight: 700;
+	  color: #ffffff;
+	  white-space: nowrap;
+	}
+
+	.hcred-lbl {
+	  font-family: var(--ff-sans); font-size: 0.64rem; font-weight: 400;
+	  letter-spacing: 0.06em;
+	  color: rgba(255,255,255,0.85);
+	}
+
+    /* ─── DUAL METRICS ─── */
+    /* Two-band strip: blue for science, dark for industry */
+    .metrics-dual {
+      display: grid; grid-template-columns: 1fr 1fr;
     }
 
-    /* BADGES */
-    .badges-strip {
-      background: var(--off-white);
-      border-bottom: 1px solid var(--rule);
-      padding: 1.1rem 4rem;
-      display: flex;
-      gap: 3rem;
-      align-items: center;
-      flex-wrap: wrap;
+    .metrics-half {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      padding: 0;
+    }
+    .metrics-half.science { background: var(--blue); }
+    .metrics-half.industry { background: var(--ink); }
+
+    .metrics-half-label {
+      grid-column: 1 / -1;
+      padding: 0.9rem 2rem 0;
+      font-family: var(--ff-sans); font-size: 0.6rem; font-weight: 700;
+      letter-spacing: 0.18em; text-transform: uppercase;
+    }
+    .metrics-half.science .metrics-half-label { color: rgba(255,255,255,0.4); }
+    .metrics-half.industry .metrics-half-label { color: rgba(255,255,255,0.3); }
+
+    .mstat {
+      padding: 1.2rem 2rem 1.8rem;
+      border-right: 1px solid rgba(255,255,255,0.1);
+    }
+    .mstat:last-of-type { border-right: none; }
+
+    .mstat-val {
+      font-family: var(--ff-display); font-size: 2rem; font-weight: 700;
+      color: #fff; line-height: 1; margin-bottom: 0.3rem;
+    }
+    .mstat-lbl {
+      font-family: var(--ff-sans); font-size: 0.62rem; font-weight: 400;
+      letter-spacing: 0.07em; text-transform: uppercase;
+      color: rgba(255,255,255,0.45);
     }
 
-    .badge-item { display: flex; align-items: center; gap: 0.6rem; }
-    .badge-dot { width: 5px; height: 5px; background: var(--red); border-radius: 50%; flex-shrink: 0; }
-    .badge-text { font-family: var(--font-sans); font-size: 0.75rem; color: var(--mid); }
+    /* ─── SECTION LAYOUT ─── */
+    .sw { max-width: 1160px; margin: 0 auto; padding: 5.5rem 4rem; }
+    .sw + .sw { border-top: 1px solid var(--rule); }
 
-    /* SECTIONS */
-    .section-wrap {
-      max-width: 1160px;
-      margin: 0 auto;
-      padding: 5.5rem 4rem;
-    }
-
-    .section-wrap + .section-wrap { border-top: 1px solid var(--rule); }
-
-    .section-head {
-      display: grid;
-      grid-template-columns: 200px 1fr;
-      gap: 3rem;
-      margin-bottom: 3.5rem;
-      padding-bottom: 2rem;
-      border-bottom: 1px solid var(--rule);
+    .sh {
+      display: grid; grid-template-columns: 220px 1fr;
+      gap: 3rem; margin-bottom: 3.5rem;
+      padding-bottom: 2rem; border-bottom: 1px solid var(--rule);
       align-items: baseline;
     }
-
-    .section-label {
-      font-family: var(--font-sans);
-      font-size: 0.7rem;
-      font-weight: 600;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--accent);
+    .sh-label {
+      font-family: var(--ff-sans); font-size: 0.68rem; font-weight: 700;
+      letter-spacing: 0.16em; text-transform: uppercase; color: var(--blue);
+    }
+    .sh-title {
+      font-family: var(--ff-display); font-size: 2.2rem; font-weight: 400;
+      color: var(--black); line-height: 1.1;
     }
 
-    .section-title {
-      font-family: var(--font-display);
-      font-size: 2.4rem;
-      font-weight: 400;
-      color: var(--black);
-      line-height: 1.1;
-    }
+    .two-col { display: grid; grid-template-columns: 220px 1fr; gap: 3rem; }
 
-    /* BIO */
-    .bio-layout { display: grid; grid-template-columns: 200px 1fr; gap: 3rem; }
-
+    /* ─── TIMELINE ─── */
     .tl-item { padding: 1.1rem 0; border-bottom: 1px solid var(--rule); }
     .tl-item:last-child { border-bottom: none; }
-    .tl-period { font-family: var(--font-sans); font-size: 0.68rem; font-weight: 600; letter-spacing: 0.06em; color: var(--red); margin-bottom: 0.2rem; }
-    .tl-role { font-family: var(--font-sans); font-size: 0.82rem; font-weight: 600; color: var(--charcoal); line-height: 1.35; }
-    .tl-org { font-family: var(--font-sans); font-size: 0.75rem; color: var(--light); margin-top: 0.15rem; }
+    .tl-period {
+      font-family: var(--ff-sans); font-size: 0.66rem; font-weight: 700;
+      letter-spacing: 0.07em; color: var(--red); margin-bottom: 0.2rem;
+    }
+    .tl-role {
+      font-family: var(--ff-sans); font-size: 0.84rem; font-weight: 600;
+      color: var(--ink); line-height: 1.3;
+    }
+    .tl-org { font-family: var(--ff-sans); font-size: 0.74rem; color: var(--muted); margin-top: 0.1rem; }
 
-    .bio-prose p { font-family: var(--font-serif); font-size: 1.08rem; line-height: 1.8; color: var(--mid); margin-bottom: 1.4rem; }
+    /* ─── BIO ─── */
+    .bio-prose p {
+      font-family: var(--ff-serif); font-size: 1.06rem; line-height: 1.82;
+      color: var(--mid); margin-bottom: 1.4rem;
+    }
     .bio-prose p:last-child { margin-bottom: 0; }
-    .bio-prose strong { font-weight: 600; color: var(--charcoal); }
+    .bio-prose strong { font-weight: 600; color: var(--ink); }
 
-    /* EXPERTISE */
-    .expertise-grid { display: grid; grid-template-columns: 200px 1fr; gap: 3rem; }
-
-    .exp-list {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+    /* ─── TRACK RECORD — industrial highlights ─── */
+    .track-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
       gap: 0;
       border-top: 1px solid var(--rule);
       border-left: 1px solid var(--rule);
     }
 
-    .exp-item {
-      padding: 2rem 1.8rem;
+    .track-item {
+      padding: 2.2rem 2rem;
       border-right: 1px solid var(--rule);
       border-bottom: 1px solid var(--rule);
-      transition: background 0.2s;
+      transition: background .2s;
     }
-    .exp-item:hover { background: var(--accent-light); }
+    .track-item:hover { background: var(--off); }
 
-    .exp-area { font-family: var(--font-sans); font-size: 0.65rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--red); margin-bottom: 0.5rem; }
-    .exp-name { font-family: var(--font-display); font-size: 1.15rem; font-weight: 500; color: var(--black); line-height: 1.25; margin-bottom: 0.7rem; }
-    .exp-desc { font-family: var(--font-sans); font-size: 0.82rem; color: var(--mid); line-height: 1.65; }
+    .track-company {
+      font-family: var(--ff-sans); font-size: 0.65rem; font-weight: 700;
+      letter-spacing: 0.13em; text-transform: uppercase;
+      color: var(--red); margin-bottom: 0.6rem;
+    }
+    .track-role {
+      font-family: var(--ff-display); font-size: 1.12rem; font-weight: 500;
+      color: var(--black); line-height: 1.25; margin-bottom: 0.6rem;
+    }
+    .track-desc {
+      font-family: var(--ff-sans); font-size: 0.82rem;
+      color: var(--mid); line-height: 1.6;
+    }
+    .track-tag {
+      display: inline-block; margin-top: 0.8rem;
+      font-family: var(--ff-sans); font-size: 0.6rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--blue); background: var(--blue-light); padding: 0.2rem 0.6rem;
+    }
 
-    /* PROJECTS */
-    .projects-layout { display: grid; grid-template-columns: 200px 1fr; gap: 3rem; }
-
+    /* ─── PROJECTS ─── */
     .proj {
-      display: grid;
-      grid-template-columns: 110px 1fr;
-      gap: 2.5rem;
-      padding: 2.5rem 0;
-      border-bottom: 1px solid var(--rule);
-      align-items: start;
+      display: grid; grid-template-columns: 130px 1fr;
+      gap: 2.5rem; padding: 2.5rem 0;
+      border-bottom: 1px solid var(--rule); align-items: start;
     }
     .proj:first-child { border-top: 1px solid var(--rule); }
 
-    .proj-budget { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--accent); line-height: 1; margin-bottom: 0.4rem; }
-    .proj-year { font-family: var(--font-sans); font-size: 0.65rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--red); margin-bottom: 0.3rem; }
-    .proj-funder { font-family: var(--font-sans); font-size: 0.7rem; color: var(--light); line-height: 1.4; }
+    .proj-budget {
+      font-family: var(--ff-display); font-size: 1.6rem; font-weight: 700;
+      color: var(--blue); line-height: 1; margin-bottom: 0.35rem;
+    }
+    .proj-year {
+      font-family: var(--ff-sans); font-size: 0.62rem; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--red); margin-bottom: 0.3rem;
+    }
+    .proj-funder { font-family: var(--ff-sans); font-size: 0.7rem; color: var(--muted); line-height: 1.4; }
 
-    .proj-title { font-family: var(--font-display); font-size: 1.3rem; font-weight: 500; color: var(--black); line-height: 1.3; margin-bottom: 0.7rem; }
-    .proj-desc { font-family: var(--font-serif); font-size: 0.95rem; color: var(--mid); line-height: 1.75; margin-bottom: 1rem; }
-
+    .proj-title {
+      font-family: var(--ff-display); font-size: 1.3rem; font-weight: 500;
+      color: var(--black); line-height: 1.3; margin-bottom: 0.7rem;
+    }
+    .proj-desc {
+      font-family: var(--ff-serif); font-size: 0.96rem;
+      color: var(--mid); line-height: 1.78; margin-bottom: 1rem;
+    }
     .proj-tags { display: flex; gap: 0.4rem; flex-wrap: wrap; }
-    .ptag { font-family: var(--font-sans); font-size: 0.64rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); background: var(--accent-light); padding: 0.25rem 0.65rem; }
-
-    /* RESEARCH BAND */
-    .research-band { background: var(--black); }
-    .research-inner { max-width: 1160px; margin: 0 auto; padding: 5.5rem 4rem; }
-
-    .research-head {
-      display: grid;
-      grid-template-columns: 200px 1fr;
-      gap: 3rem;
-      margin-bottom: 3.5rem;
-      padding-bottom: 2rem;
-      border-bottom: 1px solid rgba(255,255,255,0.1);
-      align-items: baseline;
+    .ptag {
+      font-family: var(--ff-sans); font-size: 0.62rem; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--blue); background: var(--blue-light); padding: 0.22rem 0.6rem;
     }
 
-    .research-label { font-family: var(--font-sans); font-size: 0.7rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--red); }
-    .research-title { font-family: var(--font-display); font-size: 2.4rem; font-weight: 400; color: #fff; line-height: 1.1; }
+    /* ─── RESEARCH BAND ─── */
+    .research-band { background: var(--black); }
+    .ri { max-width: 1160px; margin: 0 auto; padding: 5.5rem 4rem; }
 
-    .research-layout { display: grid; grid-template-columns: 200px 1fr; gap: 3rem; }
+    .rh {
+      display: grid; grid-template-columns: 220px 1fr;
+      gap: 3rem; margin-bottom: 3.5rem;
+      padding-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.1);
+      align-items: baseline;
+    }
+    .rh-label {
+      font-family: var(--ff-sans); font-size: 0.68rem; font-weight: 700;
+      letter-spacing: 0.16em; text-transform: uppercase; color: var(--red);
+    }
+    .rh-title {
+      font-family: var(--ff-display); font-size: 2.2rem; font-weight: 400;
+      color: #fff; line-height: 1.1;
+    }
 
-    .research-sidebar-stats { display: flex; flex-direction: column; gap: 1.5rem; }
-    .rs-item { padding-bottom: 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.08); }
-    .rs-item:last-child { border-bottom: none; }
-    .rs-value { font-family: var(--font-display); font-size: 1.8rem; font-weight: 700; color: #fff; line-height: 1; margin-bottom: 0.25rem; }
-    .rs-label { font-family: var(--font-sans); font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.4); }
+    .r-layout { display: grid; grid-template-columns: 220px 1fr; gap: 3rem; }
 
-    .pub-item {
-      display: grid;
-      grid-template-columns: 56px 1fr;
-      gap: 1.8rem;
-      padding: 1.6rem 0;
+    .r-stats { display: flex; flex-direction: column; gap: 1.5rem; }
+    .rs { padding-bottom: 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.08); }
+    .rs:last-child { border-bottom: none; }
+    .rs-val { font-family: var(--ff-display); font-size: 1.9rem; font-weight: 700; color: #fff; line-height: 1; margin-bottom: 0.2rem; }
+    .rs-lbl { font-family: var(--ff-sans); font-size: 0.66rem; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.38); }
+
+    .pub {
+      display: grid; grid-template-columns: 54px 1fr;
+      gap: 1.8rem; padding: 1.6rem 0;
       border-bottom: 1px solid rgba(255,255,255,0.07);
       align-items: start;
     }
-    .pub-item:first-child { border-top: 1px solid rgba(255,255,255,0.07); }
+    .pub:first-child { border-top: 1px solid rgba(255,255,255,0.07); }
+    .pub-yr { font-family: var(--ff-sans); font-size: 0.66rem; font-weight: 700; letter-spacing: 0.06em; color: var(--red); padding-top: 0.15rem; }
+    .pub-journal { font-family: var(--ff-sans); font-size: 0.62rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.32); margin-bottom: 0.28rem; }
+    .pub-title { font-family: var(--ff-serif); font-size: 1rem; font-weight: 300; color: rgba(255,255,255,0.85); line-height: 1.5; margin-bottom: 0.22rem; }
+    .pub-auth { font-family: var(--ff-sans); font-size: 0.66rem; color: rgba(255,255,255,0.28); }
 
-    .pub-year { font-family: var(--font-sans); font-size: 0.68rem; font-weight: 600; letter-spacing: 0.06em; color: var(--red); padding-top: 0.15rem; }
-    .pub-journal { font-family: var(--font-sans); font-size: 0.65rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.35); margin-bottom: 0.3rem; }
-    .pub-title { font-family: var(--font-serif); font-size: 1rem; font-weight: 400; color: rgba(255,255,255,0.85); line-height: 1.5; margin-bottom: 0.25rem; }
-    .pub-authors { font-family: var(--font-sans); font-size: 0.68rem; color: rgba(255,255,255,0.3); }
-
-    .scholar-cta {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.7rem;
-      margin-top: 2.5rem;
-      font-family: var(--font-sans);
-      font-size: 0.75rem;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.6);
-      text-decoration: none;
-      border-bottom: 1px solid rgba(255,255,255,0.2);
-      padding-bottom: 2px;
-      transition: color 0.2s, border-color 0.2s;
+    .scholar-link {
+      display: inline-flex; align-items: center; gap: 0.6rem; margin-top: 2.5rem;
+      font-family: var(--ff-sans); font-size: 0.72rem; font-weight: 600;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: rgba(255,255,255,0.55); text-decoration: none;
+      border-bottom: 1px solid rgba(255,255,255,0.18); padding-bottom: 2px;
+      transition: color .2s, border-color .2s;
     }
-    .scholar-cta:hover { color: #fff; border-color: rgba(255,255,255,0.5); }
+    .scholar-link:hover { color: #fff; border-color: rgba(255,255,255,0.5); }
 
-    /* COLLAB */
+    /* ─── COLLAB STRIP ─── */
     .collab-strip {
-      background: var(--off-white);
-      border-top: 1px solid var(--rule);
-      border-bottom: 1px solid var(--rule);
-      padding: 1.6rem 4rem;
-      display: flex;
-      align-items: center;
-      gap: 4rem;
-      flex-wrap: wrap;
+      background: var(--off); border-bottom: 1px solid var(--rule);
+      padding: 1.5rem 4rem;
+      display: flex; align-items: center; gap: 4rem; flex-wrap: wrap;
     }
-    .collab-label { font-family: var(--font-sans); font-size: 0.68rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--light); white-space: nowrap; flex-shrink: 0; }
+    .collab-lbl {
+      font-family: var(--ff-sans); font-size: 0.65rem; font-weight: 700;
+      letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted);
+      white-space: nowrap; flex-shrink: 0;
+    }
     .collab-names { display: flex; gap: 3rem; flex-wrap: wrap; }
-    .collab-name { font-family: var(--font-display); font-size: 0.95rem; font-weight: 500; color: var(--mid); }
+    .collab-name { font-family: var(--ff-display); font-size: 0.95rem; font-weight: 500; color: var(--mid); }
 
-    /* CONTACT */
-    .contact-layout { display: grid; grid-template-columns: 200px 1fr; gap: 3rem; }
+    /* ─── CONTACT ─── */
     .contact-body { display: grid; grid-template-columns: 1.2fr 1fr; gap: 5rem; }
 
-    .contact-text { font-family: var(--font-serif); font-size: 1.08rem; line-height: 1.8; color: var(--mid); margin-bottom: 2.5rem; }
-    .contact-text strong { font-weight: 600; color: var(--charcoal); }
+    .contact-text { font-family: var(--ff-serif); font-size: 1.06rem; line-height: 1.82; color: var(--mid); margin-bottom: 2.5rem; }
+    .contact-text strong { font-weight: 600; color: var(--ink); }
 
-    .contact-links { display: flex; flex-direction: column; gap: 0; }
-    .c-link {
-      display: flex;
-      align-items: baseline;
-      gap: 1.2rem;
-      padding: 1.1rem 0;
-      border-bottom: 1px solid var(--rule);
-      text-decoration: none;
-      transition: padding-left 0.2s;
+    .clinks { display: flex; flex-direction: column; }
+    .clink {
+      display: flex; align-items: baseline; gap: 1.2rem;
+      padding: 1.1rem 0; border-bottom: 1px solid var(--rule);
+      text-decoration: none; transition: padding-left .2s;
     }
-    .c-link:hover { padding-left: 0.6rem; }
-    .c-link-label { font-family: var(--font-sans); font-size: 0.65rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--red); width: 55px; flex-shrink: 0; }
-    .c-link-val { font-family: var(--font-serif); font-size: 1rem; color: var(--black); }
-    .c-link-arrow { margin-left: auto; font-size: 0.85rem; color: var(--light); transition: transform 0.2s; }
-    .c-link:hover .c-link-arrow { transform: translateX(4px); }
+    .clink:hover { padding-left: 0.5rem; }
+    .clink-lbl { font-family: var(--ff-sans); font-size: 0.62rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--red); width: 52px; flex-shrink: 0; }
+    .clink-val { font-family: var(--ff-serif); font-size: 1rem; color: var(--black); }
+    .clink-arr { margin-left: auto; font-size: 0.85rem; color: var(--muted); transition: transform .2s; }
+    .clink:hover .clink-arr { transform: translateX(4px); }
 
-    .eng-title { font-family: var(--font-sans); font-size: 0.68rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 1.4rem; }
+    .eng-title { font-family: var(--ff-sans); font-size: 0.66rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--blue); margin-bottom: 1.3rem; }
     .eng-item {
-      font-family: var(--font-serif);
-      font-size: 0.95rem;
-      color: var(--mid);
-      padding: 0.7rem 0 0.7rem 1rem;
-      border-bottom: 1px solid var(--rule);
+      font-family: var(--ff-serif); font-size: 0.95rem; color: var(--mid);
+      padding: 0.65rem 0 0.65rem 1rem; border-bottom: 1px solid var(--rule);
       position: relative;
     }
     .eng-item::before { content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 3px; height: 3px; background: var(--red); border-radius: 50%; }
     .eng-item:last-child { border-bottom: none; }
 
-    /* FOOTER */
-    footer {
-      background: var(--accent);
-      padding: 1.8rem 4rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .footer-name { font-family: var(--font-display); font-size: 0.95rem; color: rgba(255,255,255,0.7); }
-    .footer-info { font-family: var(--font-sans); font-size: 0.7rem; letter-spacing: 0.06em; color: rgba(255,255,255,0.4); }
+    /* ─── FOOTER ─── */
+    footer { background: var(--blue); padding: 1.8rem 4rem; display: flex; align-items: center; justify-content: space-between; }
+    .footer-name { font-family: var(--ff-display); font-size: 0.95rem; color: rgba(255,255,255,0.7); }
+    .footer-info { font-family: var(--ff-sans); font-size: 0.68rem; letter-spacing: 0.06em; color: rgba(255,255,255,0.35); }
 
-    /* ANIMATIONS */
+    /* ─── ANIMATION ─── */
     @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(20px); }
+      from { opacity: 0; transform: translateY(18px); }
       to   { opacity: 1; transform: translateY(0); }
     }
-    .hero-top > * { animation: fadeUp 0.7s ease both; }
-    .hero-top > *:nth-child(1) { animation-delay: 0.05s; }
-    .hero-top > *:nth-child(2) { animation-delay: 0.2s; }
+    .hero-left > * { animation: fadeUp 0.75s ease both; }
+    .hero-left > *:nth-child(1) { animation-delay: 0.05s; }
+    .hero-left > *:nth-child(2) { animation-delay: 0.15s; }
+    .hero-left > *:nth-child(3) { animation-delay: 0.3s; }
+    .hero-left > *:nth-child(4) { animation-delay: 0.45s; }
 
-    /* RESPONSIVE */
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 1024px) {
+      .hero-split { grid-template-columns: 1fr; min-height: auto; }
+      .hero-right { min-height: 380px; }
+      .hero-photo { height: 100%; max-height: 320px; width: 100%; object-fit: cover; }
+      .hero-left { padding: 3.5rem 1.5rem 3rem; border-right: none; }
+      .dual-identity { grid-template-columns: 1fr; }
+      .identity-pillar { border-right: none; border-bottom: 1px solid var(--rule); padding-left: 0; padding-right: 0; }
+      .identity-pillar:last-child { border-bottom: none; }
+    }
     @media (max-width: 960px) {
       nav { padding: 0 1.5rem; }
       .nav-links { display: none; }
-      .hero-top { grid-template-columns: 1fr; padding: 3.5rem 1.5rem 3rem; gap: 2rem; }
-      .hero-photo-col { flex-direction: row; align-items: center; gap: 1.5rem; }
-      .affil-main, .affil-sub { text-align: left; }
-      .metrics-strip { grid-template-columns: 1fr 1fr; }
-      .badges-strip { padding: 1rem 1.5rem; gap: 1.5rem; }
-      .section-wrap { padding: 4rem 1.5rem; }
-      .section-head,
-      .bio-layout,
-      .expertise-grid,
-      .projects-layout,
-      .research-head,
-      .research-layout,
-      .contact-layout { grid-template-columns: 1fr; gap: 1.5rem; }
-      .exp-list { grid-template-columns: 1fr 1fr; }
+      .metrics-dual { grid-template-columns: 1fr; }
+      .metrics-half { grid-template-columns: 1fr 1fr; }
+      .metrics-half-label { grid-column: 1 / -1; }
+      .sw { padding: 4rem 1.5rem; }
+      .sh, .two-col, .r-layout, .rh { grid-template-columns: 1fr; gap: 1.5rem; }
+      .track-grid { grid-template-columns: 1fr 1fr; }
       .proj { grid-template-columns: 90px 1fr; gap: 1.5rem; }
-      .pub-item { grid-template-columns: 48px 1fr; gap: 1rem; }
-      .collab-strip { padding: 1.2rem 1.5rem; gap: 2rem; }
+      .pub { grid-template-columns: 48px 1fr; gap: 1rem; }
       .contact-body { grid-template-columns: 1fr; gap: 3rem; }
-      .research-inner { padding: 4rem 1.5rem; }
-      footer { padding: 1.5rem; flex-direction: column; gap: 0.5rem; align-items: flex-start; }
+      .collab-strip { padding: 1.2rem 1.5rem; gap: 2rem; }
+      .ri { padding: 4rem 1.5rem; }
+      footer { padding: 1.5rem; flex-direction: column; gap: 0.4rem; align-items: flex-start; }
     }
   </style>
 </head>
 <body>
 
+  <!-- NAV -->
   <nav>
     <a href="#" class="nav-logo">Jose L. Salmeron</a>
     <ul class="nav-links">
       <li><a href="#background">Background</a></li>
-      <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#industry">Industry</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#research">Research</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
+  <!-- ═══ HERO ═══ -->
   <div class="hero">
-    <div class="hero-top">
-      <div>
-        <div class="hero-eyebrow">Professor of Computer Science & AI · Stanford Top 2% Scientist</div>
-        <h1 class="hero-name">Jose L.<br><span>Salmeron</span></h1>
-        <p class="hero-description">
-          Three decades at the intersection of <strong>frontier AI research</strong> and 
-          large-scale industrial deployment. Catedrático at CUNEF Universidad, Madrid. 
-          Principal Investigator on programmes funded at up to €15 million. 
-          Consistently ranked among the <strong>top 2% of scientists worldwide</strong> 
-          by Stanford University — with over 200 publications, an h-index of 39, 
-          and 6,800+ citations from researchers across twenty countries.
+    <div class="hero-split">
+
+      <div class="hero-left">
+        <div class="hero-eyebrow">AI Scientist · Executive · Catedrático</div>
+
+        <h1 class="hero-name">Jose L.<br><em>Salmeron</em></h1>
+
+        <!-- THE DUAL IDENTITY — the core new element -->
+        <div class="dual-identity">
+          <div class="identity-pillar">
+            <div class="pillar-icon science">● Scientist</div>
+            <div class="pillar-title">Stanford Top 2%<br>Global Scientist</div>
+            <p class="pillar-desc">h-index 39 · 6,800+ citations · 200+ publications in ISI Web of Science. Three decades of peer-reviewed research in AI, federated learning and quantum computing.</p>
+          </div>
+          <div class="identity-pillar">
+            <div class="pillar-icon industry">● Executive</div>
+            <div class="pillar-title">Chief AI & Quantum<br>Officer · Full Professor (Catedrático)</div>
+            <p class="pillar-desc">C-level leadership at tech and consultancy firms. Principal Investigator on €15M+ programmes. Deployed AI systems at Intel, Airbus, BBVA, Capgemini, Vodafone.</p>
+          </div>
+        </div>
+
+        <p class="hero-summary">
+          Thirty years operating at the boundary where <strong>frontier research meets industrial consequence</strong> — leading teams, securing funding, shipping systems that run in production, and publishing the science that makes the next generation possible.
         </p>
       </div>
-      <div class="hero-photo-col">
+
+      <div class="hero-right">
         <img class="hero-photo" src="https://joselsalmeron.github.io/images/me_new.png" alt="Jose L. Salmeron" />
-        <div>
-          <div class="affil-main">CUNEF Universidad</div>
-          <div class="affil-sub">Madrid, Spain</div>
-          <div class="affil-main" style="margin-top:0.6rem;">ACM Senior Member</div>
-          <div class="affil-sub">Lifetime · Ph.D.</div>
+        <div class="hero-right-meta">
+          <div class="hero-affil">Current position</div>
+          <div class="hero-affil-val">Chief AI & Quantum Officer<br>+ Professor of CS & AI, CUNEF Universidad</div>
+          <div class="hero-credentials">
+            <div class="hcred"><span class="hcred-val">Top 2%</span><span class="hcred-lbl">Stanford Global Scientist Ranking</span></div>
+            <div class="hcred"><span class="hcred-val">h · 39</span><span class="hcred-lbl">H-Index · ISI Web of Science</span></div>
+            <div class="hcred"><span class="hcred-val">€15M+</span><span class="hcred-lbl">Funded research as PI</span></div>
+            <div class="hcred"><span class="hcred-val">30 yrs</span><span class="hcred-lbl">Research & industrial leadership</span></div>
+          </div>
         </div>
       </div>
+
     </div>
   </div>
 
-  <div class="metrics-strip">
-    <div class="metric">
-      <div class="metric-value">Top 2%</div>
-      <div class="metric-label">Stanford Global Scientist Ranking</div>
+  <!-- ═══ DUAL METRICS STRIP ═══ -->
+  <div class="metrics-dual">
+    <!-- Science side -->
+    <div class="metrics-half science">
+      <div class="metrics-half-label">Scientific impact</div>
+      <div class="mstat"><div class="mstat-val">Top 2%</div><div class="mstat-lbl">Stanford Global Ranking</div></div>
+      <div class="mstat"><div class="mstat-val">h · 39</div><div class="mstat-lbl">H-Index</div></div>
+      <div class="mstat"><div class="mstat-val">6,800+</div><div class="mstat-lbl">Citations</div></div>
+      <div class="mstat"><div class="mstat-val">200+</div><div class="mstat-lbl">Publications</div></div>
     </div>
-    <div class="metric">
-      <div class="metric-value">h · 39</div>
-      <div class="metric-label">H-Index · ISI Web of Science</div>
-    </div>
-    <div class="metric">
-      <div class="metric-value">6,800+</div>
-      <div class="metric-label">Research Citations</div>
-    </div>
-    <div class="metric">
-      <div class="metric-value">200+</div>
-      <div class="metric-label">Peer-Reviewed Publications</div>
+    <!-- Industry side -->
+    <div class="metrics-half industry">
+      <div class="metrics-half-label">Industrial track record</div>
+      <div class="mstat"><div class="mstat-val">€15M+</div><div class="mstat-lbl">Funded as PI</div></div>
+      <div class="mstat"><div class="mstat-val">8+</div><div class="mstat-lbl">Global enterprises</div></div>
+      <div class="mstat"><div class="mstat-val">C-level</div><div class="mstat-lbl">Executive roles</div></div>
+      <div class="mstat"><div class="mstat-val">3 cont.</div><div class="mstat-lbl">Programmes led</div></div>
     </div>
   </div>
 
-  <div class="badges-strip">
-    <div class="badge-item"><div class="badge-dot"></div><span class="badge-text">Catedrático de Universidad — CUNEF Universidad, Madrid</span></div>
-    <div class="badge-item"><div class="badge-dot"></div><span class="badge-text">Chief AI & Quantum Officer — Stealth Startup, 2025</span></div>
-    <div class="badge-item"><div class="badge-dot"></div><span class="badge-text">Principal Investigator — €15M+ EU Next Generation</span></div>
-    <div class="badge-item"><div class="badge-dot"></div><span class="badge-text">ACM Senior Member (Lifetime)</span></div>
-  </div>
-
-  <!-- BACKGROUND -->
-  <div class="section-wrap" id="background">
-    <div class="section-head">
-      <span class="section-label">01 — Background</span>
-      <h2 class="section-title">Thirty years building AI that matters</h2>
+  <!-- ═══ BACKGROUND ═══ -->
+  <div class="sw" id="background">
+    <div class="sh">
+      <span class="sh-label">01 — Background</span>
+      <h2 class="sh-title">Scientist. Executive. Builder.</h2>
     </div>
-    <div class="bio-layout">
+    <div class="two-col">
       <div>
         <div class="tl-item"><div class="tl-period">2025 — present</div><div class="tl-role">Chief AI & Quantum Officer</div><div class="tl-org">Stealth Startup · Spain</div></div>
         <div class="tl-item"><div class="tl-period">2022 — present</div><div class="tl-role">Professor CS & AI (Catedrático)</div><div class="tl-org">CUNEF Universidad · Madrid</div></div>
@@ -539,92 +570,138 @@
         <div class="tl-item"><div class="tl-period">2012 — 2022</div><div class="tl-role">Professor of Data Science (Catedrático)</div><div class="tl-org">Univ. Pablo de Olavide · Seville</div></div>
       </div>
       <div class="bio-prose">
-        <p>Over three decades, my work has moved between two poles I regard as inseparable: <strong>building AI systems that operate in the real world</strong> and advancing the scientific foundations that will define what those systems can become.</p>
-        <p>That duality is deliberate. Research without industrial grounding produces solutions for problems that do not exist. Industry without rigorous science produces systems that cannot be trusted, explained, or safely extended. My career has been an attempt to work at that boundary — as principal investigator on programmes funded at the scale of tens of millions of euros, as a technical lead embedded in global enterprises, and as a scientist whose work is cited by researchers across twenty countries.</p>
-        <p>I hold the <strong>Cátedra (Full Proffesorship)</strong> — the highest professorial rank in the Spanish university system — currently at CUNEF Universidad, Madrid. Simultaneously ranked in the Stanford top 2% of scientists globally, with an h-index of 39 and over 6,800 citations. My research spans explainable AI, federated learning, quantum-classical hybrid architectures, and causal machine learning, published consistently in the leading venues of each field.</p>
-        <p>The questions I find most consequential sit at the intersection of <strong>scientific rigour and organisational accountability</strong>: when can an AI system's decision be trusted? How do we train models when data cannot move? What does a genuine quantum advantage look like in a production environment?</p>
+        <p>I have spent three decades doing two things simultaneously that most people do one at a time: <strong>leading large-scale AI deployments in industry</strong>, and <strong>producing scientific research</strong> that advances the field. The combination is not incidental — it is the point.</p>
+        <p>On the industry side, I have occupied C-level and principal scientist roles at global organisations — Capgemini, BBVA, and now a stealth AI startup — leading technical teams, securing funding and delivering systems that operate in production. I have been principal investigator on programmes funded up to €15 million, managing the full arc from architecture to deployment across healthcare, finance, energy and defence.</p>
+        <p>On the scientific side, I hold the <strong>Cátedra</strong> — Spain's highest professorial rank — at CUNEF Universidad, and I am consistently ranked among the <strong>Stanford top 2% of scientists globally</strong>. With an h-index of 39 and over 6,800 citations from researchers in twenty countries, my work in explainable AI, federated learning, quantum computing and causal machine learning is among the most cited in each field.</p>
+        <p>The interaction between those two tracks is what makes both better. Research grounded in real operational constraints is more useful. Industry guided by rigorous science is more trustworthy. Boards and research councils alike have come to value that combination.</p>
       </div>
     </div>
   </div>
 
-  <!-- EXPERTISE -->
-  <div class="section-wrap" id="expertise">
-    <div class="section-head">
-      <span class="section-label">02 — Expertise</span>
-      <h2 class="section-title">Research & technical domains</h2>
+  <!-- ═══ INDUSTRY TRACK RECORD ═══ -->
+  <div class="sw" id="industry">
+    <div class="sh">
+      <span class="sh-label">02 — Industrial leadership</span>
+      <h2 class="sh-title">Delivered at scale, across sectors</h2>
     </div>
-    <div class="expertise-grid">
+    <div class="two-col">
       <div></div>
-      <div class="exp-list">
-        <div class="exp-item"><div class="exp-area">Frontier</div><div class="exp-name">Generative AI & LLMs</div><p class="exp-desc">Architecture and governance of large language model systems for regulated enterprise environments — RAG pipelines, reliability frameworks, production deployment at scale.</p></div>
-        <div class="exp-item"><div class="exp-area">Core</div><div class="exp-name">eXplainable AI</div><p class="exp-desc">Interpretable and post-hoc explainability methods for models operating in finance, healthcare and insurance. Audit-ready transparency by design.</p></div>
-        <div class="exp-item"><div class="exp-area">Privacy</div><div class="exp-name">Federated Learning</div><p class="exp-desc">Distributed training across institutional and national data boundaries without centralisation — from theoretical convergence guarantees to production systems.</p></div>
-        <div class="exp-item"><div class="exp-area">Emerging</div><div class="exp-name">Quantum Computing</div><p class="exp-desc">Quantum-classical hybrid architectures for optimisation and machine learning. Quantum readiness strategy and variational circuit design for near-term devices.</p></div>
-        <div class="exp-item"><div class="exp-area">Causal</div><div class="exp-name">Causal Machine Learning</div><p class="exp-desc">Structural causal models and root-cause identification for robust decision-making under distributional shift, confounding, and uncertainty.</p></div>
-        <div class="exp-item"><div class="exp-area">Reasoning</div><div class="exp-name">NeuroSymbolic AI</div><p class="exp-desc">Integrating neural flexibility with symbolic reasoning — systems that explain their logic in interpretable terms and maintain coherence under constraints.</p></div>
+      <div class="track-grid">
+        <div class="track-item">
+          <div class="track-company">Capgemini</div>
+          <div class="track-role">Principal AI & Quantum Scientist</div>
+          <p class="track-desc">Led the AI & Quantum practice across Europe. Architected and delivered federated AI systems for healthcare, energy and financial services clients. Principal investigator on EU-funded programmes totalling €15M+.</p>
+          <span class="track-tag">2019 – 2025</span>
+        </div>
+        <div class="track-item">
+          <div class="track-company">BBVA New Digital Business</div>
+          <div class="track-role">Lead Data Scientist</div>
+          <p class="track-desc">Designed and deployed explainable AI systems for high-stakes financial decision making. Delivered audit-ready, regulator-facing AI across multiple jurisdictions — from model design to production rollout.</p>
+          <span class="track-tag">2018 – 2020</span>
+        </div>
+        <div class="track-item">
+          <div class="track-company">Stealth Startup</div>
+          <div class="track-role">Chief AI & Quantum Officer</div>
+          <p class="track-desc">C-level executive responsibility for AI and quantum strategy, research direction, and technical delivery. Building the next generation of AI-native enterprise infrastructure from the ground up.</p>
+          <span class="track-tag">2025 – present</span>
+        </div>
+        <div class="track-item">
+          <div class="track-company">Intel · Cisco · Vodafone</div>
+          <div class="track-role">AI Research Collaborations</div>
+          <p class="track-desc">Technical advisory and joint research programmes on federated computer vision, privacy-preserving distributed learning and network AI — delivering from research to pilot deployment.</p>
+          <span class="track-tag">Various</span>
+        </div>
+        <div class="track-item">
+          <div class="track-company">EU Next Generation · CDTI</div>
+          <div class="track-role">Principal Investigator</div>
+          <p class="track-desc">PI on multiple nationally and EU-funded programmes in AI and health. Managing cross-institutional consortia, securing and administering competitive public funding, and delivering scientific and industrial outcomes on schedule.</p>
+          <span class="track-tag">€16M+ total</span>
+        </div>
+        <div class="track-item">
+          <div class="track-company">McGill University · Canadian CIHR</div>
+          <div class="track-role">International Research PI</div>
+          <p class="track-desc">Led international research collaboration on quantum AI for clinical diagnostics. Demonstrated that quantum-inspired methods deliver interpretable, high-performance results from scarce healthcare datasets.</p>
+          <span class="track-tag">2024 – 2026</span>
+        </div>
       </div>
     </div>
   </div>
 
-  <!-- PROJECTS -->
-  <div class="section-wrap" id="projects">
-    <div class="section-head">
-      <span class="section-label">03 — Projects</span>
-      <h2 class="section-title">Selected research & industrial projects</h2>
+  <!-- ═══ PROJECTS ═══ -->
+  <div class="sw" id="projects">
+    <div class="sh">
+      <span class="sh-label">03 — Key projects</span>
+      <h2 class="sh-title">From architecture to production</h2>
     </div>
-    <div class="projects-layout">
+    <div class="two-col">
       <div></div>
       <div>
         <div class="proj">
-          <div><div class="proj-budget">€15.3M</div><div class="proj-year">2022–2024</div><div class="proj-funder">EU Next Generation<br>Capgemini</div></div>
-          <div><h3 class="proj-title">Distributed AI for Early Disease Diagnosis in Aging Populations</h3><p class="proj-desc">As principal investigator, led architecture and delivery of a federated AI platform enabling early diagnosis of high-prevalence age-related diseases across distributed hospital networks — without centralising sensitive patient data. Delivered from inception to production within programme constraints.</p><div class="proj-tags"><span class="ptag">Federated Learning</span><span class="ptag">Healthcare AI</span><span class="ptag">XAI</span><span class="ptag">Distributed Systems</span></div></div>
+          <div><div class="proj-budget">€15.3M</div><div class="proj-year">2022–2024</div><div class="proj-funder">EU Next Generation · Capgemini</div></div>
+          <div>
+            <h3 class="proj-title">Distributed AI for Early Disease Diagnosis in Aging Populations</h3>
+            <p class="proj-desc">As principal investigator, led architecture and delivery of a federated AI platform enabling early diagnosis of high-prevalence age-related diseases across distributed hospital networks — without centralising patient data. Managed a cross-European consortium from inception to production.</p>
+            <div class="proj-tags"><span class="ptag">Federated Learning</span><span class="ptag">Healthcare AI</span><span class="ptag">XAI</span><span class="ptag">Distributed Systems</span></div>
+          </div>
         </div>
         <div class="proj">
-          <div><div class="proj-budget">$250K</div><div class="proj-year">2024–2026</div><div class="proj-funder">Canadian CIHR<br>McGill University</div></div>
-          <div><h3 class="proj-title">Quantum AI for Cardiovascular Risk Detection in Women</h3><p class="proj-desc">Quantum-inspired interpretable AI for early cardiovascular risk detection from scarce clinical datasets — demonstrating that explainability and performance are not mutually exclusive, even at the edge of feasible data regimes.</p><div class="proj-tags"><span class="ptag">Quantum AI</span><span class="ptag">Digital Twins</span><span class="ptag">Clinical AI</span><span class="ptag">XAI</span></div></div>
+          <div><div class="proj-budget">$250K</div><div class="proj-year">2024–2026</div><div class="proj-funder">Canadian CIHR · McGill University</div></div>
+          <div>
+            <h3 class="proj-title">Quantum AI for Cardiovascular Risk Detection in Women</h3>
+            <p class="proj-desc">Quantum-inspired interpretable AI for early cardiovascular risk from scarce clinical datasets — demonstrating that explainability and predictive performance are not mutually exclusive, even in data-constrained clinical environments.</p>
+            <div class="proj-tags"><span class="ptag">Quantum AI</span><span class="ptag">Digital Twins</span><span class="ptag">Clinical AI</span><span class="ptag">XAI</span></div>
+          </div>
         </div>
         <div class="proj">
-          <div><div class="proj-budget">€1.25M</div><div class="proj-year">2020–2021</div><div class="proj-funder">CDTI<br>Spanish Min. of Science</div></div>
-          <div><h3 class="proj-title">COVIDSION — Multipurpose Federated AI for Pandemic Response</h3><p class="proj-desc">Federated, explainable AI platform for rapid pandemic response — from architecture to production deployment in under 18 months. Designed to generalise across disease contexts as reusable public health infrastructure.</p><div class="proj-tags"><span class="ptag">Federated AI</span><span class="ptag">Public Health</span><span class="ptag">XAI</span></div></div>
+          <div><div class="proj-budget">€1.25M</div><div class="proj-year">2020–2021</div><div class="proj-funder">CDTI · Spanish Ministry of Science</div></div>
+          <div>
+            <h3 class="proj-title">COVIDSION — Federated AI for Pandemic Response</h3>
+            <p class="proj-desc">Federated, explainable AI platform for rapid pandemic response — from architecture to production in under 18 months. Designed as reusable public health infrastructure generalisable across disease contexts.</p>
+            <div class="proj-tags"><span class="ptag">Federated AI</span><span class="ptag">Public Health</span><span class="ptag">XAI</span></div>
+          </div>
         </div>
         <div class="proj">
-          <div><div class="proj-budget">—</div><div class="proj-year">2018–2019</div><div class="proj-funder">BBVA<br>New Digital Business</div></div>
-          <div><h3 class="proj-title">eXplainable AI for Financial Decision Systems</h3><p class="proj-desc">Design and deployment of XAI systems enabling transparent, audit-ready explanations for AI-driven financial decisions at scale — addressing regulatory compliance requirements across multiple jurisdictions simultaneously.</p><div class="proj-tags"><span class="ptag">XAI</span><span class="ptag">Finance</span><span class="ptag">Regulatory Compliance</span></div></div>
+          <div><div class="proj-budget">—</div><div class="proj-year">2018–2019</div><div class="proj-funder">BBVA New Digital Business</div></div>
+          <div>
+            <h3 class="proj-title">eXplainable AI for Financial Decision Systems at Scale</h3>
+            <p class="proj-desc">Design and production deployment of XAI systems for audit-ready financial decision-making at scale — addressing regulatory compliance requirements across multiple jurisdictions within a single unified architecture.</p>
+            <div class="proj-tags"><span class="ptag">XAI</span><span class="ptag">Finance</span><span class="ptag">Regulatory Compliance</span></div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- RESEARCH -->
+  <!-- ═══ RESEARCH ═══ -->
   <div class="research-band" id="research">
-    <div class="research-inner">
-      <div class="research-head">
-        <span class="research-label">04 — Research</span>
-        <h2 class="research-title">Scientific record</h2>
+    <div class="ri">
+      <div class="rh">
+        <span class="rh-label">04 — Research</span>
+        <h2 class="rh-title">Scientific record</h2>
       </div>
-      <div class="research-layout">
-        <div class="research-sidebar-stats">
-          <div class="rs-item"><div class="rs-value">Top 2%</div><div class="rs-label">Stanford Global Ranking · ISI Web of Science</div></div>
-          <div class="rs-item"><div class="rs-value">h · 39</div><div class="rs-label">H-Index</div></div>
-          <div class="rs-item"><div class="rs-value">6,800+</div><div class="rs-label">Citations · 20 countries</div></div>
-          <div class="rs-item"><div class="rs-value">200+</div><div class="rs-label">ISI Web of Science Publications</div></div>
+      <div class="r-layout">
+        <div class="r-stats">
+          <div class="rs"><div class="rs-val">Top 2%</div><div class="rs-lbl">Stanford Global Ranking · ISI Web of Science</div></div>
+          <div class="rs"><div class="rs-val">h · 39</div><div class="rs-lbl">H-Index</div></div>
+          <div class="rs"><div class="rs-val">6,800+</div><div class="rs-lbl">Citations · 20 countries</div></div>
+          <div class="rs"><div class="rs-val">200+</div><div class="rs-lbl">ISI Web of Science publications</div></div>
         </div>
         <div>
-          <div class="pub-item"><div class="pub-year">2026</div><div><div class="pub-journal">Expert Systems with Applications</div><div class="pub-title">Model-agnostic post-hoc explainability for recommender systems</div><div class="pub-authors">Arevalo & Salmeron</div></div></div>
-          <div class="pub-item"><div class="pub-year">2025</div><div><div class="pub-journal">Future Generation Computer Systems</div><div class="pub-title">Concurrent Vertical & Horizontal Federated Learning with Fuzzy Cognitive Maps</div><div class="pub-authors">Salmeron & Arevalo</div></div></div>
-          <div class="pub-item"><div class="pub-year">2025</div><div><div class="pub-journal">Neurocomputing</div><div class="pub-title">Inverse simulation learning of Quasi-Nonlinear Fuzzy Cognitive Maps</div><div class="pub-authors">Napoles, Salmeron & Salgueiro</div></div></div>
-          <div class="pub-item"><div class="pub-year">2024</div><div><div class="pub-journal">IEEE Transactions on Emerging Topics in Computing</div><div class="pub-title">Chaotic maps-based privacy-preserving distributed deep learning for Non-IID datasets</div><div class="pub-authors">Arevalo & Salmeron</div></div></div>
-          <div class="pub-item"><div class="pub-year">2024</div><div><div class="pub-journal">Journal of Big Data</div><div class="pub-title">Blind Federated Learning without initial model</div><div class="pub-authors">Salmeron & Arevalo</div></div></div>
-          <div class="pub-item"><div class="pub-year">2023</div><div><div class="pub-journal">Mathematics</div><div class="pub-title">Variational Quantum Circuit topology grid search for post-surgical hypocalcemia</div><div class="pub-authors">Salmeron & Fernández-Palop</div></div></div>
-          <a href="https://scholar.google.com/citations?user=Salmeron" target="_blank" class="scholar-cta">Full publication record on Google Scholar →</a>
+          <div class="pub"><div class="pub-yr">2026</div><div><div class="pub-journal">Expert Systems with Applications</div><div class="pub-title">Model-agnostic post-hoc explainability for recommender systems</div><div class="pub-auth">Arevalo & Salmeron</div></div></div>
+          <div class="pub"><div class="pub-yr">2025</div><div><div class="pub-journal">Future Generation Computer Systems</div><div class="pub-title">Concurrent Vertical & Horizontal Federated Learning with Fuzzy Cognitive Maps</div><div class="pub-auth">Salmeron & Arevalo</div></div></div>
+          <div class="pub"><div class="pub-yr">2025</div><div><div class="pub-journal">Neurocomputing</div><div class="pub-title">Inverse simulation learning of Quasi-Nonlinear Fuzzy Cognitive Maps</div><div class="pub-auth">Napoles, Salmeron & Salgueiro</div></div></div>
+          <div class="pub"><div class="pub-yr">2024</div><div><div class="pub-journal">IEEE Transactions on Emerging Topics in Computing</div><div class="pub-title">Chaotic maps-based privacy-preserving distributed deep learning for Non-IID datasets</div><div class="pub-auth">Arevalo & Salmeron</div></div></div>
+          <div class="pub"><div class="pub-yr">2024</div><div><div class="pub-journal">Journal of Big Data</div><div class="pub-title">Blind Federated Learning without initial model</div><div class="pub-auth">Salmeron & Arevalo</div></div></div>
+          <div class="pub"><div class="pub-yr">2023</div><div><div class="pub-journal">Mathematics</div><div class="pub-title">Variational Quantum Circuit topology grid search for post-surgical hypocalcemia</div><div class="pub-auth">Salmeron & Fernández-Palop</div></div></div>
+          <a href="https://scholar.google.com/citations?user=Salmeron" target="_blank" class="scholar-link">Full publication record on Google Scholar →</a>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- COLLABORATIONS -->
+  <!-- COLLAB STRIP -->
   <div class="collab-strip">
-    <span class="collab-label">Selected collaborations</span>
+    <span class="collab-lbl">Selected collaborations</span>
     <div class="collab-names">
       <span class="collab-name">Intel</span>
       <span class="collab-name">Airbus</span>
@@ -638,31 +715,31 @@
     </div>
   </div>
 
-  <!-- CONTACT -->
-  <div class="section-wrap" id="contact">
-    <div class="section-head">
-      <span class="section-label">05 — Contact</span>
-      <h2 class="section-title">Collaboration & engagement</h2>
+  <!-- ═══ CONTACT ═══ -->
+  <div class="sw" id="contact">
+    <div class="sh">
+      <span class="sh-label">05 — Contact</span>
+      <h2 class="sh-title">Collaboration & engagement</h2>
     </div>
-    <div class="contact-layout">
+    <div class="two-col">
       <div></div>
       <div class="contact-body">
         <div>
-          <p class="contact-text">I engage selectively with organisations and researchers working on problems at the frontier of AI and quantum computing. Whether for a <strong>board-level advisory role</strong>, a principal investigator position in a funded programme, a scientific collaboration, or a keynote at a research or executive forum — I am open to the conversation.</p>
-          <div class="contact-links">
-            <a href="mailto:salmeron@acm.org" class="c-link"><span class="c-link-label">Email</span><span class="c-link-val">salmeron@acm.org</span><span class="c-link-arrow">→</span></a>
-            <a href="http://es.linkedin.com/in/salmeron/" target="_blank" class="c-link"><span class="c-link-label">LinkedIn</span><span class="c-link-val">linkedin.com/in/salmeron</span><span class="c-link-arrow">→</span></a>
-            <a href="https://scholar.google.com/citations?user=Salmeron" target="_blank" class="c-link"><span class="c-link-label">Scholar</span><span class="c-link-val">Google Scholar Profile</span><span class="c-link-arrow">→</span></a>
+          <p class="contact-text">I engage selectively with organisations and researchers working at the frontier of AI and quantum computing. Whether for a <strong>board-level or C-suite role</strong>, principal investigator position in a major funded programme, scientific collaboration, or a keynote at an executive or research forum — I am open to the conversation.</p>
+          <div class="clinks">
+            <a href="mailto:salmeron@acm.org" class="clink"><span class="clink-lbl">Email</span><span class="clink-val">salmeron@acm.org</span><span class="clink-arr">→</span></a>
+            <a href="http://es.linkedin.com/in/salmeron/" target="_blank" class="clink"><span class="clink-lbl">LinkedIn</span><span class="clink-val">linkedin.com/in/salmeron</span><span class="clink-arr">→</span></a>
+            <a href="https://scholar.google.com/citations?user=Salmeron" target="_blank" class="clink"><span class="clink-lbl">Scholar</span><span class="clink-val">Google Scholar Profile</span><span class="clink-arr">→</span></a>
           </div>
         </div>
         <div>
           <div class="eng-title">Areas of engagement</div>
-          <div class="eng-item">AI Strategy & Scientific Advisory</div>
-          <div class="eng-item">Chief AI / Chief Quantum Officer Roles</div>
+          <div class="eng-item">Chief AI Officer / Chief Quantum Officer</div>
+          <div class="eng-item">Board-Level AI Advisory</div>
+          <div class="eng-item">AI Strategy & Technology Roadmap</div>
           <div class="eng-item">EU & National R&D Programme Leadership</div>
           <div class="eng-item">Generative AI Architecture & Governance</div>
           <div class="eng-item">XAI Audits for Regulated Industries</div>
-          <div class="eng-item">Quantum Computing Readiness Assessment</div>
           <div class="eng-item">Research Collaboration & Co-authorship</div>
           <div class="eng-item">Keynotes & Executive Scientific Programmes</div>
         </div>
@@ -671,7 +748,7 @@
   </div>
 
   <footer>
-    <span class="footer-name">Jose L. Salmeron · Professor of CS & AI · CUNEF Universidad</span>
+    <span class="footer-name">Jose L. Salmeron · AI Scientist & Executive · CUNEF Universidad</span>
     <span class="footer-info">Madrid, Spain · salmeron@acm.org</span>
   </footer>
 
