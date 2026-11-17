@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jose L. Salmeron, PhD — AI Builder & Technical Leader</title>
-  <meta name="description" content="Jose L. Salmeron, PhD — hands-on AI architect building agentic and LLM systems in production, with the science (Stanford Top 2%, h-index 39) and scale (€20M+ as PI) to lead them." />
+  <title>Jose L. Salmeron, PhD · Enterprise Data and AI Leader</title>
+  <meta name="description" content="Jose L. Salmeron, PhD. Enterprise data and AI leader based in Madrid. Owns an agentic AI platform in production at three multinationals, directed a €15.3M AI programme, Full Professor of AI and Stanford/Elsevier top 2% scientist." />
   <link rel="canonical" href="https://joselsalmeron.github.io/" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='13' fill='%23002D72'/%3E%3Ctext x='50%25' y='55%25' font-family='Georgia,serif' font-size='30' font-weight='700' fill='white' text-anchor='middle' dominant-baseline='middle'%3EJS%3C/text%3E%3C/svg%3E" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="profile" />
   <meta property="og:site_name" content="Jose L. Salmeron, PhD" />
-  <meta property="og:title" content="Jose L. Salmeron, PhD — AI Builder & Technical Leader" />
-  <meta property="og:description" content="Hands-on AI architect building agentic & LLM systems in production — with the science (Stanford Top 2%, h-index 39) and scale (€20M+ as PI) to lead them." />
+  <meta property="og:title" content="Jose L. Salmeron, PhD · Enterprise Data and AI Leader" />
+  <meta property="og:description" content="Owns an enterprise agentic AI platform in production at three multinationals. Directed a €15.3M AI programme. Full Professor of AI, CUNEF Universidad." />
   <meta property="og:url" content="https://joselsalmeron.github.io/" />
   <meta property="og:image" content="https://joselsalmeron.github.io/images/me_new.png" />
   <meta property="og:image:alt" content="Jose L. Salmeron, PhD" />
@@ -20,8 +20,8 @@
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Jose L. Salmeron, PhD — AI Builder & Technical Leader" />
-  <meta name="twitter:description" content="Hands-on AI architect building agentic & LLM systems in production — with the science and scale to lead them." />
+  <meta name="twitter:title" content="Jose L. Salmeron, PhD · Enterprise Data and AI Leader" />
+  <meta name="twitter:description" content="Owns an enterprise agentic AI platform in production at three multinationals. Directed a €15.3M AI programme. Full Professor of AI." />
   <meta name="twitter:image" content="https://joselsalmeron.github.io/images/me_new.png" />
 
   <!-- Structured data -->
@@ -31,9 +31,10 @@
     "@type": "Person",
     "name": "Jose L. Salmeron",
     "honorificSuffix": "PhD",
-    "jobTitle": "Director of Agentic AI",
+    "jobTitle": "Associate Director, AI LLM Technology Infrastructure (Agentic AI)",
     "worksFor": { "@type": "Organization", "name": "Accenture" },
-    "alumniOf": "Universidad de Almería",
+    "alumniOf": ["Universidad de Almería", "Universidad de Huelva", "Universitat Oberta de Catalunya"],
+    "address": { "@type": "PostalAddress", "addressLocality": "Madrid", "addressCountry": "ES" },
     "url": "https://joselsalmeron.github.io/",
     "image": "https://joselsalmeron.github.io/images/me_new.png",
     "sameAs": [
@@ -42,7 +43,7 @@
       "https://www.linkedin.com/in/salmeron/",
       "https://github.com/joselsalmeron"
     ],
-    "knowsAbout": ["Agentic AI", "Large Language Models", "Federated Learning", "Explainable AI", "Knowledge Graphs", "Quantum Machine Learning"]
+    "knowsAbout": ["Enterprise AI", "Agentic AI", "AI Governance", "EU AI Act", "Knowledge Graphs", "Federated Learning", "Explainable AI"]
   }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -65,7 +66,7 @@
       --blue-light: #e6ecf7;
       --red: #B5121B;        /* strong accent red */
       --gold: #8a6800;
-      --code: #0b7a5b;       /* terminal green for build signals */
+      --code: #0b7a5b;       /* open-source badges */
       --ff-display: 'Playfair Display', Georgia, serif;
       --ff-serif: 'Source Serif 4', Georgia, serif;
       --ff-sans: 'Source Sans 3', system-ui, sans-serif;
@@ -127,65 +128,54 @@
     }
 
     .hero-left {
-      padding: 4.5rem 4rem 4rem;
+      padding: 4rem 4rem 3.5rem;
       display: flex; flex-direction: column; justify-content: flex-end;
       border-right: 1px solid var(--rule);
     }
 
     .hero-eyebrow {
-      font-family: var(--ff-sans); font-size: 0.72rem; font-weight: 700;
+      font-family: var(--ff-sans); font-size: 0.74rem; font-weight: 700;
       letter-spacing: 0.14em; text-transform: uppercase;
-      color: var(--red); margin-bottom: 1.5rem; line-height: 1.6;
+      color: var(--red); margin-bottom: 1.4rem; line-height: 1.6;
     }
     .hero-eyebrow .sep { color: var(--rule); margin: 0 0.5rem; }
 
     .hero-name {
       font-family: var(--ff-display);
-      font-size: clamp(3.6rem, 5vw, 5.6rem);
+      font-size: clamp(3.4rem, 4.8vw, 5.2rem);
       font-weight: 700; line-height: 0.93; letter-spacing: -0.02em;
-      color: var(--black); margin-bottom: 1.8rem;
+      color: var(--black); margin-bottom: 1.5rem;
     }
     .hero-name em { display: block; font-style: italic; font-weight: 400; color: var(--blue); }
     .hero-name .phd { font-size: 0.4em; font-weight: 400; letter-spacing: 0; color: var(--blue); vertical-align: baseline; margin-left: 0.12rem; }
 
-    /* Dual identity — build first, then scale+science */
-    .dual-identity {
-      display: grid; grid-template-columns: 1fr 1fr;
-      gap: 0; margin-bottom: 2.4rem;
-      border-top: 1px solid var(--rule);
+    .hero-tagline {
+      font-family: var(--ff-sans); font-size: 0.98rem; font-weight: 500;
+      color: var(--ink); line-height: 1.55; max-width: 640px;
+      margin-bottom: 1.4rem;
     }
-
-    .identity-pillar {
-      padding: 1.5rem 1.4rem 1.5rem 0;
-      border-right: 1px solid var(--rule);
-    }
-    .identity-pillar:last-child { border-right: none; padding-left: 1.4rem; padding-right: 0; }
-
-    .pillar-icon {
-      font-family: var(--ff-sans); font-size: 0.62rem; font-weight: 700;
-      letter-spacing: 0.14em; text-transform: uppercase;
-      margin-bottom: 0.5rem;
-    }
-    .pillar-icon.build { color: var(--red); }
-    .pillar-icon.lead { color: var(--blue); }
-
-    .pillar-title {
-      font-family: var(--ff-display); font-size: 1.18rem; font-weight: 500;
-      color: var(--black); line-height: 1.25; margin-bottom: 0.5rem;
-    }
-
-    .pillar-desc {
-      font-family: var(--ff-sans);
-      font-size: 0.82rem;
-      color: var(--mid);
-      line-height: 1.6;
-    }
+    .hero-tagline .dot { color: var(--red); margin: 0 0.35rem; }
 
     .hero-summary {
-      font-family: var(--ff-serif); font-size: 1.12rem; font-weight: 300;
-      line-height: 1.75; color: var(--mid); max-width: 580px;
+      font-family: var(--ff-serif); font-size: 1.05rem; font-weight: 300;
+      line-height: 1.72; color: var(--mid); max-width: 620px;
     }
     .hero-summary strong { font-weight: 600; color: var(--ink); }
+
+    /* Hero facts: sectors and target roles, visible in the first screen */
+    .hero-facts {
+      display: grid; grid-template-columns: 1fr 1fr;
+      margin-top: 1.8rem;
+      border-top: 1px solid var(--rule);
+    }
+    .hero-fact { padding: 1.1rem 1.4rem 0 0; border-right: 1px solid var(--rule); }
+    .hero-fact:last-child { border-right: none; padding-left: 1.4rem; padding-right: 0; }
+    .hero-fact-lbl {
+      font-family: var(--ff-sans); font-size: 0.62rem; font-weight: 700;
+      letter-spacing: 0.14em; text-transform: uppercase; color: var(--blue);
+      margin-bottom: 0.35rem;
+    }
+    .hero-fact-val { font-family: var(--ff-sans); font-size: 0.86rem; color: var(--mid); line-height: 1.55; }
 
     /* ─── BUTTONS ─── */
     .btn {
@@ -200,7 +190,7 @@
     .btn-primary:hover { background: #8f0e15; }
     .btn-ghost { background: transparent; color: var(--ink); border: 1px solid var(--rule); }
     .btn-ghost:hover { border-color: var(--blue); color: var(--blue); }
-    .hero-cta-row { display: flex; gap: 0.9rem; margin-top: 2rem; flex-wrap: wrap; }
+    .hero-cta-row { display: flex; gap: 0.9rem; margin-top: 1.8rem; flex-wrap: wrap; }
 
     /* ─── SECTION ASIDE (uses the left column) ─── */
     .aside { position: sticky; top: 90px; }
@@ -222,13 +212,13 @@
       background: linear-gradient(to bottom, rgba(0,0,0,0.25), transparent);
     }
     .hero-photo {
-      width: 100%; height: 58%;
+      width: 100%; height: 56%;
       object-fit: cover; object-position: top center;
       display: block;
       filter: grayscale(15%) contrast(1.05);
     }
     .hero-right-meta {
-      padding: 2rem 2rem 2.2rem;
+      padding: 1.8rem 2rem 2.2rem;
       position: relative; z-index: 2;
     }
     .hero-affil {
@@ -237,8 +227,8 @@
       color: rgba(255,255,255,0.5); margin-bottom: 0.25rem;
     }
     .hero-affil-val {
-      font-family: var(--ff-display); font-size: 1.05rem; font-weight: 400;
-      color: #fff; margin-bottom: 1.1rem; line-height: 1.3;
+      font-family: var(--ff-display); font-size: 1.02rem; font-weight: 400;
+      color: #fff; margin-bottom: 1.1rem; line-height: 1.35;
     }
     .hero-credentials { display: flex; flex-direction: column; gap: 0.5rem; }
     .hcred {
@@ -252,11 +242,11 @@
       color: #ffffff; white-space: nowrap;
     }
     .hcred-lbl {
-      font-family: var(--ff-sans); font-size: 0.64rem; font-weight: 400;
-      letter-spacing: 0.05em; color: rgba(255,255,255,0.85);
+      font-family: var(--ff-sans); font-size: 0.66rem; font-weight: 400;
+      letter-spacing: 0.04em; color: rgba(255,255,255,0.85); line-height: 1.35;
     }
 
-    /* ─── BUILD SIGNAL BAR (mono) ─── */
+    /* ─── GOVERNANCE BAR ─── */
     .signal-bar {
       background: var(--black);
       padding: 0.9rem 4rem;
@@ -265,14 +255,14 @@
     }
     .signal-bar::-webkit-scrollbar { display: none; }
     .signal-lbl {
-      font-family: var(--ff-mono); font-size: 0.64rem; font-weight: 500;
-      letter-spacing: 0.05em; color: var(--code); flex-shrink: 0;
+      font-family: var(--ff-sans); font-size: 0.62rem; font-weight: 700;
+      letter-spacing: 0.14em; text-transform: uppercase; color: #fff; flex-shrink: 0;
     }
     .signal-item {
-      font-family: var(--ff-mono); font-size: 0.68rem; font-weight: 400;
-      color: rgba(255,255,255,0.62); flex-shrink: 0;
+      font-family: var(--ff-sans); font-size: 0.74rem; font-weight: 400;
+      color: rgba(255,255,255,0.68); flex-shrink: 0;
     }
-    .signal-item::before { content: '›'; color: rgba(255,255,255,0.25); margin-right: 0.6rem; }
+    .signal-item::before { content: '·'; color: rgba(255,255,255,0.35); margin-right: 0.8rem; }
 
     /* ─── DUAL METRICS ─── */
     .metrics-dual { display: grid; grid-template-columns: 1fr 1fr; }
@@ -284,13 +274,12 @@
       padding: 0.9rem 2rem 0;
       font-family: var(--ff-sans); font-size: 0.6rem; font-weight: 700;
       letter-spacing: 0.18em; text-transform: uppercase;
+      color: rgba(255,255,255,0.45);
     }
-    .metrics-half.science .metrics-half-label { color: rgba(255,255,255,0.4); }
-    .metrics-half.industry .metrics-half-label { color: rgba(255,255,255,0.3); }
     .mstat { padding: 1.2rem 2rem 1.8rem; border-right: 1px solid rgba(255,255,255,0.1); }
     .mstat:last-of-type { border-right: none; }
     .mstat-val { font-family: var(--ff-display); font-size: 1.9rem; font-weight: 700; color: #fff; line-height: 1; margin-bottom: 0.3rem; }
-    .mstat-lbl { font-family: var(--ff-sans); font-size: 0.62rem; font-weight: 400; letter-spacing: 0.06em; text-transform: uppercase; color: rgba(255,255,255,0.45); }
+    .mstat-lbl { font-family: var(--ff-sans); font-size: 0.62rem; font-weight: 400; letter-spacing: 0.06em; text-transform: uppercase; color: rgba(255,255,255,0.55); }
 
     /* ─── SECTION LAYOUT ─── */
     .sw { max-width: 1160px; margin: 0 auto; padding: 5.5rem 4rem; }
@@ -311,58 +300,45 @@
     .sh-lead strong { font-weight: 600; color: var(--ink); }
 
     .two-col { display: grid; grid-template-columns: 220px 1fr; gap: 3rem; }
-
-    /* ─── BUILD SECTION ─── */
-    .build-grid {
-      display: grid; grid-template-columns: repeat(2, 1fr);
-      gap: 0; border-top: 1px solid var(--rule); border-left: 1px solid var(--rule);
-      margin-bottom: 3.2rem;
-    }
-    .build-card {
-      padding: 2rem 2rem 2.1rem;
-      border-right: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
-      transition: background .2s;
-    }
-    .build-card:hover { background: var(--off); }
-    .build-idx { font-family: var(--ff-mono); font-size: 0.7rem; color: var(--red); margin-bottom: 0.7rem; }
-    .build-title { font-family: var(--ff-display); font-size: 1.18rem; font-weight: 500; color: var(--black); line-height: 1.25; margin-bottom: 0.6rem; }
-    .build-desc { font-family: var(--ff-sans); font-size: 0.85rem; color: var(--mid); line-height: 1.6; margin-bottom: 1rem; }
-    .build-stack { display: flex; flex-wrap: wrap; gap: 0.4rem; }
-    .chip {
-      font-family: var(--ff-mono); font-size: 0.64rem; font-weight: 400;
-      color: var(--ink); background: #eef1ee; border: 1px solid var(--rule);
-      padding: 0.2rem 0.55rem; border-radius: 3px;
-    }
-
-    /* Open source */
-    .os-head {
+    .sub-head {
       font-family: var(--ff-sans); font-size: 0.66rem; font-weight: 700;
       letter-spacing: 0.14em; text-transform: uppercase; color: var(--blue);
       margin-bottom: 1.2rem;
     }
-    .os-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0; border-top: 1px solid var(--rule); border-left: 1px solid var(--rule); }
-    .os-item {
-      display: block; text-decoration: none;
-      padding: 1.4rem 1.6rem;
+
+    /* ─── PLATFORM FLOW ─── */
+    .flow {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      border-top: 1px solid var(--rule); border-left: 1px solid var(--rule);
+      margin-bottom: 2.8rem;
+    }
+    .flow-step { padding: 1.3rem 1.3rem 1.4rem; border-right: 1px solid var(--rule); border-bottom: 1px solid var(--rule); background: var(--off); }
+    .flow-idx { font-family: var(--ff-sans); font-size: 0.62rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--red); margin-bottom: 0.4rem; }
+    .flow-txt { font-family: var(--ff-sans); font-size: 0.84rem; color: var(--ink); line-height: 1.5; }
+
+    /* ─── SCOPE CARDS ─── */
+    .scope-grid {
+      display: grid; grid-template-columns: repeat(2, 1fr);
+      gap: 0; border-top: 1px solid var(--rule); border-left: 1px solid var(--rule);
+      margin-bottom: 3.2rem;
+    }
+    .scope-card {
+      padding: 1.8rem 2rem 1.9rem;
       border-right: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
       transition: background .2s;
     }
-    .os-item:hover { background: var(--off); }
-    .os-name { font-family: var(--ff-mono); font-size: 0.92rem; font-weight: 500; color: var(--black); margin-bottom: 0.3rem; display: flex; align-items: center; gap: 0.5rem; }
-    .os-name .arr { color: var(--muted); font-family: var(--ff-sans); transition: transform .2s; }
-    .os-item:hover .os-name .arr { transform: translateX(3px); }
-    .os-badge { font-family: var(--ff-mono); font-size: 0.58rem; color: var(--code); border: 1px solid var(--code); padding: 0.05rem 0.35rem; border-radius: 3px; letter-spacing: 0.03em; }
-    .os-desc { font-family: var(--ff-sans); font-size: 0.8rem; color: var(--mid); line-height: 1.55; }
-    .os-links { margin-top: 1.4rem; display: flex; gap: 1.6rem; flex-wrap: wrap; }
-    .os-link { font-family: var(--ff-sans); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: var(--blue); text-decoration: none; border-bottom: 1px solid var(--blue-light); padding-bottom: 2px; transition: border-color .2s; }
-    .os-link:hover { border-color: var(--blue); }
+    .scope-card:hover { background: var(--off); }
+    .scope-val { font-family: var(--ff-display); font-size: 1.6rem; font-weight: 700; color: var(--blue); line-height: 1; margin-bottom: 0.5rem; }
+    .scope-title { font-family: var(--ff-display); font-size: 1.15rem; font-weight: 500; color: var(--black); line-height: 1.25; margin-bottom: 0.5rem; }
+    .scope-desc { font-family: var(--ff-sans); font-size: 0.85rem; color: var(--mid); line-height: 1.6; }
+    .scope-grid:last-child { margin-bottom: 0; }
 
-    /* ─── EDITORIAL ROLES (research band) ─── */
-    .r-roles { margin-top: 2rem; padding-top: 1.6rem; border-top: 1px solid rgba(255,255,255,0.12); }
-    .r-roles-title { font-family: var(--ff-sans); font-size: 0.62rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--red); margin-bottom: 1rem; }
-    .r-role { font-family: var(--ff-sans); font-size: 0.8rem; color: rgba(255,255,255,0.72); line-height: 1.45; padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.07); }
-    .r-role:last-child { border-bottom: none; }
-    .r-role strong { color: #fff; font-weight: 600; }
+    /* ─── SECTORS & GOVERNANCE ─── */
+    .list-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
+    .eng-title { font-family: var(--ff-sans); font-size: 0.66rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--blue); margin-bottom: 1.3rem; }
+    .eng-item { font-family: var(--ff-serif); font-size: 0.95rem; color: var(--mid); padding: 0.65rem 0 0.65rem 1rem; border-bottom: 1px solid var(--rule); position: relative; }
+    .eng-item::before { content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 3px; height: 3px; background: var(--red); border-radius: 50%; }
+    .eng-item:last-child { border-bottom: none; }
 
     /* ─── TRACK RECORD ─── */
     .track-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 1px solid var(--rule); border-left: 1px solid var(--rule); }
@@ -391,56 +367,79 @@
     .rh { display: grid; grid-template-columns: 220px 1fr; gap: 3rem; margin-bottom: 3.5rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.1); align-items: baseline; }
     .rh-label { font-family: var(--ff-sans); font-size: 0.68rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--red); }
     .rh-title { font-family: var(--ff-display); font-size: 2.2rem; font-weight: 400; color: #fff; line-height: 1.1; }
+    .rh-lead { grid-column: 2 / -1; margin-top: 1rem; font-family: var(--ff-serif); font-size: 1.04rem; font-weight: 300; line-height: 1.75; color: rgba(255,255,255,0.78); max-width: 720px; }
     .r-layout { display: grid; grid-template-columns: 220px 1fr; gap: 3rem; }
     .r-stats { display: flex; flex-direction: column; gap: 1.5rem; }
     .rs { padding-bottom: 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.08); }
     .rs:last-child { border-bottom: none; }
     .rs-val { font-family: var(--ff-display); font-size: 1.9rem; font-weight: 700; color: #fff; line-height: 1; margin-bottom: 0.2rem; }
     .rs-lbl { font-family: var(--ff-sans); font-size: 0.66rem; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.75); }
+    .r-lines { margin-bottom: 2rem; }
+    .r-lines-title { font-family: var(--ff-sans); font-size: 0.62rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--red); margin-bottom: 0.8rem; }
+    .r-line { display: inline-block; font-family: var(--ff-sans); font-size: 0.78rem; color: #fff; border: 1px solid rgba(255,255,255,0.25); padding: 0.25rem 0.7rem; margin: 0 0.4rem 0.5rem 0; }
     .pub { display: grid; grid-template-columns: 54px 1fr; gap: 1.8rem; padding: 1.6rem 0; border-bottom: 1px solid rgba(255,255,255,0.07); align-items: start; }
-    .pub:first-child { border-top: 1px solid rgba(255,255,255,0.07); }
+    .pub:first-of-type { border-top: 1px solid rgba(255,255,255,0.07); }
     .pub-yr { font-family: var(--ff-sans); font-size: 0.9rem; font-weight: 700; letter-spacing: 0.06em; color: var(--red); padding-top: 0.15rem; }
     .pub-journal { font-family: var(--ff-sans); font-size: 0.82rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.82); margin-bottom: 0.28rem; }
     .pub-title { font-family: var(--ff-serif); font-size: 1rem; font-weight: 300; color: rgba(255,255,255,0.85); line-height: 1.5; margin-bottom: 0.22rem; }
     .pub-auth { font-family: var(--ff-sans); font-size: 0.85rem; color: rgba(255,255,255,0.88); }
-    .scholar-link { display: inline-flex; align-items: center; gap: 0.6rem; margin-top: 2.5rem; font-family: var(--ff-sans); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.55); text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.18); padding-bottom: 2px; transition: color .2s, border-color .2s; }
+    .r-roles { margin-top: 2rem; padding-top: 1.6rem; border-top: 1px solid rgba(255,255,255,0.12); }
+    .r-roles-title { font-family: var(--ff-sans); font-size: 0.62rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--red); margin-bottom: 1rem; }
+    .r-role { font-family: var(--ff-sans); font-size: 0.8rem; color: rgba(255,255,255,0.72); line-height: 1.45; padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.07); }
+    .r-role:last-child { border-bottom: none; }
+    .r-role strong { color: #fff; font-weight: 600; }
+    .scholar-links { display: flex; gap: 1.8rem; flex-wrap: wrap; margin-top: 2.5rem; }
+    .scholar-link { display: inline-flex; align-items: center; gap: 0.6rem; font-family: var(--ff-sans); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.55); text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.18); padding-bottom: 2px; transition: color .2s, border-color .2s; }
     .scholar-link:hover { color: #fff; border-color: rgba(255,255,255,0.5); }
 
-    /* ─── COLLAB STRIP ─── */
-    .collab-strip { background: var(--off); border-bottom: 1px solid var(--rule); padding: 1.5rem 4rem; display: flex; align-items: center; gap: 4rem; flex-wrap: wrap; }
-    .collab-lbl { font-family: var(--ff-sans); font-size: 0.65rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); white-space: nowrap; flex-shrink: 0; }
-    .collab-names { display: flex; gap: 3rem; flex-wrap: wrap; }
-    .collab-name { font-family: var(--ff-display); font-size: 0.95rem; font-weight: 500; color: var(--mid); }
+    /* ─── OPEN SOURCE ─── */
+    .os-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0; border-top: 1px solid var(--rule); border-left: 1px solid var(--rule); }
+    .os-item {
+      display: block; text-decoration: none;
+      padding: 1.4rem 1.6rem;
+      border-right: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+      transition: background .2s;
+    }
+    .os-item:hover { background: var(--off); }
+    .os-name { font-family: var(--ff-mono); font-size: 0.92rem; font-weight: 500; color: var(--black); margin-bottom: 0.3rem; display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
+    .os-name .arr { color: var(--muted); font-family: var(--ff-sans); transition: transform .2s; }
+    .os-item:hover .os-name .arr { transform: translateX(3px); }
+    .os-badge { font-family: var(--ff-mono); font-size: 0.58rem; color: var(--code); border: 1px solid var(--code); padding: 0.05rem 0.35rem; border-radius: 3px; letter-spacing: 0.03em; }
+    .os-desc { font-family: var(--ff-sans); font-size: 0.8rem; color: var(--mid); line-height: 1.55; }
+    .os-links { margin-top: 1.4rem; display: flex; gap: 1.6rem; flex-wrap: wrap; }
+    .os-link { font-family: var(--ff-sans); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: var(--blue); text-decoration: none; border-bottom: 1px solid var(--blue-light); padding-bottom: 2px; transition: border-color .2s; }
+    .os-link:hover { border-color: var(--blue); }
 
     /* ─── CONTACT ─── */
+    .seek {
+      font-family: var(--ff-display); font-size: 1.35rem; font-weight: 400;
+      color: var(--black); line-height: 1.45; margin-bottom: 1.4rem; max-width: 720px;
+    }
     .contact-body { display: grid; grid-template-columns: 1.2fr 1fr; gap: 5rem; }
-    .contact-text { font-family: var(--ff-serif); font-size: 1.06rem; line-height: 1.82; color: var(--mid); margin-bottom: 2.5rem; }
+    .contact-text { font-family: var(--ff-serif); font-size: 1.04rem; line-height: 1.8; color: var(--mid); margin-bottom: 2.2rem; }
     .contact-text strong { font-weight: 600; color: var(--ink); }
     .clinks { display: flex; flex-direction: column; }
     .clink { display: flex; align-items: baseline; gap: 1.2rem; padding: 1.1rem 0; border-bottom: 1px solid var(--rule); text-decoration: none; transition: padding-left .2s; }
     .clink:hover { padding-left: 0.5rem; }
-    .clink-lbl { font-family: var(--ff-sans); font-size: 0.62rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--red); width: 52px; flex-shrink: 0; }
+    .clink-lbl { font-family: var(--ff-sans); font-size: 0.62rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--red); width: 60px; flex-shrink: 0; }
     .clink-val { font-family: var(--ff-serif); font-size: 1rem; color: var(--black); }
     .clink-arr { margin-left: auto; font-size: 0.85rem; color: var(--muted); transition: transform .2s; }
     .clink:hover .clink-arr { transform: translateX(4px); }
-    .eng-title { font-family: var(--ff-sans); font-size: 0.66rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--blue); margin-bottom: 1.3rem; }
-    .eng-item { font-family: var(--ff-serif); font-size: 0.95rem; color: var(--mid); padding: 0.65rem 0 0.65rem 1rem; border-bottom: 1px solid var(--rule); position: relative; }
-    .eng-item::before { content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 3px; height: 3px; background: var(--red); border-radius: 50%; }
-    .eng-item:last-child { border-bottom: none; }
 
     /* ─── FOOTER ─── */
     footer { background: var(--blue); padding: 1.8rem 4rem; display: flex; align-items: center; justify-content: space-between; }
     .footer-name { font-family: var(--ff-display); font-size: 0.95rem; color: rgba(255,255,255,0.7); }
-    .footer-info { font-family: var(--ff-sans); font-size: 0.68rem; letter-spacing: 0.06em; color: rgba(255,255,255,0.35); }
+    .footer-info { font-family: var(--ff-sans); font-size: 0.68rem; letter-spacing: 0.06em; color: rgba(255,255,255,0.5); }
 
     /* ─── ANIMATION ─── */
     @keyframes fadeUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
     .hero-left > * { animation: fadeUp 0.75s ease both; }
     .hero-left > *:nth-child(1) { animation-delay: 0.05s; }
     .hero-left > *:nth-child(2) { animation-delay: 0.15s; }
-    .hero-left > *:nth-child(3) { animation-delay: 0.3s; }
-    .hero-left > *:nth-child(4) { animation-delay: 0.45s; }
-    .hero-left > *:nth-child(5) { animation-delay: 0.55s; }
+    .hero-left > *:nth-child(3) { animation-delay: 0.25s; }
+    .hero-left > *:nth-child(4) { animation-delay: 0.35s; }
+    .hero-left > *:nth-child(5) { animation-delay: 0.45s; }
+    .hero-left > *:nth-child(6) { animation-delay: 0.55s; }
 
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
@@ -453,10 +452,11 @@
       .hero-split { grid-template-columns: 1fr; min-height: auto; }
       .hero-right { min-height: 380px; }
       .hero-photo { height: 100%; max-height: 320px; width: 100%; object-fit: cover; }
-      .hero-left { padding: 3.5rem 1.5rem 3rem; border-right: none; }
-      .dual-identity { grid-template-columns: 1fr; }
-      .identity-pillar { border-right: none; border-bottom: 1px solid var(--rule); padding-left: 0; padding-right: 0; }
-      .identity-pillar:last-child { border-bottom: none; }
+      .hero-left { padding: 3rem 1.5rem 2.8rem; border-right: none; }
+      .hero-facts { grid-template-columns: 1fr; }
+      .hero-fact { border-right: none; padding: 1rem 0 0; }
+      .hero-fact:last-child { padding-left: 0; }
+      .flow { grid-template-columns: 1fr 1fr; }
     }
     @media (max-width: 960px) {
       nav { padding: 0 1.5rem; }
@@ -465,21 +465,25 @@
       .metrics-dual { grid-template-columns: 1fr; }
       .metrics-half { grid-template-columns: 1fr 1fr; }
       .metrics-half-label { grid-column: 1 / -1; }
+      .mstat { padding: 1.1rem 1.5rem 1.5rem; }
       .sw { padding: 4rem 1.5rem; }
       .sh, .two-col, .r-layout, .rh { grid-template-columns: 1fr; gap: 1.5rem; }
-      .sh-lead { grid-column: 1 / -1; }
-      .build-grid { grid-template-columns: 1fr; }
+      .sh-lead, .rh-lead { grid-column: 1 / -1; }
+      .aside { position: static; }
+      .scope-grid { grid-template-columns: 1fr; }
+      .list-cols { grid-template-columns: 1fr; gap: 2rem; }
       .os-grid { grid-template-columns: 1fr; }
       .track-grid { grid-template-columns: 1fr 1fr; }
       .proj { grid-template-columns: 90px 1fr; gap: 1.5rem; }
       .pub { grid-template-columns: 48px 1fr; gap: 1rem; }
       .contact-body { grid-template-columns: 1fr; gap: 3rem; }
-      .collab-strip { padding: 1.2rem 1.5rem; gap: 2rem; }
       .ri { padding: 4rem 1.5rem; }
       footer { padding: 1.5rem; flex-direction: column; gap: 0.4rem; align-items: flex-start; }
     }
     @media (max-width: 560px) {
       .track-grid { grid-template-columns: 1fr; }
+      .flow { grid-template-columns: 1fr; }
+      .proj { grid-template-columns: 1fr; gap: 0.8rem; }
     }
   </style>
 </head>
@@ -489,11 +493,11 @@
   <nav>
     <a href="#" class="nav-logo">Jose L. Salmeron, PhD</a>
     <ul class="nav-links">
-      <li><a href="#build">What I Build</a></li>
+      <li><a href="#platform">Platform &amp; Scope</a></li>
       <li><a href="#track">Track Record</a></li>
-      <li><a href="#projects">Projects</a></li>
+      <li><a href="#projects">Programmes</a></li>
       <li><a href="#research">Research</a></li>
-      <li><a href="#contact" class="nav-cta">Work with me</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
     </ul>
   </nav>
 
@@ -502,31 +506,30 @@
     <div class="hero-split">
 
       <div class="hero-left">
-        <div class="hero-eyebrow">AI Architect &amp; Technical Director<span class="sep">/</span>Agentic &amp; LLM Systems in Production<span class="sep">/</span>Stanford Top 2% Scientist</div>
+        <div class="hero-eyebrow">Enterprise Data and AI Leader<span class="sep">/</span>Agentic Platforms in Production</div>
 
         <h1 class="hero-name">Jose L.<br><em>Salmeron<span class="phd">, PhD</span></em></h1>
 
-        <!-- DUAL IDENTITY — build first, scale + science second -->
-        <div class="dual-identity">
-          <div class="identity-pillar">
-            <div class="pillar-icon build">◆ Technical Authority</div>
-            <div class="pillar-title">Directs and builds agentic AI</div>
-            <p class="pillar-desc">I own the technical direction — multi-agent architectures, private LLMs, knowledge graphs, RAG — with the depth to be accountable for what ships. Today: directing and building agentic systems at the frontier.</p>
+        <p class="hero-tagline">Owns an enterprise agentic AI platform in production at three multinationals<span class="dot">·</span>€15.3M AI programme directed end to end<span class="dot">·</span>Full Professor of AI, CUNEF Universidad</p>
+
+        <p class="hero-summary">
+          I run enterprise AI as a <strong>governed, budgeted capability</strong>. At Accenture I own RSA, an agentic AI platform on SAP Business Technology Platform in production at <strong>three large multinational clients</strong>, and I am accountable for its reference architecture, guardrails, output-quality evaluation and the cost-per-task model used across delivery teams. My technical depth is first-hand, and it is what makes those architecture, risk and cost decisions defensible to clients, boards and regulators. Before this I directed AI4HealthyAging, a <strong>€15.3M NextGenerationEU programme</strong> run through a 60-person organisation across a multi-site European consortium.
+        </p>
+
+        <div class="hero-facts">
+          <div class="hero-fact">
+            <div class="hero-fact-lbl">Sectors</div>
+            <div class="hero-fact-val">Life sciences and health · Financial services · Insurance · Industry and energy</div>
           </div>
-          <div class="identity-pillar">
-            <div class="pillar-icon lead">● Leader &amp; Scientist</div>
-            <div class="pillar-title">With the science &amp; scale to lead it</div>
-            <p class="pillar-desc">€15M+ programmes, €20M+ secured as PI, multidisciplinary teams to 60. Proven by science: Full Professor (Catedrático), h-index 39, 200+ peer-reviewed papers.</p>
+          <div class="hero-fact">
+            <div class="hero-fact-lbl">Seeking</div>
+            <div class="hero-fact-val">Head, VP or C-level Data and AI leadership · Spain or remote from Madrid</div>
           </div>
         </div>
 
-        <p class="hero-summary">
-          A rare technical leader who <strong>directs and builds</strong>: I own the architecture of agentic and LLM systems in regulated production — and stay deep enough in the engineering to be accountable for whether they ship. <strong>And</strong> I have led the €15M programmes, multidisciplinary teams and grant-winning science that scale them. Sharpest exactly where agentic AI gets hard: agent governance, responsible AI and reliable deployment.
-        </p>
-
         <div class="hero-cta-row">
-          <a href="#contact" class="btn btn-primary">Work with me <span class="arr">→</span></a>
-          <a href="#build" class="btn btn-ghost">See what I build <span class="arr">→</span></a>
+          <a href="#contact" class="btn btn-primary">Contact <span class="arr">→</span></a>
+          <a href="#platform" class="btn btn-ghost">Platform and scope <span class="arr">→</span></a>
         </div>
       </div>
 
@@ -534,11 +537,11 @@
         <img class="hero-photo" src="images/me_new.png" alt="Jose L. Salmeron, PhD" />
         <div class="hero-right-meta">
           <div class="hero-affil">Current</div>
-          <div class="hero-affil-val">Director of Agentic AI<br>@ Accenture</div>
+          <div class="hero-affil-val">Associate Director, AI LLM Technology Infrastructure (Agentic AI)<br>Accenture, Madrid</div>
           <div class="hero-credentials">
-            <div class="hcred"><span class="hcred-val">Agentic AI</span><span class="hcred-lbl">Architecture &amp; production deployment</span></div>
-            <div class="hcred"><span class="hcred-val">Top 0.5%</span><span class="hcred-lbl">Stanford Global Scientist Ranking</span></div>
-            <div class="hcred"><span class="hcred-val">€20M+</span><span class="hcred-lbl">Total research funding secured as PI</span></div>
+            <div class="hcred"><span class="hcred-val">3 clients</span><span class="hcred-lbl">Agentic AI platform in production at large multinationals</span></div>
+            <div class="hcred"><span class="hcred-val">€15.3M</span><span class="hcred-lbl">AI programme directed, 60-person organisation</span></div>
+            <div class="hcred"><span class="hcred-val">Top 2%</span><span class="hcred-lbl">Stanford/Elsevier scientist ranking</span></div>
           </div>
         </div>
       </div>
@@ -546,204 +549,226 @@
     </div>
   </div>
 
-  <!-- ═══ BUILD SIGNAL BAR ═══ -->
+  <!-- ═══ GOVERNANCE BAR ═══ -->
   <div class="signal-bar">
-    <span class="signal-lbl">$ stack --core</span>
-    <span class="signal-item">Agentic frameworks</span>
-    <span class="signal-item">Agent interop</span>
-    <span class="signal-item">vLLM</span>
-    <span class="signal-item">llama.cpp</span>
-    <span class="signal-item">Knowledge Graphs</span>
-    <span class="signal-item">RAG</span>
-    <span class="signal-item">Quantization</span>
-    <span class="signal-item">Federated Learning</span>
-    <span class="signal-item">XAI</span>
-    <span class="signal-item">Python · PyTorch</span>
+    <span class="signal-lbl">AI governance</span>
+    <span class="signal-item">EU AI Act high-risk obligations</span>
+    <span class="signal-item">Human oversight</span>
+    <span class="signal-item">Documentation</span>
+    <span class="signal-item">Bias testing</span>
+    <span class="signal-item">Traceability</span>
+    <span class="signal-item">Model risk review</span>
+    <span class="signal-item">Cost per task</span>
   </div>
 
   <!-- ═══ DUAL METRICS STRIP ═══ -->
   <div class="metrics-dual">
+    <div class="metrics-half industry">
+      <div class="metrics-half-label">Leadership and delivery</div>
+      <div class="mstat"><div class="mstat-val">€15.3M</div><div class="mstat-lbl">Programme directed</div></div>
+      <div class="mstat"><div class="mstat-val">60</div><div class="mstat-lbl">Programme organisation</div></div>
+      <div class="mstat"><div class="mstat-val">€15M+</div><div class="mstat-lbl">New contracted business</div></div>
+      <div class="mstat"><div class="mstat-val">€20M+</div><div class="mstat-lbl">Research funding as PI</div></div>
+    </div>
     <div class="metrics-half science">
       <div class="metrics-half-label">Scientific authority</div>
-      <div class="mstat"><div class="mstat-val">Top 0.5%</div><div class="mstat-lbl">Stanford Ranking</div></div>
+      <div class="mstat"><div class="mstat-val">Top 2%</div><div class="mstat-lbl">Stanford/Elsevier</div></div>
       <div class="mstat"><div class="mstat-val">h · 39</div><div class="mstat-lbl">H-Index</div></div>
       <div class="mstat"><div class="mstat-val">7,200+</div><div class="mstat-lbl">Citations</div></div>
-      <div class="mstat"><div class="mstat-val">200+</div><div class="mstat-lbl">Publications</div></div>
-    </div>
-    <div class="metrics-half industry">
-      <div class="metrics-half-label">Leadership &amp; delivery</div>
-      <div class="mstat"><div class="mstat-val">€20M+</div><div class="mstat-lbl">Secured as PI</div></div>
-      <div class="mstat"><div class="mstat-val">€15M</div><div class="mstat-lbl">Largest programme led</div></div>
-      <div class="mstat"><div class="mstat-val">60</div><div class="mstat-lbl">Team led</div></div>
-      <div class="mstat"><div class="mstat-val">20 yrs</div><div class="mstat-lbl">In enterprise AI</div></div>
+      <div class="mstat"><div class="mstat-val">150+</div><div class="mstat-lbl">Publications</div></div>
     </div>
   </div>
 
-  <!-- ═══ WHAT I BUILD ═══ -->
-  <div class="sw" id="build">
+  <!-- ═══ PLATFORM & SCOPE ═══ -->
+  <div class="sw" id="platform">
     <div class="sh">
-      <span class="sh-label">01 — What I Build</span>
-      <h2 class="sh-title">Technical authority at the frontier of agentic AI</h2>
-      <p class="sh-lead">I own the technical direction of agentic and LLM systems <strong>and</strong> build them — multi-agent orchestration, private LLM deployment, and the grounding, observability and governance that make them dependable in regulated production. Directing and engineering at once is rare, and it is precisely where agentic AI succeeds or fails.</p>
+      <span class="sh-label">01 · Platform &amp; Scope</span>
+      <h2 class="sh-title">Platform ownership and mandate</h2>
+      <p class="sh-lead">I own <strong>RSA (Rapid SAP Adoption)</strong>, an enterprise agentic AI platform built on SAP Business Technology Platform and running in production at <strong>three large multinational clients</strong>. It turns a client's process and system landscape into structured knowledge, and has agents produce analysis, configuration decisions and test cases with full traceability.</p>
     </div>
 
-    <div class="build-grid">
-      <div class="build-card">
-        <div class="build-idx">01 / agentic-architecture</div>
-        <h3 class="build-title">Multi-agent architectures</h3>
-        <p class="build-desc">Design and production-grade Python to deploy and orchestrate agents at enterprise scale — currently accelerating SAP migrations with agentic AI. Scalable, robust, and built to be governed.</p>
-        <div class="build-stack"><span class="chip">agentic frameworks</span><span class="chip">orchestrators</span><span class="chip">multi-agent patterns</span><span class="chip">interop protocols</span></div>
+    <div class="two-col">
+      <div class="aside">
+        <span class="aside-label">Accountable for</span>
+        <p class="aside-text">Reference architecture, ingestion and integration layers, guardrails, output-quality evaluation and the <strong>cost-per-task model</strong> applied across delivery teams.</p>
       </div>
-      <div class="build-card">
-        <div class="build-idx">02 / private-llms</div>
-        <h3 class="build-title">Private &amp; efficient LLMs</h3>
-        <p class="build-desc">Private, on-prem and efficient LLM deployment where data can't leave the building — fine-tuning, quantization and model compression for cost-efficient inference at scale.</p>
-        <div class="build-stack"><span class="chip">vLLM</span><span class="chip">llama.cpp</span><span class="chip">Ollama</span><span class="chip">Llama</span><span class="chip">quantization</span></div>
-      </div>
-      <div class="build-card">
-        <div class="build-idx">03 / grounding</div>
-        <h3 class="build-title">Grounding &amp; reasoning</h3>
-        <p class="build-desc">Ontologies and knowledge graphs as the backbone of agent grounding and reasoning; advanced RAG, memory and retrieval so agents act on truth, not hallucination.</p>
-        <div class="build-stack"><span class="chip">Knowledge Graphs</span><span class="chip">Ontologies</span><span class="chip">RAG</span><span class="chip">vector DBs</span></div>
-      </div>
-      <div class="build-card">
-        <div class="build-idx">04 / evals-and-cost</div>
-        <h3 class="build-title">Observability &amp; cost control</h3>
-        <p class="build-desc">Output-quality metrics and evals for agents, plus token-saving strategies — per-task model routing, private/small models where they fit, prompt optimization — to keep quality up and spend down.</p>
-        <div class="build-stack"><span class="chip">evals</span><span class="chip">observability</span><span class="chip">model routing</span><span class="chip">AgentOps</span></div>
-      </div>
-    </div>
+      <div>
+        <div class="sub-head">How the platform works</div>
+        <div class="flow">
+          <div class="flow-step"><div class="flow-idx">01 Ingest</div><div class="flow-txt">Ingests and integrates client process and system landscape data</div></div>
+          <div class="flow-step"><div class="flow-idx">02 Graph</div><div class="flow-txt">Builds a knowledge graph of the landscape</div></div>
+          <div class="flow-step"><div class="flow-idx">03 Ontology</div><div class="flow-txt">Derives a formal ontology from the graph</div></div>
+          <div class="flow-step"><div class="flow-idx">04 Agents</div><div class="flow-txt">Agents produce analysis, configuration decisions and test cases, fully traceable</div></div>
+        </div>
 
-    <!-- OPEN SOURCE -->
-    <div class="os-head">Open source — designed, written and released solo</div>
-    <div class="os-grid">
-      <a href="https://swarmstate.github.io" target="_blank" rel="noopener" class="os-item">
-        <div class="os-name">swarmstate <span class="os-badge">Rust · Python</span> <span class="arr">→</span></div>
-        <div class="os-desc">Framework-agnostic state management and checkpointing backend for agent orchestration — the plumbing that keeps multi-agent runs recoverable.</div>
-      </a>
-      <a href="https://huggingface.co/deepsky-ia/TinyLlama-1.1B-Chat-v1.0-GGUF-MacQuantized" target="_blank" rel="noopener" class="os-item">
-        <div class="os-name">TinyLlama 1.1B · Mac GGUF <span class="os-badge">Hugging Face</span> <span class="arr">→</span></div>
-        <div class="os-desc">My own quantization of TinyLlama-1.1B-Chat (~700 MB) for Apple Silicon — solo work on model compression for efficient on-device inference.</div>
-      </a>
-      <a href="https://turboswarm.github.io" target="_blank" rel="noopener" class="os-item">
-        <div class="os-name">TurboSwarm <span class="os-badge">Rust · Python</span> <span class="arr">→</span></div>
-        <div class="os-desc">Full-featured particle swarm optimization library — metaheuristics for hard search and optimization problems.</div>
-      </a>
-      <a href="https://fuzzytool.github.io" target="_blank" rel="noopener" class="os-item">
-        <div class="os-name">fuzzytool <span class="os-badge">Python · NumPy</span> <span class="arr">→</span></div>
-        <div class="os-desc">Fuzzy-logic toolkit for building fuzzy inference systems — building on three decades of published work in Fuzzy Cognitive Maps.</div>
-      </a>
+        <div class="sub-head">What I own</div>
+        <div class="scope-grid">
+          <div class="scope-card">
+            <h3 class="scope-title">Reference architecture</h3>
+            <p class="scope-desc">The platform's reference architecture and the ingestion and integration layers that connect it to each client's landscape.</p>
+          </div>
+          <div class="scope-card">
+            <h3 class="scope-title">Guardrails and traceability</h3>
+            <p class="scope-desc">Guardrails on agent behaviour, and full traceability for every analysis, configuration decision and test case the agents produce.</p>
+          </div>
+          <div class="scope-card">
+            <h3 class="scope-title">Output-quality evaluation</h3>
+            <p class="scope-desc">Evaluation of the quality of what the agents produce, owned as part of the platform.</p>
+          </div>
+          <div class="scope-card">
+            <h3 class="scope-title">Cost-per-task model</h3>
+            <p class="scope-desc">The cost model applied across delivery teams, so AI cost is measured per unit of work.</p>
+          </div>
+        </div>
+
+        <div class="sub-head">Scope beyond the platform</div>
+        <div class="scope-grid">
+          <div class="scope-card">
+            <div class="scope-val">€15.3M</div>
+            <h3 class="scope-title">Programme direction</h3>
+            <p class="scope-desc">Directed AI4HealthyAging, funded by NextGenerationEU, across a multi-site European consortium and a 60-person programme organisation.</p>
+          </div>
+          <div class="scope-card">
+            <div class="scope-val">20</div>
+            <h3 class="scope-title">Organisation building</h3>
+            <p class="scope-desc">Led the permanent innovation organisation inside Capgemini's Hybrid Intelligence practice for three years, reaching 20 specialists with defined roles, capability development and progression.</p>
+          </div>
+          <div class="scope-card">
+            <div class="scope-val">€15M+</div>
+            <h3 class="scope-title">Commercial outcomes</h3>
+            <p class="scope-desc">Converted technical propositions into more than €15M of new contracted business.</p>
+          </div>
+          <div class="scope-card">
+            <div class="scope-val">25%</div>
+            <h3 class="scope-title">Delivery efficiency</h3>
+            <p class="scope-desc">Improvement in delivery efficiency across a global practice.</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="os-links">
-      <a href="https://graphfinder.github.io" target="_blank" rel="noopener" class="os-link">GraphFinder →</a>
-      <a href="https://github.com/joselsalmeron" target="_blank" rel="noopener" class="os-link">GitHub →</a>
-      <a href="https://huggingface.co/deepsky-ia" target="_blank" rel="noopener" class="os-link">Hugging Face →</a>
+  </div>
+
+  <!-- ═══ SECTORS & GOVERNANCE ═══ -->
+  <div class="sw" id="sectors">
+    <div class="sh">
+      <span class="sh-label">02 · Sectors &amp; Governance</span>
+      <h2 class="sh-title">Regulated and high-impact sectors</h2>
+      <p class="sh-lead">My work sits where AI decisions carry regulatory, clinical or financial consequences, and where governance has to be designed in rather than added after deployment.</p>
+    </div>
+    <div class="two-col">
+      <div class="aside">
+        <span class="aside-label">Location</span>
+        <p class="aside-text">Based in <strong>Madrid, Spain</strong>.</p>
+      </div>
+      <div class="list-cols">
+        <div>
+          <div class="eng-title">Sectors</div>
+          <div class="eng-item">Life sciences and health</div>
+          <div class="eng-item">Financial services</div>
+          <div class="eng-item">Insurance</div>
+          <div class="eng-item">Industry and energy</div>
+        </div>
+        <div>
+          <div class="eng-title">AI governance</div>
+          <div class="eng-item">EU AI Act high-risk obligations</div>
+          <div class="eng-item">Human oversight and documentation</div>
+          <div class="eng-item">Bias testing</div>
+          <div class="eng-item">Traceability</div>
+          <div class="eng-item">Model risk review</div>
+        </div>
+      </div>
     </div>
   </div>
 
   <!-- ═══ TRACK RECORD ═══ -->
   <div class="sw" id="track">
     <div class="sh">
-      <span class="sh-label">02 — Track Record</span>
-      <h2 class="sh-title">Built, led, and delivered at scale</h2>
-      <p class="sh-lead">Twenty years taking AI from strategy to production in <strong>highly regulated, high-stakes environments</strong> — banking, insurance, healthcare, industrial — where governance and production-grade delivery are non-negotiable.</p>
+      <span class="sh-label">03 · Track Record</span>
+      <h2 class="sh-title">Roles and outcomes</h2>
     </div>
-    <div class="two-col">
-      <div class="aside">
-        <span class="aside-label">Sectors</span>
-        <p class="aside-text">Insurance · Banking · Healthcare · Industrial · Public sector. Wherever <strong>getting AI right</strong> is non-negotiable and audit-ready delivery matters.</p>
+    <div class="track-grid">
+      <div class="track-item">
+        <div class="track-company">Accenture · Madrid</div>
+        <h3 class="track-role">Associate Director, AI LLM Technology Infrastructure (Agentic AI)</h3>
+        <p class="track-desc">Owns RSA, an enterprise agentic AI platform on SAP Business Technology Platform in production at three large multinational clients. Accountable for reference architecture, ingestion and integration, guardrails, output-quality evaluation and the cost-per-task model across delivery teams.</p>
+        <span class="track-tag">2026 –</span>
       </div>
-      <div class="track-grid">
-        <div class="track-item">
-          <div class="track-company">Accenture</div>
-          <h3 class="track-role">Director of Agentic AI</h3>
-          <p class="track-desc">Technical lead for agentic AI on an SAP migration-acceleration programme. Deliberately hands-on: agent architectures, ontologies/knowledge graphs, observability and inference-cost optimization at scale.</p>
-          <span class="track-tag">2026 –</span>
-        </div>
-        <div class="track-item">
-          <div class="track-company">AI Venture · Stealth</div>
-          <h3 class="track-role">Chief AI Officer</h3>
-          <p class="track-desc">Owned end-to-end AI strategy and product. Built private enterprise LLMs and distributed training for NLP; senior GenAI advisor to a global insurer (MAPFRE Global Corporate).</p>
-          <span class="track-tag">2025 – 2026</span>
-        </div>
-        <div class="track-item">
-          <div class="track-company">Capgemini · Hybrid Intelligence</div>
-          <h3 class="track-role">Principal AI Director / Tech Director</h3>
-          <p class="track-desc">Directed a €15M NextGenEU programme (federated learning, XAI, deep learning) with teams to 60 in a regulated healthcare setting. Technical Authorities Board member.</p>
-          <span class="track-tag">2019 – 2025</span>
-        </div>
-        <div class="track-item">
-          <div class="track-company">BBVA · New Digital Business</div>
-          <h3 class="track-role">Lead Data Scientist</h3>
-          <p class="track-desc">Led AI/ML in a top-tier regulated bank: explainable, audit-ready, bias-mitigated risk-scoring and portfolio models. Secure multiparty computation, data-poisoning detection.</p>
-          <span class="track-tag">2018 – 2020</span>
-        </div>
-        <div class="track-item">
-          <div class="track-company">European Commission · FP7</div>
-          <h3 class="track-role">Director, Technical Committee</h3>
-          <p class="track-desc">Directed the technical committee of a multi-stakeholder intelligent resource-management programme — real-time prediction, optimization, multi-source data — owning roadmap and governance.</p>
-          <span class="track-tag">2014 – 2017</span>
-        </div>
-        <div class="track-item">
-          <div class="track-company">Enterprise proposals</div>
-          <h3 class="track-role">Technical win owner</h3>
-          <p class="track-desc">Led the technical side of winning enterprise RFPs — SEAT-CUPRA (awarded) and MASORANGE — shaping the value case and solution architecture that secured the business.</p>
-          <span class="track-tag">SEAT-CUPRA · awarded</span>
-        </div>
+      <div class="track-item">
+        <div class="track-company">Deep Sky</div>
+        <h3 class="track-role">Co-founder, CTO and Chief AI Officer</h3>
+        <p class="track-desc">Set AI strategy and product. Built a dataset distillation technology now under technical evaluation by a global hardware manufacturer. Senior GenAI advisor to a global insurer (MAPFRE Global Corporate).</p>
+        <span class="track-tag">2024 – 2026</span>
+      </div>
+      <div class="track-item">
+        <div class="track-company">Capgemini · Hybrid Intelligence · Global</div>
+        <h3 class="track-role">Principal AI Director / Technical Director</h3>
+        <p class="track-desc">Member of the Technical Authorities Board. Led the practice's permanent innovation organisation for three years, to 20 specialists. Directed AI4HealthyAging (€15.3M, NextGenerationEU) with a 60-person programme organisation.</p>
+        <span class="track-tag">2019 – 2025</span>
+      </div>
+      <div class="track-item">
+        <div class="track-company">BBVA · New Digital Business</div>
+        <h3 class="track-role">Lead Data Scientist</h3>
+        <p class="track-desc">Led AI and ML for risk scoring and portfolio models in a regulated bank: explainable, audit-ready and bias-mitigated, with secure multiparty computation and data-poisoning detection.</p>
+        <span class="track-metric">15% lower model development cost · 8% better portfolio performance</span>
+        <span class="track-tag">2018 – 2019</span>
+      </div>
+      <div class="track-item">
+        <div class="track-company">European Commission · FP7</div>
+        <h3 class="track-role">Technical Director and Technical Committee Lead</h3>
+        <p class="track-desc">Directed the technical committee of a multi-stakeholder intelligent resource-management programme, owning roadmap and technical governance across real-time prediction, optimisation and multi-source data.</p>
+        <span class="track-tag">2014 – 2017</span>
+      </div>
+      <div class="track-item">
+        <div class="track-company">Enterprise proposals</div>
+        <h3 class="track-role">Technical lead on enterprise bids</h3>
+        <p class="track-desc">Led the technical side of enterprise RFPs for SEAT-CUPRA (awarded) and MASORANGE, shaping the value case and solution design that secured the business.</p>
+        <span class="track-tag">SEAT-CUPRA · awarded</span>
       </div>
     </div>
   </div>
 
-  <!-- ═══ PROJECTS ═══ -->
+  <!-- ═══ PROGRAMMES ═══ -->
   <div class="sw" id="projects">
     <div class="sh">
-      <span class="sh-label">03 — Flagship Programmes</span>
-      <h2 class="sh-title">From architecture to production</h2>
+      <span class="sh-label">04 · Programmes</span>
+      <h2 class="sh-title">Selected programmes</h2>
     </div>
     <div class="two-col">
       <div class="aside">
         <span class="aside-label">At a glance</span>
-        <p class="aside-text">A selection from <strong>€20M+</strong> in funded R&amp;D and enterprise programmes led as principal investigator or technical director — from agentic systems to federated healthcare AI.</p>
+        <p class="aside-text">A selection from more than <strong>€20M</strong> in competitive research funding awarded as principal investigator, alongside industry programmes led as technical director.</p>
       </div>
       <div>
         <div class="proj">
-          <div><div class="proj-budget">€2M</div><div class="proj-year">2026 –</div><div class="proj-funder">Accenture · SAP</div></div>
+          <div><div class="proj-budget">€15.3M</div><div class="proj-year">2021 – 2024</div><div class="proj-funder">NextGenerationEU · Capgemini</div></div>
           <div>
-            <h3 class="proj-title">RSA — Rapid SAP Adoption</h3>
-            <p class="proj-desc">Agentic AI programme to accelerate enterprise SAP migrations. I own the <strong>ontology and knowledge-graph design</strong> that grounds the system, and the <strong>agentic architecture built around it</strong> — the reasoning and orchestration layer that lets agents act reliably on that structured knowledge in production.</p>
-            <div class="proj-tags"><span class="ptag">Agentic AI</span><span class="ptag">Ontology</span><span class="ptag">Knowledge Graphs</span><span class="ptag">SAP</span></div>
+            <h3 class="proj-title">AI4HealthyAging: Distributed AI for Early Disease Diagnosis</h3>
+            <p class="proj-desc">Directed as principal investigator: a federated, explainable AI platform for early diagnosis of age-related diseases across distributed hospital networks, without centralising patient data. Multi-site European consortium and a 60-person programme organisation, from inception to production in a regulated setting.</p>
+            <div class="proj-tags"><span class="ptag">Federated Learning</span><span class="ptag">Healthcare AI</span><span class="ptag">XAI</span><span class="ptag">Programme Direction</span></div>
           </div>
         </div>
         <div class="proj">
-          <div><div class="proj-budget">€15M</div><div class="proj-year">2021–2024</div><div class="proj-funder">NextGenEU · Capgemini</div></div>
+          <div><div class="proj-budget">$250K</div><div class="proj-year">2024 – 2026</div><div class="proj-funder">Canadian CIHR · Digital Twins</div></div>
           <div>
-            <h3 class="proj-title">AI4HealthyAging — Distributed AI for Early Disease Diagnosis</h3>
-            <p class="proj-desc">As principal investigator, I led the architecture and delivery of a federated, explainable AI platform enabling early diagnosis of age-related diseases across distributed hospital networks — without centralising patient data. Cross-European consortium, inception to production, regulated setting.</p>
-            <div class="proj-tags"><span class="ptag">Federated Learning</span><span class="ptag">Healthcare AI</span><span class="ptag">XAI</span><span class="ptag">Distributed Systems</span></div>
-          </div>
-        </div>
-        <div class="proj">
-          <div><div class="proj-budget">$250K</div><div class="proj-year">2024–2026</div><div class="proj-funder">Canadian CIHR · Digital Twins</div></div>
-          <div>
-            <h3 class="proj-title">CARDIO-TWIN — Cardiovascular Risk Detection in Women</h3>
-            <p class="proj-desc">I lead the technical and research work on digital-twin AI for early cardiovascular risk from scarce clinical data — demonstrating that explainability and predictive performance coexist even in data-constrained clinical environments. Algorithm design and research leadership.</p>
+            <h3 class="proj-title">CARDIO-TWIN: Cardiovascular Risk Detection in Women</h3>
+            <p class="proj-desc">I lead the technical and research work on digital-twin AI for early cardiovascular risk from scarce clinical data, showing that explainability and predictive performance can coexist in data-constrained clinical settings.</p>
             <div class="proj-tags"><span class="ptag">Digital Twins</span><span class="ptag">Clinical AI</span><span class="ptag">XAI</span></div>
           </div>
         </div>
         <div class="proj">
           <div><div class="proj-budget">Aerospace</div><div class="proj-year">2020</div><div class="proj-funder">Airbus Defence &amp; Space · Military</div></div>
           <div>
-            <h3 class="proj-title">A400M Wing-Fit — ML Virtual Photogrammetry for Airbus Military</h3>
-            <p class="proj-desc">I led the feasibility, algorithm design and experimental work for a machine-learning-based virtual photogrammetry system to automate wing-fit on the Airbus A400M military transport — 3D computer vision applied to a high-precision aerospace manufacturing problem.</p>
-            <div class="proj-tags"><span class="ptag">Computer Vision</span><span class="ptag">3D / Photogrammetry</span><span class="ptag">Aerospace</span><span class="ptag">Machine Learning</span></div>
+            <h3 class="proj-title">A400M Wing-Fit: ML Virtual Photogrammetry for Airbus Military</h3>
+            <p class="proj-desc">I led the feasibility study, algorithm design and experimental work for a machine-learning virtual photogrammetry system to automate wing-fit on the Airbus A400M military transport, applying 3D computer vision to a high-precision aerospace manufacturing problem.</p>
+            <div class="proj-tags"><span class="ptag">Computer Vision</span><span class="ptag">3D / Photogrammetry</span><span class="ptag">Aerospace</span></div>
           </div>
         </div>
         <div class="proj">
-          <div><div class="proj-budget">Prod</div><div class="proj-year">2018–2020</div><div class="proj-funder">BBVA New Digital Business</div></div>
+          <div><div class="proj-budget">Prod</div><div class="proj-year">2018 – 2019</div><div class="proj-funder">BBVA New Digital Business</div></div>
           <div>
-            <h3 class="proj-title">Explainable AI for Financial Decision Systems at Scale</h3>
-            <p class="proj-desc">I designed and deployed XAI risk-scoring and portfolio-optimization systems for audit-ready financial decisions — meeting regulatory transparency requirements within a single unified architecture, using secure multiparty computation.</p>
-            <div class="proj-tags"><span class="ptag">XAI</span><span class="ptag">Finance</span><span class="ptag">Regulatory Compliance</span><span class="ptag">SMPC</span></div>
+            <h3 class="proj-title">Explainable AI for Financial Decision Systems</h3>
+            <p class="proj-desc">I led the design and deployment of explainable risk-scoring and portfolio-optimisation systems for audit-ready financial decisions, meeting regulatory transparency requirements within a single architecture and using secure multiparty computation. Model development cost fell by 15% and portfolio performance improved by 8%.</p>
+            <div class="proj-tags"><span class="ptag">XAI</span><span class="ptag">Financial Services</span><span class="ptag">Regulatory Compliance</span><span class="ptag">SMPC</span></div>
           </div>
         </div>
       </div>
@@ -754,95 +779,122 @@
   <div class="research-band" id="research">
     <div class="ri">
       <div class="rh">
-        <span class="rh-label">04 — Research</span>
-        <h2 class="rh-title">The science underneath</h2>
+        <span class="rh-label">05 · Research</span>
+        <h2 class="rh-title">Scientific authority</h2>
+        <p class="rh-lead">Full Professor of Computer Science and Artificial Intelligence at CUNEF Universidad, Madrid, since 2022, and previously Professor of AI at Universidad Pablo de Olavide (2012 to 2022). Ranked among the top 2% of scientists worldwide by Stanford/Elsevier, with an h-index of 39 and more than 7,200 citations.</p>
       </div>
       <div class="r-layout">
         <div>
           <div class="r-stats">
-            <div class="rs"><div class="rs-val">Double PhD</div><div class="rs-lbl">AI &amp; Management Info. Systems · both Summa Cum Laude · + MBA</div></div>
+            <div class="rs"><div class="rs-val">Two PhDs</div><div class="rs-lbl">Artificial Intelligence (Almería) · Management Information Systems (Huelva) · both Summa Cum Laude</div></div>
+            <div class="rs"><div class="rs-val">MSc · MBA</div><div class="rs-lbl">MSc Computer Engineering (UOC) · MBA (Huelva)</div></div>
             <div class="rs"><div class="rs-val">4×</div><div class="rs-lbl">National research sexenios · Spanish Ministry of Science</div></div>
             <div class="rs"><div class="rs-val">20+</div><div class="rs-lbl">Countries citing the work</div></div>
             <div class="rs"><div class="rs-val">Award</div><div class="rs-lbl">PhD Extraordinary Dissertation Award</div></div>
           </div>
           <div class="r-roles">
-            <div class="r-roles-title">Editorial &amp; Program Chairs</div>
-            <div class="r-role"><strong>Program Chair</strong> — 18th Intl. KES Conference on Intelligent Decision Technologies, Barcelona, 2026</div>
-            <div class="r-role"><strong>Area Editor</strong> — Evolving Systems (Springer Nature)</div>
-            <div class="r-role"><strong>Editorial Board</strong> — Mathematics (Q1 JCR)</div>
-            <div class="r-role"><strong>Vice-President</strong> — Intl. Association of Grey Systems &amp; Uncertain Analysis</div>
+            <div class="r-roles-title">Editorial and programme chairs</div>
+            <div class="r-role"><strong>Program Chair</strong>, 18th Intl. KES Conference on Intelligent Decision Technologies, Barcelona, 2026</div>
+            <div class="r-role"><strong>Area Editor</strong>, Evolving Systems (Springer Nature)</div>
+            <div class="r-role"><strong>Editorial Board</strong>, Mathematics (Q1 JCR)</div>
+            <div class="r-role"><strong>Vice-President</strong>, Intl. Association of Grey Systems &amp; Uncertain Analysis</div>
           </div>
         </div>
         <div>
+          <div class="r-lines">
+            <div class="r-lines-title">Research lines</div>
+            <span class="r-line">Federated and privacy-preserving learning</span>
+            <span class="r-line">Explainable AI</span>
+            <span class="r-line">Evaluation of agentic systems</span>
+          </div>
           <div class="pub"><div class="pub-yr">2026</div><div><div class="pub-journal">IEEE Transactions on Emerging Topics on Computing</div><div class="pub-title">Privacy-Preserving Quasi-Nonlinear Fuzzy Cognitive Maps Through Structural Transformation</div><div class="pub-auth">Salgueiro, Napoles &amp; Salmeron</div></div></div>
           <div class="pub"><div class="pub-yr">2026</div><div><div class="pub-journal">Neurocomputing</div><div class="pub-title">Convergence and Stability in Algebraic and Exponential Fuzzy Grey Cognitive Maps</div><div class="pub-auth">Salmeron &amp; Pueyo</div></div></div>
           <div class="pub"><div class="pub-yr">2026</div><div><div class="pub-journal">Neurocomputing</div><div class="pub-title">Divergence-Driven Generative Adversarial Networks for semi-supervised anomaly detection</div><div class="pub-auth">Garcia &amp; Salmeron</div></div></div>
           <div class="pub"><div class="pub-yr">2026</div><div><div class="pub-journal">IEEE Transactions on Fuzzy Systems</div><div class="pub-title">Non-monotonic Causal Discovery with Kolmogorov–Arnold Fuzzy Cognitive Maps</div><div class="pub-auth">Salmeron</div></div></div>
           <div class="pub"><div class="pub-yr">2026</div><div><div class="pub-journal">Knowledge-Based Systems</div><div class="pub-title">Spectral Biclustering-Driven Scalability for Post-Hoc Explainability in Recommender Systems</div><div class="pub-auth">Salmeron &amp; Arevalo</div></div></div>
           <div class="pub"><div class="pub-yr">2026</div><div><div class="pub-journal">Mathematics</div><div class="pub-title">Pharmacokinetics-Informed Agentic Architecture for Drug Dynamics with LLM-Driven In Silico Patients</div><div class="pub-auth">Salmeron</div></div></div>
-          <a href="https://scholar.google.com/citations?user=EkOGlRoAAAAJ" target="_blank" rel="noopener" class="scholar-link">Google Scholar →</a>
-          <a href="https://orcid.org/0000-0001-7811-3716" target="_blank" rel="noopener" class="scholar-link" style="margin-left:1.8rem;">ORCID →</a>
-          <a href="https://salmeron.cunef.edu" target="_blank" rel="noopener" class="scholar-link" style="margin-left:1.8rem;">Academic profile →</a>
+          <div class="scholar-links">
+            <a href="https://scholar.google.com/citations?user=EkOGlRoAAAAJ" target="_blank" rel="noopener" class="scholar-link">Google Scholar →</a>
+            <a href="https://orcid.org/0000-0001-7811-3716" target="_blank" rel="noopener" class="scholar-link">ORCID →</a>
+            <a href="https://salmeron.cunef.edu" target="_blank" rel="noopener" class="scholar-link">Academic profile →</a>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- COLLAB STRIP -->
-  <div class="collab-strip">
-    <span class="collab-lbl">Built &amp; delivered with</span>
-    <div class="collab-names">
-      <span class="collab-name">Accenture</span>
-      <span class="collab-name">Capgemini</span>
-      <span class="collab-name">BBVA</span>
-      <span class="collab-name">MAPFRE</span>
-      <span class="collab-name">Intel</span>
-      <span class="collab-name">Airbus</span>
-      <span class="collab-name">Vodafone</span>
-      <span class="collab-name">Cisco</span>
-      <span class="collab-name">Gilead</span>
+  <!-- ═══ OPEN SOURCE ═══ -->
+  <div class="sw" id="opensource">
+    <div class="sh">
+      <span class="sh-label">06 · Open Source</span>
+      <h2 class="sh-title">Judgement tested in practice</h2>
+      <p class="sh-lead">Architecture and cost decisions at enterprise scale are only as good as the judgement behind them. I keep that judgement tested against working systems through independent open-source releases in agent orchestration, model compression and optimisation.</p>
+    </div>
+    <div class="os-grid">
+      <a href="https://swarmstate.github.io" target="_blank" rel="noopener" class="os-item">
+        <div class="os-name">swarmstate <span class="os-badge">Rust · Python</span> <span class="arr">→</span></div>
+        <div class="os-desc">Framework-agnostic state management and checkpointing backend for agent orchestration, so that multi-agent runs remain recoverable.</div>
+      </a>
+      <a href="https://huggingface.co/deepsky-ia/TinyLlama-1.1B-Chat-v1.0-GGUF-MacQuantized" target="_blank" rel="noopener" class="os-item">
+        <div class="os-name">TinyLlama 1.1B · Mac GGUF <span class="os-badge">Hugging Face</span> <span class="arr">→</span></div>
+        <div class="os-desc">Quantization of TinyLlama-1.1B-Chat (~700 MB) for Apple Silicon: model compression for efficient on-device inference.</div>
+      </a>
+      <a href="https://turboswarm.github.io" target="_blank" rel="noopener" class="os-item">
+        <div class="os-name">TurboSwarm <span class="os-badge">Rust · Python</span> <span class="arr">→</span></div>
+        <div class="os-desc">Particle swarm optimization library: metaheuristics for hard search and optimization problems.</div>
+      </a>
+      <a href="https://fuzzytool.github.io" target="_blank" rel="noopener" class="os-item">
+        <div class="os-name">fuzzytool <span class="os-badge">Python · NumPy</span> <span class="arr">→</span></div>
+        <div class="os-desc">Toolkit for fuzzy inference systems, building on my published research on Fuzzy Cognitive Maps.</div>
+      </a>
+    </div>
+    <div class="os-links">
+      <a href="https://graphfinder.github.io" target="_blank" rel="noopener" class="os-link">GraphFinder →</a>
+      <a href="https://github.com/joselsalmeron" target="_blank" rel="noopener" class="os-link">GitHub →</a>
+      <a href="https://huggingface.co/deepsky-ia" target="_blank" rel="noopener" class="os-link">Hugging Face →</a>
     </div>
   </div>
 
   <!-- ═══ CONTACT ═══ -->
   <div class="sw" id="contact">
     <div class="sh">
-      <span class="sh-label">05 — Work with me</span>
-      <h2 class="sh-title">Where I can help</h2>
+      <span class="sh-label">07 · Contact</span>
+      <h2 class="sh-title">What I am looking for</h2>
     </div>
     <div class="two-col">
       <div class="aside">
-        <span class="aside-label">Availability</span>
-        <p class="aside-text">Based in <strong>Madrid</strong> · open to remote (EU / US time zones). Selective engagements.</p>
+        <span class="aside-label">Location</span>
+        <p class="aside-text">Based in <strong>Madrid</strong>. Open to roles in Spain or remote from Madrid.</p>
       </div>
-      <div class="contact-body">
-        <div>
-          <p class="contact-text">I partner with organisations that need to take <strong>agentic AI and LLM systems from prototype to reliable, governed production</strong> — especially under EU AI Act and regulatory constraints. That can be a hands-on technical lead role, a Head/VP of AI mandate, senior advisory, or a funded research collaboration. If you're scaling AI where getting it <em>right</em> matters, let's talk.</p>
-          <div class="clinks">
-            <a href="mailto:salmeron@acm.org" class="clink"><span class="clink-lbl">Email</span><span class="clink-val">salmeron@acm.org</span><span class="clink-arr">→</span></a>
-            <a href="https://www.linkedin.com/in/salmeron/" target="_blank" rel="noopener" class="clink"><span class="clink-lbl">LinkedIn</span><span class="clink-val">linkedin.com/in/salmeron</span><span class="clink-arr">→</span></a>
-            <a href="https://github.com/joselsalmeron" target="_blank" rel="noopener" class="clink"><span class="clink-lbl">GitHub</span><span class="clink-val">github.com/joselsalmeron</span><span class="clink-arr">→</span></a>
-            <a href="https://scholar.google.com/citations?user=EkOGlRoAAAAJ" target="_blank" rel="noopener" class="clink"><span class="clink-lbl">Scholar</span><span class="clink-val">Google Scholar Profile</span><span class="clink-arr">→</span></a>
+      <div>
+        <p class="seek">Head, VP or C-level enterprise AI and data leadership, in Spain or remote from Madrid, in regulated and industrial sectors.</p>
+        <div class="contact-body">
+          <div>
+            <p class="contact-text">The mandate I am suited to: owning enterprise AI and data as a <strong>governed, budgeted capability</strong>, from platform and architecture decisions to delivery economics and regulatory accountability. Executive search firms and hiring executives can reach me directly.</p>
+            <div class="clinks">
+              <a href="mailto:salmeron@acm.org" class="clink"><span class="clink-lbl">Email</span><span class="clink-val">salmeron@acm.org</span><span class="clink-arr">→</span></a>
+              <a href="https://www.linkedin.com/in/salmeron/" target="_blank" rel="noopener" class="clink"><span class="clink-lbl">LinkedIn</span><span class="clink-val">linkedin.com/in/salmeron</span><span class="clink-arr">→</span></a>
+              <a href="https://scholar.google.com/citations?user=EkOGlRoAAAAJ" target="_blank" rel="noopener" class="clink"><span class="clink-lbl">Scholar</span><span class="clink-val">Google Scholar profile</span><span class="clink-arr">→</span></a>
+            </div>
           </div>
-        </div>
-        <div>
-          <div class="eng-title">Engagement areas</div>
-          <div class="eng-item">Agentic AI &amp; LLM architecture (hands-on)</div>
-          <div class="eng-item">Head / VP of AI · Technical Director</div>
-          <div class="eng-item">Private LLM &amp; RAG systems in production</div>
-          <div class="eng-item">AI governance &amp; EU AI Act readiness</div>
-          <div class="eng-item">XAI audits for regulated industries</div>
-          <div class="eng-item">Board-level &amp; C-suite AI advisory</div>
-          <div class="eng-item">EU / national R&amp;D programme leadership</div>
-          <div class="eng-item">Keynotes &amp; executive AI briefings</div>
+          <div>
+            <div class="eng-title">Target roles</div>
+            <div class="eng-item">Head of Data and AI</div>
+            <div class="eng-item">VP or SVP, Data and AI</div>
+            <div class="eng-item">Chief AI Officer or Chief Data and AI Officer</div>
+            <div class="eng-title" style="margin-top:1.8rem;">Target sectors</div>
+            <div class="eng-item">Life sciences and health</div>
+            <div class="eng-item">Financial services and insurance</div>
+            <div class="eng-item">Industry and energy</div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
   <footer>
-    <span class="footer-name">Jose L. Salmeron, PhD · AI Builder &amp; Technical Leader</span>
-    <span class="footer-info">Madrid, Spain · Open to remote (EU / US) · salmeron@acm.org</span>
+    <span class="footer-name">Jose L. Salmeron, PhD · Enterprise Data and AI Leader</span>
+    <span class="footer-info">Madrid, Spain · salmeron@acm.org</span>
   </footer>
 
   <script>
